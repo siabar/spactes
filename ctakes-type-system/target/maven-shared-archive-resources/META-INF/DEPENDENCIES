@@ -1,0 +1,43 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache cTAKES common type system
+
+
+From: 'an unknown organization'
+  - LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/) tw.edu.ntu.csie:libsvm:jar:3.1
+    License: BSD 3-Clause License  (http://www.csie.ntu.edu.tw/~cjlin/libsvm/COPYRIGHT)
+
+From: 'Spring IO' (http://projects.spring.io/spring-framework)
+  - Spring AOP (https://github.com/spring-projects/spring-framework) org.springframework:spring-aop:jar:4.3.12.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Beans (https://github.com/spring-projects/spring-framework) org.springframework:spring-beans:jar:4.3.12.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Context (https://github.com/spring-projects/spring-framework) org.springframework:spring-context:jar:4.3.12.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Core (https://github.com/spring-projects/spring-framework) org.springframework:spring-core:jar:4.3.12.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Spring Expression Language (SpEL) (https://github.com/spring-projects/spring-framework) org.springframework:spring-expression:jar:4.3.12.RELEASE
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Logging (http://jakarta.apache.org/commons/logging/) commons-logging:commons-logging-api:jar:1.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons IO (http://commons.apache.org/io/) commons-io:commons-io:jar:2.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Lang (http://commons.apache.org/lang/) commons-lang:commons-lang:jar:2.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Logging (http://commons.apache.org/logging) commons-logging:commons-logging:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache UIMA uimaFIT - Core (http://uima.apache.org) org.apache.uima:uimafit-core:jar:2.4.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache UIMA Base: uimaj-core (http://uima.apache.org) org.apache.uima:uimaj-core:jar:2.10.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

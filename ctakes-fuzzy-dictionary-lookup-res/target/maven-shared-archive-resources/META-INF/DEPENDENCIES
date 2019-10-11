@@ -1,0 +1,15 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache cTAKES Resources fuzzy-dictionary-lookup-res
+
+
+From: 'an unknown organization'
+  - ctakes-resources-sno_rx (http://ctakes.apache.org) net.sourceforge.ctakesresources:ctakes-resources-sno_rx:jar:4.0.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

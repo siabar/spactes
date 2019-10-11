@@ -1,0 +1,274 @@
+ictus isquémico
+ictus
+infarto cerebral
+accidente cerebrovascular
+ictus isquémico con transformación hemorrágica
+AVC
+ataque isquémico transitorio
+AIT
+TIA
+hemorragia cerebral
+hemorragia intracerebral
+ictus hemorrágico
+hematoma cerebral
+trombólisis intravenosa
+fibrinolisis
+rtPA
+fibrinolisis iv
+fibrinolisis endovenosa
+tratamiento trombolítico
+fibrinólisis sistémica con rtPA ev
+tratamiento endovascular
+trombectomía
+trombectomía mecánica
+trombólisis ia
+trombólisis intraarterial
+test de disfagia
+test de deglución
+Escala de Rankin modificada 0
+mRankin 0
+Rankin 0
+mRs 0
+mRS 0
+Escala NIHSS 0
+NIHSS 0
+escala ASPECTS 0
+ASPECTS score 0
+ASPECTS  0
+Escala de Rankin modificada 0
+mRankin 0
+Rankin 0
+mRS 0
+mRs 0
+Escala NIHSS 0
+NIHSS 0
+acenocumarol
+warfarin
+heparin
+dalteparin
+enoxaparin
+nadroparin
+parnaparin
+reviparin
+bemiparin
+dabigatran etexilate
+rivaroxaban
+apixaban
+edoxaban
+B01AA07
+B01AA03
+B01AB01
+B01AB04
+B01AB05
+B01AB06
+B01AB07
+B01AB08
+B01AB12
+B01AE07
+B01AF01
+B01AF02
+B01AF03
+sintrom
+aldocumar
+Heparina
+fragmin
+clexane
+fraxiparina
+hibor
+pradaxa
+xarelto
+eliquis
+lixiana
+acenocumarol
+warfarin
+heparin
+dalteparin
+enoxaparin
+nadroparin
+parnaparin
+reviparin
+bemiparin
+dabigatran etexilate
+rivaroxaban
+apixaban
+edoxaban
+B01AA07
+B01AA03
+B01AB01
+B01AB04
+B01AB05
+B01AB06
+B01AB07
+B01AB08
+B01AB12
+B01AE07
+B01AF01
+B01AF02
+B01AF03
+sintrom
+aldocumar
+Heparina
+fragmin
+clexane
+fraxiparina
+hibor
+pradaxa
+xarelto
+eliquis
+lixiana
+clopidogrel
+ticlopidine
+acetylsalicylic acid
+dipyridamole
+abciximab
+tirofiban
+triflusal
+cilostazol
+ticagrelor
+cangrelor
+prasugler
+combinations
+acetylsalicylic acid, combinations with proton pump inhibitors
+B01AC04
+B01AC05
+B01AC06
+B01AC07
+B01AC13
+B01AC17
+B01AC18
+B01AC23
+B01AC24
+B01AC25
+B01AC22
+B01AC30
+B01AC56
+plavix
+tiklid
+Adiro
+AAS
+persantin
+reopro
+agrastat
+disgren
+ekistol
+pletal
+brilique
+clopidogrel
+ticlopidine
+acetylsalicylic acid
+dipyridamole
+abciximab
+tirofiban
+triflusal
+cilostazol
+ticagrelor
+cangrelor
+prasugler
+combinations
+acetylsalicylic acid, combinations with proton pump inhibitors
+B01AC04
+B01AC05
+B01AC06
+B01AC07
+B01AC13
+B01AC17
+B01AC18
+B01AC23
+B01AC24
+B01AC25
+B01AC22
+B01AC30
+B01AC56
+plavix
+tiklid
+Adiro
+AAS
+persantin
+reopro
+agrastat
+disgren
+ekistol
+pletal
+brilique
+Arteria carótida común
+ACC
+Arteria carótida interna
+ACI
+Arteria carótida interna terminal
+ACI-T
+AICA
+Arteria cerebral media
+ACM
+Arteria cerebral media segmento M1
+M1
+Arteria cerebral media segmento M2
+M2
+Arteria cerebral anterior
+ACA
+Arteria cerebral posterior
+ACP
+Arteria lenticuloestriada
+Arteria coroidea anterior
+Arteria coroidea posterior
+Arteria cerebelosa superior
+ACS
+Arteria cerebelosa anteroinferior
+AICA
+Arteria cerebelosa posteroinferior
+PICA
+Arteria vertebral
+Arteria basilar
+AB
+Infarto total de circulación anterior
+TACI
+Infarto parcial de circulación anterior
+PACI
+Infarto lacunar
+LACI
+Infarto de circulación posterior
+POCI
+Lobar
+frontal 
+cortical
+temporal 
+parietal 
+occipital
+profunda 
+ggbb
+ganglios de la base
+tálamo 
+putamen 
+caudado 
+lenticular 
+pálido
+Intraventricular
+posterior
+tronco
+cerebelosa
+Izquierda
+Izq
+I
+Derecha
+Dcha
+D
+Tronco cerebral 
+Aterotrombótico
+aterosclerótico
+Cardioembólico
+Lacunar
+Indeterminado
+ESUS
+Indeterminado de causa doble
+Indeterminado por estudio incompleto
+Inhabitual
+Hipertensiva
+angiopatía amiloide
+secundaria a malformación vascular
+aneurisma
+secundaria a tumor
+indeterminada
+TAC craneal
+TC craneal
+TC cranial
+TC de cráneo
+TC

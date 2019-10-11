@@ -1,0 +1,11 @@
+# UPF-TALN
+#Feeling integration
+# as there is no information of Freeling about the different functions and trainsets used
+# we keep the original dependencies
+
+
+__META_SOURCE_URL__http://nlp.lsi.upc.edu/freeling/node/1
+__META_TYPE_BASE__=de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.
+
+
+*=Dependency

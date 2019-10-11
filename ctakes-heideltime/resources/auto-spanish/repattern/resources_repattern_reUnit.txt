@@ -1,0 +1,25 @@
+// author: Aitor Gonzalez-Agirre, Jannik Strötgen
+// email:  stroetgen@uni-hd.de
+// date:   2012-07-16
+// This file contains regular expression patterns for unit words.
+// FORMAT: one line is one disjunction of the pattern
+[Dd]ías hábil(es)
+[Dd]ías bursátil(es)
+[Dd]ías
+[Ff]in(es) de semana
+[Ss]emanas
+[Mm]es(es)
+[Tt]rimestres
+[Aa]ños
+[Dd]écadas
+[Ss]iglos
+[Dd]ía hábil
+[Dd]ía bursátil
+[Dd]ía
+[Ff]in de semana
+[Ss]emana
+[Mm]es
+[Tt]rimestre
+[Aa]ño
+[Dd]écada
+[Ss]iglo

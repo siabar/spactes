@@ -1,0 +1,17 @@
+// author: Aitor Gonzalez-Agirre, Antonio Cancela Díaz, Jannik Strötgen
+// email:  stroetgen@uni-hd.de
+// date:   2012-07-16
+// This file contains regular expression patterns for long months.
+// FORMAT: one line is one disjunction of the pattern
+[Ee][Nn][Ee][Rr][Oo]
+[Ff][Ee][Bb][Rr][Ee][Rr][Oo]
+[Mm][Aa][Rr][Zz][Oo]
+[Aa][Bb][Rr][Ii][Ll]
+[Mm][Aa][Yy][Oo]
+[Jj][Uu][Nn][Ii][Oo]
+[Jj][Uu][Ll][Ii][Oo]
+[Aa][Gg][Oo][Ss][Tt][Oo]
+[Ss][Ee][Pp][Tt][Ii][Ee][Mm][Bb][Rr][Ee]
+[Oo][Cc][Tt][Uu][Bb][Rr][Ee]
+[Nn][Oo][Vv][Ii][Ee][Mm][Bb][Rr][Ee]
+[Dd][Ii][Cc][Ii][Ee][Mm][Bb][Rr][Ee]

@@ -1,0 +1,166 @@
+Sin AMC
+AMC
+alergias medicamentosas
+No alergias medicamentosas
+Alérgico a la aspirina
+No alergias
+Exfumador
+Fumador 2 paquetes al día
+Niega consumo de alcohol y de otras sustancias
+Niega consumo de alcohol
+Niega consumo de drogas
+ExADVP
+Independiente para las actividades básicas de la vida diaria
+ÍNDEX BARTHEL PREVI : 100
+Rankin 0
+mRankin 0
+NIHSS 0
+NIH 0
+mRS 0
+Rankin
+mRankin
+NIHSS_inicial 0
+NIH
+mRS
+Hipertensión arterial
+Diabetes mellitus
+Dislipidemia
+Tabaquismo
+Fibrilación auricular
+Cardiopatía isquémica
+Arteriopatía periférica
+Ictus isquémico previo
+Hemorragia cerebral previa
+AIT previo
+Hemiplejia residual
+Deterioro cognitivo/Demencia
+Enfermedad pulmonar obstructiva crónica
+Enfermedades del tejido conectivo
+Úlcera gastroduodenal
+Hepatopatía crónica
+Lesiones en órgano diana (nefropatía, retinopatía) por la diabetes
+Tumor/neoplasia sólida
+Leucemia
+Linfoma
+SIDA
+Hipercolesterolemia familiar
+Angiopatía amiloide
+Demencia
+CEX Neurología HUB
+en 3 meses
+Ictus isquémico 
+ictus
+Infarto cerebral
+AVC
+Accidente cerebrovascular
+Ictus isquémico con transformación hemorrágica
+Ataque isquémico transitorio
+AIT
+TIA
+Hemorragia cerebral
+Hematoma cerebral
+Hemorragia intracerebral
+Ictus hemorrágico
+Arteria carótida común
+Arteria carótida interna
+Arteria cerebral media
+Arteria cerebral anterior
+Arteria cerebral posterior
+Arteria coroidea anterior
+Arteria coroidea posterior 
+Arteria cerebelosa superior
+Arteria cerebelosa anteroinferior
+Arteria cerebelosa posteroinferior
+Arteria vertebral
+Arteria basilar
+TACI
+PACI
+LACI
+POCI
+Lobar
+cortical
+lóbulo frontal
+parietal
+temporal
+occipital
+Profunda
+ganglios de la base
+Intraventricular
+Posterior
+tronco
+cerebelosa
+Derecha
+Derecho
+Dcha
+D
+Izquierda
+Izquierdo
+Izq
+I
+Hipertensión arterial
+Diabetes mellitus
+Dislipidemia
+Tabaquismo
+Fibrilación auricular
+Cardiopatía isquémica
+Arteriopatía periférica
+Ictus isquémico previo
+Hemorragia cerebral previa
+AIT previo
+Hemiplejia residual
+Deterioro cognitivo
+Demencia
+Enfermedad pulmonar obstructiva crónica
+Enfermedades del tejido conectivo
+Úlcera gastroduodenal
+Hepatopatía crónica
+Lesiones en órgano diana
+nefropatía
+retinopatía
+Tumor/neoplasia sólida
+Leucemia
+Linfoma
+SIDA
+código ictus extrahospitalario
+inicio a las 13h
+inestabilidad cefálica y de la marcha
+inestabilidad cefálica
+inestabilidad de la marcha
+disartria
+Aterotrombótico
+Cardioembólico
+Lacunar
+Indeterminado por estudio completo
+Indeterminado por estudio incompleto
+Indeterminado por causa doble
+Inhabitual
+NIHSS 2
+NIHSS: 00000/10001/01010: 4
+control estricto de enfermedades que aumentan el riesgo de ictus
+Abstención de tabaco y alcohol
+dieta adecuada
+poca sal
+evitando grasas
+Evitar la obesidad y el sobrepeso
+ejercicio físico 
+Afasia
+Pérdida de fuerza
+Trastorno del lenguaje
+trombolísis intravenosa
+Trombólisis 
+Fibrinolisis 
+rtPA
+Fibrinolisis iv con rtPA
+Trombectomía  mecánica
+Trombectomía
+Trombólisis intraarterial
+Test de disfagia
+Test de deglución
+Adiro 100mh cada 24h
+Clopidogrel 75mg 1-0-0
+Sintrom un cuarto al día
+Acenocumarol ½ comp cada 24h 
+Warfarina 1 comprimido a las 19h
+Insulina NPH 100 10-0-10
+Enalapril 5mg 1-0-0
+Simvastatina 40mg cada 24h

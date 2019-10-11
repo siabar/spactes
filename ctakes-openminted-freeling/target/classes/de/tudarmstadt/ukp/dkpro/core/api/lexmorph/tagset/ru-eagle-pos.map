@@ -1,0 +1,85 @@
+# Eagle for Russian
+#
+# 
+
+__META_SOURCE_URL__=https://talp-upc.gitbooks.io/freeling-user-manual/content/tagsets/tagset-as.html
+__META_TYPE_BASE__=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.
+
+#Adjective (7/8/9 digits)
+A*=POS_ADJ
+#
+#Preposition (½ digits)
+B* =POS_AD
+#
+#Conjunction (½ digits)
+C*=POS_CONJ
+#
+#Adverb (2/3/4 digits)
+D*=POS_ADV
+#
+#Pronoun (6/7 digits)
+E*=POS_PRON
+#
+#Interjection (1/2/3 digits)
+J*=POS_INTJ
+#
+#Compound (½ digits)
+M*=POS_NOUN
+#
+#Noun (6/7/8/9 digits)
+NC*=POS_NOUN
+NP*=POS_NOUN
+#
+#Pronominal-adv (½ digits)
+P*=POS_ADV
+#
+#Participle (9/1*/11 digits)
+Q*=POS_VERB
+#
+#Pronominal-adj (5/6 digits)
+R*=POS_ADJ
+#
+#Particle (½ digits)
+T*=POS_PART
+#
+#Verb (8/9/1* digits)
+V*=POS_VERB
+#
+#Ordinal (5 digits)
+Y*=POS_ADJ
+#
+#Number (5/6 digits)
+Z*=POS_NUM
+#
+#Date (1 digit)
+W=POS_X
+#
+#Interjection (1 digit)
+I=POS_INTJ
+#
+#Punctuation (1 string per type)
+Fd=POS_PUNCT
+Fc=POS_PUNCT
+Flt=POS_PUNCT
+Fla=POS_PUNCT
+Fs=POS_PUNCT
+Fat=POS_PUNCT
+Faa=POS_PUNCT
+Fg=POS_PUNCT
+Fz=POS_PUNCT
+Fpt=POS_PUNCT
+Fpa=POS_PUNCT
+Ft=POS_PUNCT
+Fp=POS_PUNCT
+Fit=POS_PUNCT
+Fia=POS_PUNCT
+Fe=POS_PUNCT
+Frc=POS_PUNCT
+Fra=POS_PUNCT
+Fx=POS_PUNCT
+Fh=POS_PUNCT
+Fct=POS_PUNCT
+Fca=POS_PUNCT
+
+
+*=POS

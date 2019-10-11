@@ -1,0 +1,7 @@
+This is a test file to check how FreeLing is able to process it. The file contains several lines to be analyzed. I hope that the 
+language selected will be English.
+The lines can be long and the text could also be as long as desired. The then we are going to check the results.
+So, the user is waiting for the results to check them.
+The same user that now is writing this text and who is also programming the component. 
+He hopes that Freeling Parser Package will do a good job, 
+not only in the preliminary results but in the demo that we have to do in the Bank of America.

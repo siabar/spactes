@@ -1,0 +1,88 @@
+# Eagle for Catalan
+#
+# 
+
+__META_SOURCE_URL__=https://talp-upc.gitbooks.io/freeling-user-manual/content/tagsets/tagset-as.html
+__META_TYPE_BASE__=de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.
+
+
+#Adjective (4/7 digits)
+AO*=POS_ADJ
+AQ*=POS_ADJ
+AP*=POS_ADJ
+#
+#Conjunction (2 digits)
+CC=POS_CONJ
+CS=POS_SCONJ
+#
+#Determiner (5/6 digits)
+DA*=POS_DET
+DD*=POS_ADJ
+DI*=POS_ADJ
+DP*=POS_ADJ
+DR*=POS_ADJ
+DT*=POS_ADJ
+DE*=POS_ADJ
+#
+#Noun (4/5 digits)
+NC*=POS_NOUN
+NP*=POS_PROPN
+#
+#Pronoun (4/6/7 digits)
+PD*=POS_PRON
+PE*=POS_PRON
+PI*=POS_PRON
+PP*=POS_PRON
+PR*=POS_PRON
+PT*=POS_PRON
+#
+#Adverb (2 digits)
+RN=POS_ADV
+RG=POS_ADV
+#
+#Adposition (2 digits)
+SP=POS_ADP
+#
+#Verb (7 digits)
+VM*=POS_VERB
+VA*=POS_VERB
+VS*=POS_VERB
+#
+#Number (2 digits)
+Zd=POS_NUM
+Zm=POS_NUM
+Zp=POS_NUM
+Zu=POS_NUM
+#
+#Date (1 digit)
+W=POS_X
+#
+#Interjection (1 digit)
+I=POS_INTJ
+#
+#Punctuation (1 string per type)
+Fd=POS_PUNCT
+Fc=POS_PUNCT
+Flt=POS_PUNCT
+Fla=POS_PUNCT
+Fs=POS_PUNCT
+Fat=POS_PUNCT
+Faa=POS_PUNCT
+Fg=POS_PUNCT
+Fz=POS_PUNCT
+Fpt=POS_PUNCT
+Fpa=POS_PUNCT
+Ft=POS_PUNCT
+Fp=POS_PUNCT
+Fit=POS_PUNCT
+Fia=POS_PUNCT
+Fe=POS_PUNCT
+Frc=POS_PUNCT
+Fra=POS_PUNCT
+Fx=POS_PUNCT
+Fh=POS_PUNCT
+Fct=POS_PUNCT
+Fca=POS_PUNCT
+
+*=POS_X
+

@@ -1,0 +1,81 @@
+// author: Aitor Gonzalez-Agirre, Jannik Strötgen
+// email:  stroetgen@uni-hd.de
+// date:   2012-07-16
+// This file contains rules for the temporal expressions of the type time: timerules
+// RULENAME="",EXTRACTION="",NORM_VALUE=""(,OFFSET="")?(,POS_CONSTRAINT="")?(,NORM_MOD="")?(,NORM_QUANT="")?(,NORM_FREQ="")?
+
+/////////////////////
+// TIMESTAMP STYLE //
+/////////////////////
+// time_r1 (Timestamp style)
+// EXAMPLE r1a: 17:00:00h, 17:00:00hrs, 17:00:00 am,....
+// EXAMPLE r1b: 17:00h, 17:00 horas, 17:00HRS,....
+// EXAMPLE r1c: 20:29:29.79h, 20:29:29.79horas,....
+// EXAMPLE r1d: 17:00:00
+// EXAMPLE r1e: 17:00,...
+// EXAMPLE r1f: 20:29:29.79
+// EXAMPLE r1g: 18:00), 19.00),....
+// EXAMPLE r1h: 7h), 7h):,---
+// EXAMPLE r1i: sobre las 20:30, sobre las 20.20...
+RULENAME="time_r1a",EXTRACTION="%reTimeHour:%reTimeMinute:%reTimeMinute( )?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])",NORM_VALUE="%normHour(group(1)):group(2)",OFFSET="group(1)-group(2)"
+RULENAME="time_r1b",EXTRACTION="%reTimeHour[:|\.]%reTimeMinute( )?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|HRS|[Hh]|[Hh][Rr]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])",NORM_VALUE="%normHour(group(1)):group(2)",OFFSET="group(1)-group(2)"
+RULENAME="time_r1c",EXTRACTION="%reTimeHour:%reTimeMinute:%reTimeMinute\.%reYear2Digit( )?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])",NORM_VALUE="%normHour(group(1)):group(2)",OFFSET="group(1)-group(2)"
+RULENAME="time_r1d",EXTRACTION="%reTimeHour:%reTimeMinute:%reTimeMinute",NORM_VALUE="group(1):group(2)",OFFSET="group(1)-group(2)"
+RULENAME="time_r1e",EXTRACTION="%reTimeHour:%reTimeMinute",NORM_VALUE="group(1):group(2)",OFFSET="group(1)-group(2)"
+RULENAME="time_r1f",EXTRACTION="%reTimeHour:%reTimeMinute:%reTimeMinute\.%reYear2Digit",NORM_VALUE="group(1):group(2)",OFFSET="group(1)-group(2)"
+RULENAME="time_r1g",EXTRACTION="%reTimeHour[:|\.]%reTimeMinute[\)]",NORM_VALUE="%normHour(group(1)):group(2)",OFFSET="group(1)-group(2)"
+RULENAME="time_r1h",EXTRACTION="%reTimeHour[ ]?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh])[ ]?%reTimeMinute[ ]?([Mm][Ii][Nn][Uu][Tt][Oo][Ss]|[Mm][Nn]?|[Mm][Ii][Nn])",NORM_VALUE="group(1):group(3)",OFFSET="group(1)-group(3)"
+RULENAME="time_r1i",EXTRACTION="%reTimeHour( )?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])\):?",NORM_VALUE="group(1):00",OFFSET="group(1)-group(1)"
+RULENAME="time_r1j",EXTRACTION="(sobre la[s]? )%reTimeHour[:|\.]%reTimeMinute",NORM_VALUE="group(2):group(3)",OFFSET="group(2)-group(3)"
+RULENAME="time_r1k",EXTRACTION="(sobre la[s]? |a la[s]? )%reTimeHour[ ]?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])",NORM_VALUE="group(2):00",OFFSET="group(2)-group(2)"
+
+
+// time_r2
+// EXAMPLE r2a-1: 09-24-99 1145EST (TimeStamp style with timezone information)
+RULENAME="time_r2a",EXTRACTION="(%reTimeHour(:)?%reTimeMinute)%reTimezone",NORM_VALUE="%normMinute(group(2)):%normMinute(group(4))",OFFSET="group(2)-group(4)"
+
+
+/////////////////////////////
+// PART-OF-DAY GRANULARITY //
+/////////////////////////////
+// time_r3
+// EXAMPLE r3a-1: esta tarde
+// EXAMPLE r3a-2: esta noche
+// EXAMPLE r3b-1: anoche
+// EXAMPLE r3c-1: la noche
+// EXAMPLE r3d-1: la noche del pasado viernes
+// EXAMPLE r3e-1: la noche del viernes pasado
+// EXAMPLE r3f-1: la mañana del miércoles
+//RULENAME="time_r3a",EXTRACTION="%reThisNextLast %rePartOfDay( mism[oa])?",NORM_VALUE="UNDEF-%normThisNextLast(group(1))-dayT%normPartOfDay(group(2))"
+//RULENAME="time_r3b",EXTRACTION="([Aa]noche)",NORM_VALUE="UNDEF-last-dayTNI"
+// RULENAME="time_r3c",EXTRACTION="([Ee]l|[Ll]a) %rePartOfDay",NORM_VALUE="UNDEF-REF-day-PLUS-0T%normPartOfDay(group(2))"
+//RULENAME="time_r3d",EXTRACTION="([Dd]el |[Ee]l |[Ll]a |[Aa]l )?%rePartOfDay ([Dd]e la|[Dd]el|[Ee]l|[Ll]a|[Aa]l) %reThisNextLast %reWeekday",NORM_VALUE="UNDEF-%normThisNextLast(group(4))-%normWeekday(group(5))T%normPartOfDay(group(2))"
+//RULENAME="time_r3e",EXTRACTION="([Dd]el |[Ee]l |[Ll]a |[Aa]l )?%rePartOfDay ([Dd]e la|[Dd]el|[Ee]l|[Ll]a|[Aa]l) %reWeekday %reThisNextLast",NORM_VALUE="UNDEF-%normThisNextLast(group(5))-%normWeekday(group(4))T%normPartOfDay(group(2))"
+RULENAME="time_r3f",EXTRACTION="([Dd]el |[Ee]l |[Ll]a |[Aa]l )?%rePartOfDay ([Dd]e la|[Dd]el|[Ee]l|[Ll]a|[Aa]l) %reWeekday",NORM_VALUE="UNDEF-day-%normWeekday(group(4))T%normPartOfDay(group(2))"
+
+///////////////////////////
+// TIMEPOINT GRANULARITY //
+///////////////////////////
+// time_r4
+// EXAMPLE r4a-1: las 11 de la mañana 
+// EXAMPLE r4b-1: las 11 5 la tarde 
+// EXAMPLE r4c-1: las 9 de la noche
+// EXAMPLE r4d-1: las 1 de la noche
+// EXAMPLE r4e-1: las 12 de la noche
+RULENAME="time_r4a",EXTRACTION="(%reApproximate )?([Ll]as) %reTimeHour de la mañana",NORM_VALUE="%normHour(group(4)):00",NORM_MOD="%normApprox4Dates(group(2))"
+RULENAME="time_r4b",EXTRACTION="(%reApproximate )?([Ll]as) %reTimeHour de la tarde",NORM_VALUE="%SUM%(%normHour(group(4)),12):00",NORM_MOD="%normApprox4Dates(group(2))"
+RULENAME="time_r4c",EXTRACTION="(%reApproximate )?([Ll]as) (8|9|10|11) de la noche",NORM_VALUE="%SUM%(%normHour(group(4)),12):00",NORM_MOD="%normApprox4Dates(group(2))"
+RULENAME="time_r4d",EXTRACTION="(%reApproximate )?([Ll]as) (1|2|3|4|5) de la noche",NORM_VALUE="%normHour(group(4)):00",NORM_MOD="%normApprox4Dates(group(2))"
+RULENAME="time_r4e",EXTRACTION="(%reApproximate )?([Ll]as) (12) de la noche",NORM_VALUE="00:00",NORM_MOD="%normApprox4Dates(group(2))"
+
+// time_r5
+// EXAMPLE r5a-1: las 8.15 hora local
+RULENAME="time_r5a",EXTRACTION="(%reApproximate )?([Ll]as) %reTimeHour[\.|:]%reTimeMinute(\.| hora(s)?( local(es)?)?)",NORM_VALUE="%normHour(group(4)):group(5)",NORM_MOD="%normApprox4Dates(group(2))",OFFSET="group(4)-group(5)"
+RULENAME="time_r5b",EXTRACTION="(%reApproximate )?([Ll]as) %reTimeHour hora(s)?( local(es)?)?",NORM_VALUE="%normHour(group(4)):00",NORM_MOD="%normApprox4Dates(group(2))",OFFSET="group(4)-group(4)"
+
+
+////////////////////
+// NEGATIVE RULES //
+////////////////////
+RULENAME="time_r1d_negative",EXTRACTION="/( )?(8|12|24)( )?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh])",NORM_VALUE="REMOVE"
+RULENAME="time_r1j_negative",EXTRACTION="[Aa] [Ll][Aa][Ss] 24[ ]?([Hh][Oo][Rr][Aa][Ss]|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh])",NORM_VALUE="REMOVE"
