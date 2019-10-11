@@ -39,8 +39,9 @@ the fast dictionary lookup component could not detect these tokens.
 
 Input is a text file and output is XML(Readble by UIMA CVS), BRAT or HTML files.
 
-**We integrated all of these components into cTAKES as native components.**
-** Note: Type System of cTAKES has been updated **
+**We integrated all of these components into cTAKES as native components**
+
+**Note: Type System of cTAKES has been updated**
 
 ## Requirements
 
