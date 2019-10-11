@@ -40,18 +40,18 @@ the fast dictionary lookup component could not detect these tokens.
 Input is a text file and output is XML(Readble by UIMA CVS), BRAT or HTML files.
 
 **We integrated all of these components into cTAKES as native components.**
-
+** Note: Type System of cTAKES has been updated **
 
 ## Requirements
 
 After clone [cTAKES](https://github.com/apache/ctakes) in your local repository
 Change pom of cTAKES directory with the current one and add all new modules (Freeling, HeidelTime, SpellCheker, 
-Fuzzy Dictionary Lookup and SpaCTeS) to the cTAKES directory.
+Fuzzy Dictionary Lookup, SpaCTeS, SpaCTes-res and type-system) to the cTAKES directory.
 
 Following User Install Guide of:
 1. [**cTAKES**](https://cwiki.apache.org/confluence/display/CTAKES/cTAKES+4.0+User+Install+Guide).
 
-2. [**Freeling**](https://github.com/TALP-UPC/FreeLing-User-Manual) or [**Freeling Wrapper**](https://github.com/TalnUPF/OpenMinted_Freeling) [Recommended].
+2. [**Freeling Wrapper**](https://github.com/TalnUPF/OpenMinted_Freeling).
 We installed Freeling V 4.0.
 
 
