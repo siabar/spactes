@@ -108,18 +108,6 @@ abstract public class AbstractJCasTermAnnotator extends JCasAnnotator_ImplBase
 			throw new ResourceInitializationException(cnfE);
 		}
 
-//      try {
-//    	  
-//          LOGGER.info( "Loading SpellChecker Dictionary");         
-//          spellchecker = new SpellCheckService();
-//   	      spellchecker.loadDirectoryOfDictionaries("org/apache/ctakes/examples/dictionary/lookup/spellchecker/");
-//   		
-//    	  
-//      } catch(IOException e) {
-//    	  
-//          LOGGER.error( "Error in Spell Checker" );
-//      }
-
 		LOGGER.info("Using dictionary lookup window type: " + _windowClassName);
 //      _lookupWindowType = JCasUtil.getType( _windowClassName );
 		final String[] tagArr = _exclusionPosTags.split(",");
@@ -350,7 +338,6 @@ abstract public class AbstractJCasTermAnnotator extends JCasAnnotator_ImplBase
 //				}
 //			}
 			lookupTokenIndices.add(allTokens.size());
-//			String temp= baseToken.getNormalizedForm();
 
 			String temp = "";
 
