@@ -44,7 +44,6 @@ final public class FileTreeReader extends AbstractFileTreeReader {
     */
    protected void readFile( final JCas jCas, final File file ) throws IOException {
       String docText = readFile( file );
-//      docText += ".";
 
       docText = handleTextEol( docText );
       jCas.setDocumentText( docText );
