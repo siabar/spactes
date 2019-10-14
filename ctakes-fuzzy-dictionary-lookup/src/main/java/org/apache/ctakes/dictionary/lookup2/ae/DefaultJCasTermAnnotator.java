@@ -244,8 +244,6 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 	public static int isTermMatchfuzzy(final String temp, final RareWordTerm rareWordHit,
 			final List<FastLookupToken> allTokens, final int termStartIndex, final int endIndex) {
 		String word = temp + " ";
-		String pure_word = "";
-//		String next_word = "";
 		List<String> myList = Arrays.asList("puntos", "a", "de", "total", "estimado", "actual");
 		for (Integer i = termStartIndex + 1; i < allTokens.size(); i++) {
 			if (Character.isLetter(allTokens.get(i).getText().charAt(0))
@@ -255,8 +253,6 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 				}
 
 			}
-//			pre_word = word;
-//			next_word = allTokens.get(i).getText();
 			word += allTokens.get(i).getText() + " ";
 		}
 		word = word.trim();
@@ -278,14 +274,6 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 	public static boolean isTermMatch(final String temp, final RareWordTerm rareWordHit,
 			final List<FastLookupToken> allTokens, final int termStartIndex, final int termEndIndex) {
 
-//		String inputToken = temp + " ";
-//
-//		// String[] rareWordList = rareWordHit.getTokens();
-//
-//		int endIndex = rareWordHit.getTokenCount() < allTokens.size() ? rareWordHit.getTokenCount() : allTokens.size();
-//		for (int i = 1; i < endIndex; i++) {
-//			inputToken += allTokens.get(i).getText() + " ";
-//		}
 		String inputToken = "";
 		for (int i = termStartIndex; i <= termEndIndex; i++) {
 			try {
@@ -297,11 +285,6 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		inputToken = inputToken.trim();
 
 		String rareWord = rareWordHit.getText();
-//		for (int i = 0; i < endIndex; i++) {
-//			rareWord += rareWordList[i] + " ";
-//		}
-//		rareWord = rareWord.trim();
-
 		String tempText = inputToken;
 		RemoveAccents rc = new RemoveAccents();
 		tempText = rc.removeAccents(tempText);
@@ -324,21 +307,6 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		}
 
 		return false;
-
-//			final String[] hitTokens = rareWordHit.getTokens();
-//			int hit = 0;
-//			for ( int i = termStartIndex; i < termEndIndex + 1; i++ ) {
-//			if ( hitTokens[ hit ].equals( allTokens.get( i ).getText() )
-//			|| hitTokens[ hit ].equals( allTokens.get( i ).getVariant() ) ) {
-//			// the normal token or variant matched, move to the next token
-//			hit++;
-//			continue;
-//			}
-//			// the token normal didn't match and there is no matching variant
-//			return false;
-//			}
-//			// some combination of token and variant matched
-//			return true;
 
 	}
 

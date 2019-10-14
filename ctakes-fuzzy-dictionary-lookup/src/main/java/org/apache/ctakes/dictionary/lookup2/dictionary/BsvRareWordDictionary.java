@@ -18,7 +18,6 @@
  */
 package org.apache.ctakes.dictionary.lookup2.dictionary;
 
-import org.apache.ctakes.core.config.ConfigParameterConstants;
 import org.apache.ctakes.core.resource.FileLocator;
 import org.apache.ctakes.core.util.StringUtil;
 import org.apache.ctakes.core.util.collection.CollectionMap;
@@ -26,10 +25,6 @@ import org.apache.ctakes.dictionary.lookup2.term.RareWordTerm;
 import org.apache.ctakes.dictionary.lookup2.util.FastLookupToken;
 import org.apache.log4j.Logger;
 import org.apache.uima.UimaContext;
-import org.ihtsdo.otf.spellcheck.service.RemoveAccents;
-
-import org.apache.ctakes.freeling.FreeLingWrapper;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

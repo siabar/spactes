@@ -19,14 +19,12 @@
 package org.apache.ctakes.dictionary.lookup2.dictionary;
 
 import org.apache.ctakes.core.config.ConfigParameterConstants;
-import org.apache.ctakes.core.util.StringUtil;
+//import org.apache.ctakes.core.util.StringUtil;
 import org.apache.ctakes.core.util.collection.ArrayListMap;
 import org.apache.ctakes.core.util.collection.CollectionMap;
 import org.apache.ctakes.dictionary.lookup2.term.RareWordTerm;
 import org.apache.ctakes.dictionary.lookup2.util.CuiCodeUtil;
 import org.apache.log4j.Logger;
-import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
-
 import org.apache.ctakes.freeling.FreeLingWrapper;
 import org.apache.ctakes.freeling.RemoveAccents;
 
@@ -113,7 +111,7 @@ final public class RareWordTermMapCreator {
 		freeling.init_dict();
 		RemoveAccents rc = new RemoveAccents();
 		final CollectionMap<String, RareWordTerm, List<RareWordTerm>> rareWordTermMap = new ArrayListMap<>();
-		final Map<String, Integer> tokenCountMap = createTokenCountMap(cuiTerms, rc, freeling);
+//		final Map<String, Integer> tokenCountMap = createTokenCountMap(cuiTerms, rc, freeling);
 		for (CuiTerm cuiTerm : cuiTerms) {
 			final List<String> tempTerm = freeling.tokenizer(cuiTerm.getTerm());
 			String temprc = String.join(" ", tempTerm); 
@@ -132,122 +130,122 @@ final public class RareWordTermMapCreator {
 		return rareWordTermMap;
 	}
 
-	static private Map<String, Integer> createTokenCountMap(final Iterable<CuiTerm> cuiTerms,RemoveAccents rc, FreeLingWrapper freeling) {
-		final Map<String, Integer> tokenCountMap = new HashMap<>();
-		for (CuiTerm cuiTerm : cuiTerms) {
-//         final String[] tokens = LookupUtil.fastSplit( cuiTerm.getTerm(), ' ' );
-//			final String[] tokens = StringUtil.fastSplit(cuiTerm.getTerm(), ' ');
-			final List<String> tokens = freeling.tokenizer(cuiTerm.getTerm());
-
-			for (String token : tokens) {
-				// SIAMAK
-//            if ( isRarableToken( token ) ) {
-//               // Don't bother to store counts for single-character tokens
-//               Integer count = tokenCountMap.get( token );
-//               if ( count == null ) {
-//                  count = 0;
-//               }
-//               tokenCountMap.put( token, (count + 1) );
-//            }
-				// Don't bother to store counts for single-character tokens
-				String tokenrc = rc.removeAccents(token);
-				Integer count = tokenCountMap.get(tokenrc);
-				if (count == null) {
-					count = 0;
-				}
-				tokenCountMap.put(tokenrc, (count + 1));
-			}
-			tokens.clear();
-		}
-		return tokenCountMap;
-	}
-
-	static private String getRareWord(final String tokenizedTerm, final Map<String, Integer> tokenCountMap) {
-//      final String[] tokens = LookupUtil.fastSplit( tokenizedTerm, ' ' );
-		final String[] tokens = StringUtil.fastSplit(tokenizedTerm, ' ');
-		return tokens[0];
-//		if (tokens.length == 1) {
-//			return tokens[0];
-//		}
-//		String bestWord = tokens[0];
-//		int bestCount = Integer.MAX_VALUE;
-//		for (String token : tokens) {
-//			if (isRarableToken(token)) {
-//				Integer count = tokenCountMap.get(token);
-//				if (count != null && count < bestCount) {
-//					bestWord = token;
-//					bestCount = count;
+//	static private Map<String, Integer> createTokenCountMap(final Iterable<CuiTerm> cuiTerms,RemoveAccents rc, FreeLingWrapper freeling) {
+//		final Map<String, Integer> tokenCountMap = new HashMap<>();
+//		for (CuiTerm cuiTerm : cuiTerms) {
+////         final String[] tokens = LookupUtil.fastSplit( cuiTerm.getTerm(), ' ' );
+////			final String[] tokens = StringUtil.fastSplit(cuiTerm.getTerm(), ' ');
+//			final List<String> tokens = freeling.tokenizer(cuiTerm.getTerm());
+//
+//			for (String token : tokens) {
+//				// SIAMAK
+////            if ( isRarableToken( token ) ) {
+////               // Don't bother to store counts for single-character tokens
+////               Integer count = tokenCountMap.get( token );
+////               if ( count == null ) {
+////                  count = 0;
+////               }
+////               tokenCountMap.put( token, (count + 1) );
+////            }
+//				// Don't bother to store counts for single-character tokens
+//				String tokenrc = rc.removeAccents(token);
+//				Integer count = tokenCountMap.get(tokenrc);
+//				if (count == null) {
+//					count = 0;
 //				}
+//				tokenCountMap.put(tokenrc, (count + 1));
+//			}
+//			tokens.clear();
+//		}
+//		return tokenCountMap;
+//	}
+//
+//	static private String getRareWord(final String tokenizedTerm, final Map<String, Integer> tokenCountMap) {
+////      final String[] tokens = LookupUtil.fastSplit( tokenizedTerm, ' ' );
+//		final String[] tokens = StringUtil.fastSplit(tokenizedTerm, ' ');
+//		return tokens[0];
+////		if (tokens.length == 1) {
+////			return tokens[0];
+////		}
+////		String bestWord = tokens[0];
+////		int bestCount = Integer.MAX_VALUE;
+////		for (String token : tokens) {
+////			if (isRarableToken(token)) {
+////				Integer count = tokenCountMap.get(token);
+////				if (count != null && count < bestCount) {
+////					bestWord = token;
+////					bestCount = count;
+////				}
+////			}
+////		}
+////		return bestWord;
+//	}
+//
+//	static private boolean isRarableToken(final String token) {
+//		if (token.length() <= 1) {
+//			return false;
+//		}
+//		boolean hasLetter = false;
+//		for (int i = 0; i < token.length(); i++) {
+//			if (Character.isLetter(token.charAt(i))) {
+//				hasLetter = true;
+//				break;
 //			}
 //		}
-//		return bestWord;
-	}
-
-	static private boolean isRarableToken(final String token) {
-		if (token.length() <= 1) {
-			return false;
-		}
-		boolean hasLetter = false;
-		for (int i = 0; i < token.length(); i++) {
-			if (Character.isLetter(token.charAt(i))) {
-				hasLetter = true;
-				break;
-			}
-		}
-		if (!hasLetter) {
-			return false;
-		}
-		return !BAD_POS_TERMS.contains(token);
-	}
-
-	static private int getWordIndex(final String tokenizedTerm, final String word) {
-		int index = 0;
-//      final String[] tokens = LookupUtil.fastSplit( tokenizedTerm, ' ' );
-		final String[] tokens = StringUtil.fastSplit(tokenizedTerm, ' ');
-		for (String token : tokens) {
-			if (token.equals(word)) {
-				return index;
-			}
-			index++;
-		}
-		return -1;
-	}
-
-	static private int getTokenCount(final String tokenizedTerm, FreeLingWrapper freeling) {
-//      return LookupUtil.fastSplit( tokenizedTerm, ' ' ).length;
-		int counter = freeling.tokenizer(tokenizedTerm).size();
-		return counter;
-	}
-
-	// Can also use:
-	// tokenizer = new TokenizerPTB(); List<Token> tokenList = tokenizer.tokenize(
-	// term );
-	// for( token ) {
-	// startIndex = token.getStartOffset();
-	// endIndex = token.getEndOffset();
-	// tokenText = term.substring( startIndex, endIndex+1 );
-	// sb.append( tokenText ).append( " " );
-	// }
-	// but what a roundabout!
-	static private String getTokenizedTerm(final String term) {
-		if (term.isEmpty()) {
-			return term;
-		}
-		final String[] splits = term.split("\\s+");
-		if (splits.length == 0) {
-			return "";
-		}
-		final StringBuilder sb = new StringBuilder();
-		for (String split : splits) {
-			final List<String> tokens = getTokens(split);
-			for (String token : tokens) {
-				sb.append(token).append(" ");
-			}
-		}
-		// trim whitespace
-		sb.setLength(Math.max(0, sb.length() - 1));
-		return sb.toString();
-	}
+//		if (!hasLetter) {
+//			return false;
+//		}
+//		return !BAD_POS_TERMS.contains(token);
+//	}
+//
+//	static private int getWordIndex(final String tokenizedTerm, final String word) {
+//		int index = 0;
+////      final String[] tokens = LookupUtil.fastSplit( tokenizedTerm, ' ' );
+//		final String[] tokens = StringUtil.fastSplit(tokenizedTerm, ' ');
+//		for (String token : tokens) {
+//			if (token.equals(word)) {
+//				return index;
+//			}
+//			index++;
+//		}
+//		return -1;
+//	}
+//
+//	static private int getTokenCount(final String tokenizedTerm, FreeLingWrapper freeling) {
+////      return LookupUtil.fastSplit( tokenizedTerm, ' ' ).length;
+//		int counter = freeling.tokenizer(tokenizedTerm).size();
+//		return counter;
+//	}
+//
+//	// Can also use:
+//	// tokenizer = new TokenizerPTB(); List<Token> tokenList = tokenizer.tokenize(
+//	// term );
+//	// for( token ) {
+//	// startIndex = token.getStartOffset();
+//	// endIndex = token.getEndOffset();
+//	// tokenText = term.substring( startIndex, endIndex+1 );
+//	// sb.append( tokenText ).append( " " );
+//	// }
+//	// but what a roundabout!
+//	static private String getTokenizedTerm(final String term) {
+//		if (term.isEmpty()) {
+//			return term;
+//		}
+//		final String[] splits = term.split("\\s+");
+//		if (splits.length == 0) {
+//			return "";
+//		}
+//		final StringBuilder sb = new StringBuilder();
+//		for (String split : splits) {
+//			final List<String> tokens = getTokens(split);
+//			for (String token : tokens) {
+//				sb.append(token).append(" ");
+//			}
+//		}
+//		// trim whitespace
+//		sb.setLength(Math.max(0, sb.length() - 1));
+//		return sb.toString();
+//	}
 
 	// TODO should this be exactly the same as getTokens in TextTokenizer
 	// (dictionary gui code) ? probably ...
@@ -336,17 +334,12 @@ final public class RareWordTermMapCreator {
 
 	static public class CuiTerm {
 
-//      final private String __term;
-//      final private Long __cui;
-//      final private int __hashcode;
 
 		private String __term = "";
 		private Long __cui = (long) 0;
 		private int __hashcode = -1;
 
 		public CuiTerm(final String cui, final String term) {
-//         __term = getTokenizedTerm( term );
-//			__term = String.join(" ", freeling.tokenizer(term + ".")); //freeling.tokenizer(term + ".").toString().trim();
 			__term = term;
 
 			__cui = CuiCodeUtil.getInstance().getCuiCode(cui);

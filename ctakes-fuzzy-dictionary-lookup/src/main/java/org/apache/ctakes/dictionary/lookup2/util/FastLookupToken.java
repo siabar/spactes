@@ -40,28 +40,14 @@ final public class FastLookupToken {
 
 	public FastLookupToken(final Annotation jcasAnnotation, int counter, String lemmaForm) {
 		_textSpan = new DefaultTextSpan(jcasAnnotation.getBegin(), jcasAnnotation.getEnd());
-//		jcasAnnotation.getCAS().
 		String tempText = jcasAnnotation.getCoveredText();
-//		if (tempText.startsWith("mRS")){
-//			System.out.println("tempText");
-//		}
 
-//		if (tempText.length() > LowerCaseLenght ) {
-//			if (!lemmaForm.equalsIgnoreCase("") && (counter!=1)) {
-//				tempText = lemmaForm;
-//			}
-////		if ( counter !=1 || tempText.length() > LowerCaseLenght )
-//			// No idea in  the first version I put counter!=1 or ||?!
-//			tempText = tempText.toLowerCase();
-//		}
 
 		if (counter != 1) {
 			if (lemmaForm.length() > 0)
 				tempText = lemmaForm;
 			else if (tempText.length() > LowerCaseLenght) {
 				tempText = tempText.toLowerCase();
-			} else {
-				tempText = tempText;
 			}
 		} else {
 			if (tempText.length() > LowerCaseLenght) {
@@ -74,7 +60,6 @@ final public class FastLookupToken {
 
 		_text = tempText;
 
-//      _text = jcasAnnotation.getCoveredText().toLowerCase();
 		if (jcasAnnotation instanceof WordToken) {
 			final String canonicalForm = ((WordToken) jcasAnnotation).getCanonicalForm();
 			// If canonical is not null AND not the same as the plain text then it is a
