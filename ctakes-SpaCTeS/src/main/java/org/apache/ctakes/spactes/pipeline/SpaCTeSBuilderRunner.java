@@ -18,11 +18,9 @@ import java.util.Collections;
 
 final public class SpaCTeSBuilderRunner {
 
-	static private final String DICT_DESC_PATH = "org/apache/ctakes/examples/dictionary/lookup/fast/IctusnetDictSpec.xml";
+	static private final String DICT_DESC_PATH = "org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDictSpec.xml";
 
 	static private final Logger LOGGER = Logger.getLogger("StaCTeSBuilderRunner");
-	static private final String INPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/TXT";
-	static private final String OUTPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/XML/" ;
 
 	
 	private SpaCTeSBuilderRunner() {
@@ -34,6 +32,8 @@ final public class SpaCTeSBuilderRunner {
 	 */
 	public static void main(final String... args) {
 		try {
+			String INPUT_DIR = args[0];
+			String OUTPUT_DIR = args[1] ;
 			
 
 
