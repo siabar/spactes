@@ -4,7 +4,6 @@ import org.apache.ctakes.core.config.ConfigParameterConstants;
 import org.apache.ctakes.core.ae.SimpleSegmentAnnotator;
 import org.apache.ctakes.core.pipeline.PipelineBuilder;
 import org.apache.ctakes.freeling.FreeLingWrapper;
-import org.apache.ctakes.spactes.ae.BratWriter;
 import org.apache.ctakes.dictionary.lookup2.ae.DefaultJCasTermAnnotator;
 
 import org.apache.log4j.Logger;
@@ -21,6 +20,9 @@ final public class SpaCTeSBuilderRunner {
 	static private final String DICT_DESC_PATH = "org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDictSpec.xml";
 
 	static private final Logger LOGGER = Logger.getLogger("StaCTeSBuilderRunner");
+	
+	static String INPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/TXT/";
+	static String OUTPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/XML/" ;
 
 	
 	private SpaCTeSBuilderRunner() {
@@ -32,10 +34,8 @@ final public class SpaCTeSBuilderRunner {
 	 */
 	public static void main(final String... args) {
 		try {
-			String INPUT_DIR = args[0];
-			String OUTPUT_DIR = args[1] ;
-			
-
+//			String INPUT_DIR = args[0];
+//			String OUTPUT_DIR = args[1];
 
 			PipelineBuilder builder = new PipelineBuilder();
 			builder.readFiles(INPUT_DIR)
@@ -70,11 +70,12 @@ final public class SpaCTeSBuilderRunner {
 					.addDescription(DefaultJCasTermAnnotator.createAnnotatorDescription(DICT_DESC_PATH, ConfigParameterConstants.lemmaForm))
 
 
-					// Brat Writter Component
-					.add(BratWriter.class, Collections.emptyList(), 
-							BratWriter.PARAM_SAVE_BRAT,OUTPUT_DIR)
 					.collectEntities();
-			builder.writeXMIs(OUTPUT_DIR).writeHtml(OUTPUT_DIR);;
+			builder.writeXMIs(OUTPUT_DIR)
+			// Brat Writter Component
+			.writeBrat(OUTPUT_DIR);
+			// Brat HTML Component
+//			.writeHtml(OUTPUT_DIR);
 
 			// Run the pipeline with specified text
 			builder.run();

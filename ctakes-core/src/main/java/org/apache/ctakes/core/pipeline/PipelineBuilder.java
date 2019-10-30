@@ -2,6 +2,7 @@ package org.apache.ctakes.core.pipeline;
 
 
 import org.apache.ctakes.core.cc.FileTreeXmiWriter;
+import org.apache.ctakes.core.cc.brat.BratTextWriter;
 import org.apache.ctakes.core.cc.pretty.html.HtmlTextWriter;
 import org.apache.ctakes.core.config.ConfigParameterConstants;
 import org.apache.ctakes.core.cr.FileTreeReader;
@@ -337,6 +338,23 @@ final public class PipelineBuilder {
             ConfigParameterConstants.PARAM_OUTPUTDIR, outputDirectory );
    }
 
+   
+   public PipelineBuilder writeBrat() throws ResourceInitializationException {
+	      return addLast( BratTextWriter.class, Collections.emptyList() );
+	   }
+
+	   /**
+	    * Adds ae that writes an html file at the end of the pipeline.
+	    * Use of this method is order-specific.
+	    *
+	    * @param outputDirectory directory in which html files should be written
+	    * @return this PipelineBuilder
+	    * @throws ResourceInitializationException if the html writer engine cannot be created
+	    */
+	   public PipelineBuilder writeBrat( final String outputDirectory ) throws ResourceInitializationException {
+	      return addLast( BratTextWriter.class, Collections.emptyList(),
+	            ConfigParameterConstants.PARAM_OUTPUTDIR, outputDirectory );
+	   }
    public PipelineBuilder threads( final int threadCount ) {
       if ( threadCount <= 1 ) {
          if ( threadCount < 1 ) {

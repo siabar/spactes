@@ -39,6 +39,8 @@ the fast dictionary lookup component could not detect these tokens.
 
 Input is a text file and output is XML(Readble by UIMA CVS), BRAT or HTML files.
 
+Analysis Engine (AE) for writing Brat files has been added to cTAKES in cTAKES-core project.
+
 **We integrated all of these components into cTAKES as native components**
 
 **Note: Type System of cTAKES has been updated**
