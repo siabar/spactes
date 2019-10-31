@@ -637,7 +637,14 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 
 		wordIndex = 1;
 		
+		if (fileName.endsWith(".txt"))
+			fileName = fileName.substring(0, fileName.length() - 4);
+		else
+			System.out.println("Filename does not end with .txt");
+		
 
+		
+		
 		final File bratFile = new File(outputDir, fileName + ".ann");
 		LOGGER.info("Writing BRAT to " + bratFile.getPath() + " ...");
 

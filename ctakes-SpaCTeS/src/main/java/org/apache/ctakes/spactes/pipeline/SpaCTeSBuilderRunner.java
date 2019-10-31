@@ -21,8 +21,8 @@ final public class SpaCTeSBuilderRunner {
 
 	static private final Logger LOGGER = Logger.getLogger("StaCTeSBuilderRunner");
 	
-	static String INPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/TXT/";
-	static String OUTPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/XML/" ;
+//	static String INPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/TXT/";
+//	static String OUTPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/XML/" ;
 
 	
 	private SpaCTeSBuilderRunner() {
@@ -34,8 +34,8 @@ final public class SpaCTeSBuilderRunner {
 	 */
 	public static void main(final String... args) {
 		try {
-//			String INPUT_DIR = args[0];
-//			String OUTPUT_DIR = args[1];
+			String INPUT_DIR = args[0];
+			String OUTPUT_DIR = args[1];
 
 			PipelineBuilder builder = new PipelineBuilder();
 			builder.readFiles(INPUT_DIR)
@@ -71,7 +71,8 @@ final public class SpaCTeSBuilderRunner {
 
 
 					.collectEntities();
-			builder.writeXMIs(OUTPUT_DIR)
+			builder
+//			.writeXMIs(OUTPUT_DIR)
 			// Brat Writter Component
 			.writeBrat(OUTPUT_DIR);
 			// Brat HTML Component
