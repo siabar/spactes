@@ -59,7 +59,7 @@ final public class FileTreeReader extends AbstractFileTreeReader {
     */
    private String readFile( final File file ) throws IOException {
       LOGGER.info( "Reading " + file.getPath() + " ..." );
-      if ( !isKeepCrChar() ) {
+      if ( isKeepCrChar() ) {
          try {
             return readByPath( file );
          } catch ( IOException ioE ) {

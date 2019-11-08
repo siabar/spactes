@@ -685,7 +685,7 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 			final Collection<Timex3> annotationsTime, final Collection<BaseToken> baseTokens,
 			final BufferedWriter writer) throws IOException {
 		if (baseTokens.isEmpty()) {
-			return;
+			return ;
 		}
 		// Because of character substitutions, baseTokens and IdentifiedAnnotations have
 		// to be tied by text span
@@ -723,7 +723,8 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 		Boolean isBegin = true;
 		for (Map.Entry<TextSpan, String> entry : baseTokenMap.entrySet()) {
 			try {
-				String TempText = entry.getValue();
+				String TempText = entry.getValue();			
+
 				final int begin = entry.getKey().getBegin();
 				final int end = entry.getKey().getEnd();
 				String temSB = "";
