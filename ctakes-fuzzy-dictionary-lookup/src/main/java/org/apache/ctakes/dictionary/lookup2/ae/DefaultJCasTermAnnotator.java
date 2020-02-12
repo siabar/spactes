@@ -51,8 +51,14 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 
 	final static private Logger LOGGER = Logger.getLogger("DefaultJCasTermAnnotator");
 	static SpellCheckService spellchecker;
+	static SpellCheckService spellchecker_Sent;
 	final private float accuracy_oneToken = 0.7f;
 	final static private float accuracy_sentence = 0.8f;
+	
+	List<String> score_list = Arrays.asList("niss", "nih", "nhiss","nishss","nissh", "nihss", "mrankin", "rankin","aspects", "mrs", "escala nihss",
+			"excala de rankin modificada", "aspects score", "mRs");
+	static List<String> score_after = Arrays.asList("", "puntos", "a", "de", "total", "estimado", "actual", "al", "alta", "b", "c", "resulta", "entre", "previo", "previ", "historico", "basal", "es", "score");
+
 
 	public DefaultJCasTermAnnotator() {
 		// TODO Auto-generated constructor stub
@@ -60,11 +66,14 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 
 			LOGGER.info("Loading SpellChecker Dictionary");
 			spellchecker = new SpellCheckService();
+			spellchecker_Sent = new SpellCheckService();
 			if (ConfigParameterConstants.lemmaForm)
 				spellchecker.loadDirectoryOfDictionaries(
 						"org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/");
-			else
-				spellchecker.loadDirectoryOfDictionaries("org/apache/ctakes/examples/dictionary/lookup/spellchecker/");
+			else {
+				spellchecker.loadDirectoryOfDictionaries("org/apache/ctakes/examples/dictionary/lookup/spellchecker/lexicon");
+				spellchecker_Sent.loadDirectoryOfDictionaries("org/apache/ctakes/examples/dictionary/lookup/spellchecker/dic");
+			}
 
 		} catch (IOException e) {
 
@@ -116,7 +125,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 
 			Map<String, List<String>> suggestions = spellchecker
 					.checkWordsReturnErrorSuggestions(Arrays.asList(tempText), accuracy_oneToken);
-			Map<String, List<String>> suggestions_sent = spellchecker
+			Map<String, List<String>> suggestions_sent = spellchecker_Sent
 					.checkWordsReturnErrorSuggestions(Arrays.asList(tempText), accuracy_sentence);
 
 			String temp = "";
@@ -133,7 +142,12 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 			}
 
 //         rareWordHits = dictionary.getRareWordHits( lookupToken );
-			rareWordHits = dictionary.getRareWordHits(temp);
+			
+			String removedTemp = punctuationRemover(temp);
+			if (score_list.contains(removedTemp))
+				rareWordHits = dictionary.getRareWordHits(removedTemp);
+			else
+				rareWordHits = dictionary.getRareWordHits(temp);
 
 			if (rareWordHits == null || rareWordHits.isEmpty()) {
 				continue;
@@ -176,11 +190,9 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 						: allTokens.size();
 //            final int termEndIndex = termStartIndex + rareWordHit.getTokenCount() - 1;
 				final int termEndIndex = termStartIndex + endIndex - 1;
-				if (termEndIndex < allTokens.size()) {
+				if (score_list.contains(removedTemp) || termEndIndex < allTokens.size()) {
 					int Score = isTermMatchfuzzy(temp, rareWordHit, allTokens, termStartIndex, endIndex);
-					List<String> myList = Arrays.asList("nihss", "mrankin", "rankin", "escala nihss",
-							"excala de rankin modificada", "aspects score", "aspects", "mRS", "mRs");
-					if (myList.contains(temp) && Score != 0) {
+					if (score_list.contains(removedTemp) && Score != 0) {
 
 						final int spanStart = allTokens.get(termStartIndex).getStart();
 //						System.out.println(spanStart);
@@ -241,14 +253,19 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 //      return true;
 //   }
 
+	public static String punctuationRemover(final String word) {
+		String removedWord = word.replaceAll("[^a-zA-Z ]", "");
+		
+		return removedWord.trim();
+	}
 	public static int isTermMatchfuzzy(final String temp, final RareWordTerm rareWordHit,
 			final List<FastLookupToken> allTokens, final int termStartIndex, final int endIndex) {
 		String word = temp + " ";
-		List<String> myList = Arrays.asList("puntos", "a", "de", "total", "estimado", "actual");
 		for (Integer i = termStartIndex + 1; i < allTokens.size(); i++) {
-			if (Character.isLetter(allTokens.get(i).getText().charAt(0))
-					|| allTokens.get(i).getText().equalsIgnoreCase("\t")) {
-				if (!myList.contains(allTokens.get(i).getText())) {
+			String pureWord = punctuationRemover(allTokens.get(i).getText());
+			char firstchar = (pureWord.isEmpty()) ? (char) 0 : pureWord.charAt(0);
+			if (Character.isLetter(firstchar) || allTokens.get(i).getText().equalsIgnoreCase("\t")) {
+				if (!score_after.contains(pureWord)) {
 					break;
 				}
 
@@ -256,17 +273,17 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 			word += allTokens.get(i).getText() + " ";
 		}
 		word = word.trim();
-		Integer count = word.length() - 1;
-		if (!myList.contains(allTokens.get(allTokens.size() - 1).getText())) {
-			for (int i = count; i >= 0; i--) {
-				Character c = word.charAt(i);
-				if (!Character.isDigit(word.charAt(i))) {
-					word = word.substring(0, i);
-				} else {
-					break;
-				}
-			}
-		}
+//		Integer count = word.length() - 1;
+//		if (!myList.contains(allTokens.get(allTokens.size() - 1).getText())) {
+//			for (int i = count; i >= 0; i--) {
+//				Character c = word.charAt(i);
+//				if (!Character.isDigit(word.charAt(i))) {
+//					word = word.substring(0, i);
+//				} else {
+//					break;
+//				}
+//			}
+//		}
 
 		return word.split(" ").length;
 	}
@@ -289,7 +306,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		RemoveAccents rc = new RemoveAccents();
 		tempText = rc.removeAccents(tempText);
 
-		Map<String, List<String>> suggestions = spellchecker.checkWordsReturnErrorSuggestions(Arrays.asList(tempText),
+		Map<String, List<String>> suggestions = spellchecker_Sent.checkWordsReturnErrorSuggestions(Arrays.asList(tempText),
 				accuracy_sentence);
 
 		try {

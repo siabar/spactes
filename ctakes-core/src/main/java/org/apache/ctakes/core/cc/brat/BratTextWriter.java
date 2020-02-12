@@ -363,10 +363,12 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 		}
 		final Collection<TextSpan> spans = new HashSet<>(annotationMap.keySet());
 		// TODO move coref adjustment uphill
+		
 		final Map<Integer, Character> indexMap = createIndexMap(spans);
 		final Collection<TextSpan> adjustedSpans = createAdjustedSpans(indexMap);
 		final List<TextSpan> adjustedList = new ArrayList<>(adjustedSpans);
 		adjustedList.sort(TEXT_SPAN_COMPARATOR);
+		
 		final Map<TextSpan, Collection<IdentifiedAnnotation>> adjustedAnnotations = createAdjustedAnnotations(
 				adjustedList, annotationMap);
 
@@ -704,121 +706,164 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 
 		final Collection<BinaryTextRelation> relations = null;
 		final Map<TextSpan, Collection<Integer>> corefSpans = null;
+		
 
+		String All_Annotations = "";
 		Map<Integer, String> tag = new HashMap<Integer, String>();
 		if (!annotationMapTime.isEmpty() && !annotationMap.isEmpty()) {
-			tag = BratTextWriter.createTags(sentence, annotationMap, annotationEvents, relations, corefSpans);
-			tag.putAll(BratTextWriter.createTagsTime(sentence, annotationMapTime, annotationEventsTime));
+			String rel = BratTextWriter.createClickInfo(annotations, annotationEvents, relations);
+			String time = BratTextWriter.createClickInfoTime(annotationsTime, annotationEventsTime);
+			All_Annotations = rel + "\n" + time; 
+// 			tag = BratTextWriter.createTags(sentence, annotationMap, annotationEvents, relations, corefSpans);
+//			tag.putAll(BratTextWriter.createTagsTime(sentence, annotationMapTime, annotationEventsTime));
 
 		} else if (!annotationMap.isEmpty()) {
-			tag = BratTextWriter.createTags(sentence, annotationMap, annotationEvents, relations, corefSpans);
+			All_Annotations = BratTextWriter.createClickInfo(annotations, annotationEvents, relations);
+//			tag = BratTextWriter.createTags(sentence, annotationMap, annotationEvents, relations, corefSpans);
 		} else if (!annotationMapTime.isEmpty()) {
-			tag = BratTextWriter.createTagsTime(sentence, annotationMapTime, annotationEventsTime);
+			All_Annotations = BratTextWriter.createClickInfoTime(annotationsTime, annotationEventsTime);
+//			tag = BratTextWriter.createTagsTime(sentence, annotationMapTime, annotationEventsTime);
 		}
+		
+		
+		
+		for (String annotation: All_Annotations.split("\n")) {
+			if (!annotation.contentEquals("")){
+				String[] tempList_hash = annotation.split("#note");
+				if (tempList_hash.length > 1) {
 
-		final Map<Integer, String> tags = tag;
-
-		String tempWord = "";
-
-		Boolean isBegin = true;
-		for (Map.Entry<TextSpan, String> entry : baseTokenMap.entrySet()) {
-			try {
-				String TempText = entry.getValue();			
-
-				final int begin = entry.getKey().getBegin();
-				final int end = entry.getKey().getEnd();
-				String temSB = "";
-				temSB = "";
-				String text = "";
-				String pos = "";
-				String[] ListText = TempText.split("SIAMAK");
-				if (ListText.length > 1) {
-					text = ListText[0];
-					pos = ListText[1];
-				} else
-					text = ListText[0];
-
-				int temBegin = begin;
-				for (String temChar : text.split("")) {
-					if (isBegin) {
-						final String beginTag = tags.get(temBegin);
-						if (beginTag != null && !beginTag.equalsIgnoreCase("")) {
-//							sb.append(temSB);
-							if (!temSB.equalsIgnoreCase("")) {
-//							tempWord = "T%d" + "\t" + "word" + " " + begin + " " + end + "\t";
-//							writer.write(String.format(tempWord, wordIndex) + temSB + "\n");
-//							wordIndex++;
-
-							}
-							temSB = "";
-//						if (beginTag.startsWith("T")) {
-//							writer.write(String.format(beginTag, wordIndex));
-//							wordIndex++;
-//						}else {
-//							writer.write(String.format("T%d" + beginTag, wordIndex));
-//							wordIndex++;
-
-							String[] tempList_hash = beginTag.split("#note");
-							if (tempList_hash.length > 1) {
-
-								for (String temp : tempList_hash) {
-									temp = temp.replace("&apos;", "'");
-									temp = temp.replace("&quot;", "\"");
-									temp = temp.replace("&amp;", "@");
-									temp = temp.replace("&lt;", "<");
-									temp = temp.replace("&gt;", ">");
-									writer.write(String.format(temp.trim(), wordIndex) + "\n");
-
-								}
-								wordIndex++;
-							} else {
-								String[] tempList = beginTag.split("\n");
-								for (String temp : tempList) {
-									temp = temp.replace("&apos;", "'");
-									temp = temp.replace("&quot;", "\"");
-									temp = temp.replace("&amp;", "@");
-									temp = temp.replace("&lt;", "<");
-									temp = temp.replace("&gt;", ">");
-									writer.write(String.format(temp, wordIndex) + "\n");
-									wordIndex++;
-
-								}
-							}
-							// writer.write(beginTag);
-							isBegin = false;
-
-						}
+					for (String temp : tempList_hash) {
+						temp = temp.replace("&apos;", "'");
+						temp = temp.replace("&quot;", "\"");
+						temp = temp.replace("&amp;", "@");
+						temp = temp.replace("&lt;", "<");
+						temp = temp.replace("&gt;", ">");
+						writer.write(String.format(temp.trim(), wordIndex) + "\n");
 
 					}
-					temSB += temChar;
-					temBegin += 1;
-					if (!isBegin) {
-						final String endTag = tags.get(temBegin);
-						if (endTag != null && endTag.equalsIgnoreCase("")) {
-//							sb.append(temSB);
-//						writer.write(temSB + "\t" + "token" + " " + begin + " " + end + "" + "\n");
-							temSB = "";
-//							sb.append(endTag);
-							isBegin = true;
-							temBegin += 1;
-						}
-					}
+					wordIndex++;
+				} else {
+					String[] tempList = annotation.split("\n");
+					for (String temp : tempList) {
+						temp = temp.replace("&apos;", "'");
+						temp = temp.replace("&quot;", "\"");
+						temp = temp.replace("&amp;", "@");
+						temp = temp.replace("&lt;", "<");
+						temp = temp.replace("&gt;", ">");
+						writer.write(String.format(temp, wordIndex) + "\n");
+						wordIndex++;
 
+					}
 				}
-//			sb.append(temSB);
-				if (!temSB.equalsIgnoreCase("") && isBegin) {
-					try {
-						tempWord = "T%d" + "\t" + "word" + " " + begin + " " + end + "\t";
-//				writer.write(String.format(tempWord, wordIndex) + temSB + "\n");
+//				writer.write(String.format(annotation, wordIndex) + "\n");
 //				wordIndex++;
-					} catch (Exception e) {
-						System.out.println(wordIndex + " " + tempWord);
-					}
-				}
-			} catch (Exception e) {
-				System.out.println(wordIndex + " " + tempWord);
 			}
 		}
+
+//		final Map<Integer, String> tags = tag;
+//
+//		String tempWord = "";
+//
+//		Boolean isBegin = true;
+
+//		for (Map.Entry<TextSpan, String> entry : baseTokenMap.entrySet()) {
+//			try {
+//				String TempText = entry.getValue();			
+//
+//				final int begin = entry.getKey().getBegin();
+//				final int end = entry.getKey().getEnd();
+//				String temSB = "";
+//				temSB = "";
+//				String text = "";
+//				String pos = "";
+//				String[] ListText = TempText.split("SIAMAK");
+//				if (ListText.length > 1) {
+//					text = ListText[0];
+//					pos = ListText[1];
+//				} else
+//					text = ListText[0];
+//
+//				int temBegin = begin;
+//				for (String temChar : text.split("")) {
+//					if (isBegin) {
+//						final String beginTag = tags.get(temBegin);
+//						if (beginTag != null && !beginTag.equalsIgnoreCase("")) {
+////							sb.append(temSB);
+//							if (!temSB.equalsIgnoreCase("")) {
+////							tempWord = "T%d" + "\t" + "word" + " " + begin + " " + end + "\t";
+////							writer.write(String.format(tempWord, wordIndex) + temSB + "\n");
+////							wordIndex++;
+//
+//							}
+//							temSB = "";
+////						if (beginTag.startsWith("T")) {
+////							writer.write(String.format(beginTag, wordIndex));
+////							wordIndex++;
+////						}else {
+////							writer.write(String.format("T%d" + beginTag, wordIndex));
+////							wordIndex++;
+//
+//							String[] tempList_hash = beginTag.split("#note");
+//							if (tempList_hash.length > 1) {
+//
+//								for (String temp : tempList_hash) {
+//									temp = temp.replace("&apos;", "'");
+//									temp = temp.replace("&quot;", "\"");
+//									temp = temp.replace("&amp;", "@");
+//									temp = temp.replace("&lt;", "<");
+//									temp = temp.replace("&gt;", ">");
+//									writer.write(String.format(temp.trim(), wordIndex) + "\n");
+//
+//								}
+//								wordIndex++;
+//							} else {
+//								String[] tempList = beginTag.split("\n");
+//								for (String temp : tempList) {
+//									temp = temp.replace("&apos;", "'");
+//									temp = temp.replace("&quot;", "\"");
+//									temp = temp.replace("&amp;", "@");
+//									temp = temp.replace("&lt;", "<");
+//									temp = temp.replace("&gt;", ">");
+//									writer.write(String.format(temp, wordIndex) + "\n");
+//									wordIndex++;
+//
+//								}
+//							}
+//							// writer.write(beginTag);
+//							isBegin = false;
+//
+//						}
+//
+//					}
+//					temSB += temChar;
+//					temBegin += 1;
+//					if (!isBegin) {
+//						final String endTag = tags.get(temBegin);
+//						if (endTag != null && endTag.equalsIgnoreCase("")) {
+////							sb.append(temSB);
+////						writer.write(temSB + "\t" + "token" + " " + begin + " " + end + "" + "\n");
+//							temSB = "";
+////							sb.append(endTag);
+//							isBegin = true;
+//							temBegin += 1;
+//						}
+//					}
+//
+//				}
+////			sb.append(temSB);
+//				if (!temSB.equalsIgnoreCase("") && isBegin) {
+//					try {
+//						tempWord = "T%d" + "\t" + "word" + " " + begin + " " + end + "\t";
+////				writer.write(String.format(tempWord, wordIndex) + temSB + "\n");
+////				wordIndex++;
+//					} catch (Exception e) {
+//						System.out.println(wordIndex + " " + tempWord);
+//					}
+//				}
+//			} catch (Exception e) {
+//				System.out.println(wordIndex + " " + tempWord);
+//			}
+//		}
 
 	}
 

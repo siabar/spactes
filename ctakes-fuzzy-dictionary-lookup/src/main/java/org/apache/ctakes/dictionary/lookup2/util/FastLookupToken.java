@@ -36,7 +36,7 @@ final public class FastLookupToken {
 	final private TextSpan _textSpan;
 	final private String _text;
 	private String _variant;
-	private final int LowerCaseLenght = 3;
+	private final int LowerCaseLenght = 1;
 
 	public FastLookupToken(final Annotation jcasAnnotation, int counter, String lemmaForm) {
 		_textSpan = new DefaultTextSpan(jcasAnnotation.getBegin(), jcasAnnotation.getEnd());
