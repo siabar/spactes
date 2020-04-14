@@ -24,10 +24,12 @@ RULENAME="time_r1d",EXTRACTION="%reTimeHour:%reTimeMinute:%reTimeMinute",NORM_VA
 RULENAME="time_r1e",EXTRACTION="%reTimeHour:%reTimeMinute",NORM_VALUE="group(1):group(2)",OFFSET="group(1)-group(2)"
 RULENAME="time_r1f",EXTRACTION="%reTimeHour:%reTimeMinute:%reTimeMinute\.%reYear2Digit",NORM_VALUE="group(1):group(2)",OFFSET="group(1)-group(2)"
 RULENAME="time_r1g",EXTRACTION="%reTimeHour[:|\.]%reTimeMinute[\)]",NORM_VALUE="%normHour(group(1)):group(2)",OFFSET="group(1)-group(2)"
-RULENAME="time_r1h",EXTRACTION="%reTimeHour[ ]?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh])[ ]?%reTimeMinute[ ]?([Mm][Ii][Nn][Uu][Tt][Oo][Ss]|[Mm][Nn]?|[Mm][Ii][Nn])",NORM_VALUE="group(1):group(3)",OFFSET="group(1)-group(3)"
-RULENAME="time_r1i",EXTRACTION="%reTimeHour( )?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])\):?",NORM_VALUE="group(1):00",OFFSET="group(1)-group(1)"
-RULENAME="time_r1j",EXTRACTION="(sobre la[s]? )%reTimeHour[:|\.]%reTimeMinute",NORM_VALUE="group(2):group(3)",OFFSET="group(2)-group(3)"
-RULENAME="time_r1k",EXTRACTION="(sobre la[s]? |a la[s]? )%reTimeHour[ ]?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])",NORM_VALUE="group(2):00",OFFSET="group(2)-group(2)"
+RULENAME="time_r1h",EXTRACTION="%reTimeHour[ ]?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh])[ ]?%reTimeMinute",NORM_VALUE="group(1):group(3)",OFFSET="group(1)-group(3)"
+RULENAME="time_r1i",EXTRACTION="%reTimeHour[ ]?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh])[ ]?%reTimeMinute[ ]?([Mm][Ii][Nn][Uu][Tt][Oo][Ss]|[Mm][Nn]?|[Mm][Ii][Nn])?",NORM_VALUE="group(1):group(3)",OFFSET="group(1)-group(3)"
+
+RULENAME="time_r1j",EXTRACTION="%reTimeHour( )?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])\):?",NORM_VALUE="group(1):00",OFFSET="group(1)-group(1)"
+RULENAME="time_r1k",EXTRACTION="(sobre la[s]? )%reTimeHour[:|\.]%reTimeMinute",NORM_VALUE="group(2):group(3)",OFFSET="group(2)-group(3)"
+RULENAME="time_r1l",EXTRACTION="(sobre la[s]? |a la[s]? )%reTimeHour[ ]?([Hh][Oo][Rr][Aa][Ss]?|[Hh][Rr][Aa][Ss]|[Hh][Rr][Ss]|[Hh]|[Aa]\.[Mm]\.|[Aa][Mm]|[Pp]\.[mm]\.|[Pp][Mm])",NORM_VALUE="group(2):00",OFFSET="group(2)-group(2)"
 
 
 // time_r2

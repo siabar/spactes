@@ -649,16 +649,17 @@ public class FreeLingWrapper extends SegmenterBase {
 		}
 		if (dictionary_parser) {
 			RemoveAccents ra = new RemoveAccents();
-			String input = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker_test/dic.txt";
+//			String input = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker_test/dic.txt";
+			String input = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS-res/src/main/resources/org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDict.bsv";
 
 			String output_lexicon = "";
 			String output_dic = "";
 			if (lemmaForm) {
-				output_lexicon = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/lexicon.txt";
-				output_dic = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/dic.txt";
+				output_lexicon = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/lexicon.txt";
+				output_dic = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/dic.txt";
 			} else {
-				output_lexicon = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker/lexicon.txt";
-				output_dic = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker/dic.txt";
+				output_lexicon = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker/lexicon/lexicon.txt";
+				output_dic = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker/dic/dic.txt";
 			}
 //
 //		FreeLingWrapper freeling = new FreeLingWrapper();
@@ -681,9 +682,11 @@ public class FreeLingWrapper extends SegmenterBase {
 
 				while ((line_original = bufferedReader.readLine()) != null) {
 					String temp_line = "";
-	            	String[] temp_lower = line_original.trim().split(" ");
+					String[] templine = line_original.trim().split("\\|");
+					
+	            	String[] temp_lower = templine[2].trim().split(" ");
 	            	for (String temp :temp_lower) {
-	            		if (temp.length()>3) {
+	            		if (temp.length()>1) {
 	            			temp_line +=  temp.toLowerCase() + " " ;
 	            		}else {
 	            			temp_line +=  temp+ " " ;
@@ -698,16 +701,51 @@ public class FreeLingWrapper extends SegmenterBase {
 	            	line = temp_line.trim();
 					List<String> temp = tokenizer(line);
 					String tempRC = ra.removeAccents(String.join(" ", temp));
-
 					bufferedWriter_dic.write(tempRC + "\n");
 //	            	String[] temp = line.trim().split(" ");
-					for (int i = 0; i < temp.size(); i++) {
-						tempRC = ra.removeAccents(temp.get(i));
-						if (!lexiconkepper.containsKey(tempRC)) {
-							lexiconkepper.put(tempRC, 0);
-						}
+//					for (int i = 0; i < temp.size(); i++) {
+//						tempRC = ra.removeAccents(temp.get(i));
+//						if (!lexiconkepper.containsKey(tempRC)) {
+//							lexiconkepper.put(tempRC, 0);
+//						}
+//					}
+					
+					tempRC = ra.removeAccents(temp.get(0));
+					if (!lexiconkepper.containsKey(tempRC)) {
+						lexiconkepper.put(tempRC, 0);
 					}
+					
+					
 				}
+//					String temp_line = "";
+//	            	String[] temp_lower = line_original.trim().split(" ");
+//	            	for (String temp :temp_lower) {
+//	            		if (temp.length()>3) {
+//	            			temp_line +=  temp.toLowerCase() + " " ;
+//	            		}else {
+//	            			temp_line +=  temp+ " " ;
+//	            		}
+//	            	}
+//
+////					if (line_original.length() >3) {
+////					line = line_original.trim().toLowerCase();
+////					}else {
+////						line = line_original.trim();
+////					}
+//	            	line = temp_line.trim();
+//					List<String> temp = tokenizer(line);
+//					String tempRC = ra.removeAccents(String.join(" ", temp));
+//
+//					bufferedWriter_dic.write(tempRC + "\n");
+////	            	String[] temp = line.trim().split(" ");
+//					for (int i = 0; i < temp.size(); i++) {
+//						tempRC = ra.removeAccents(temp.get(i));
+//						if (!lexiconkepper.containsKey(tempRC)) {
+//							lexiconkepper.put(tempRC, 0);
+//						}
+//					}
+					
+//				}
 				for (String st : lexiconkepper.keySet()) {
 					bufferedWriter_lexicon.write(st + "\n");
 				}

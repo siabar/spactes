@@ -30,5 +30,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/usr/local/share/freeling/APIs/java/Jfreeling.jar"/>
+	<classpathentry kind="lib" path="/home/siabar/git/lingua/build/libs/lingua-0.6.1-with-dependencies.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
