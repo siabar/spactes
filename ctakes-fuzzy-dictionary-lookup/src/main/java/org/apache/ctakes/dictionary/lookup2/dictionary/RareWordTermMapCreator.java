@@ -127,6 +127,7 @@ final public class RareWordTermMapCreator {
 			final RareWordTerm rareWordTerm = new RareWordTerm(term, cuiTerm.__term, cuiTerm.__cui, rareWord, wordIndex, tokenCount);
 			rareWordTermMap.placeValue(rareWord, rareWordTerm);
 		}
+		freeling = null;
 		return rareWordTermMap;
 	}
 

@@ -1,6 +1,0 @@
-Pretty HTML writter class has been changed
-Added new methods for writing TIMEX3 of HeidelTime component in HTML
-Adding Output and Dictionary direcotry in config file
-
-cTAKES reads files as a default by buffering, it leads to split some accent characters into two separate chars. So it is better to read files by bath. 
-

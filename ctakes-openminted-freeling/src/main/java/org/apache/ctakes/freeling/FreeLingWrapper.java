@@ -136,7 +136,7 @@ public class FreeLingWrapper extends SegmenterBase {
 	public static final String PARAM_DO_DEPENDECY_PARSING = "doDependency";
 	@ConfigurationParameter(name = PARAM_DO_DEPENDECY_PARSING, mandatory = true)
 	// protected Boolean doDependencys;
-	public final Boolean doDependency = true;
+	public final Boolean doDependency = false;
 
 	/**
 	 * Load the ner tags to UIMA type mapping from this location instead of locating
@@ -160,8 +160,8 @@ public class FreeLingWrapper extends SegmenterBase {
 	private static final String FREELINGDIR = "/usr/local/";
 	private static final String DATA = FREELINGDIR + "share/freeling/";
 	// this could be taken from config files...
-	private static Set<String> TreelerLangs = new HashSet<String>(Arrays.asList("ca", "de", "en", "es", "pt", "sl"));
-	private static Set<String> TxalaLangs = new HashSet<String>(Arrays.asList("ca", "en", "es", "as", "gl")); // removed
+	private static Set<String> TreelerLangs = new HashSet<String>(Arrays.asList("es"));
+	private static Set<String> TxalaLangs = new HashSet<String>(Arrays.asList("es")); // removed
 																												// "as"
 																												// and
 																												// "gl"
@@ -197,7 +197,7 @@ public class FreeLingWrapper extends SegmenterBase {
 
 		System.loadLibrary("Jfreeling");
 		Util.initLocale("default");
-		getLogger().info("Freeling, autodetect mode: " + autodetect);
+//		getLogger().info("Freeling, autodetect mode: " + autodetect + ", loading Spanish config");
 
 		if (!this.autodetect) {
 			try {
@@ -229,7 +229,7 @@ public class FreeLingWrapper extends SegmenterBase {
 		// read the configuration file
 		Properties prop = new Properties();
 		InputStream input = new FileInputStream(DATA + "config/" + lang + ".cfg");
-		System.out.println(DATA);
+//		System.out.println(DATA);
 		prop.load(input);
 
 		// Create options set for maco analyzer.
@@ -263,8 +263,8 @@ public class FreeLingWrapper extends SegmenterBase {
 				prop.getProperty("AffixAnalysis").trim().contentEquals("yes"), // aff,
 				prop.getProperty("CompoundAnalysis").trim().contentEquals("yes"), // comp,
 				true, // rtk, // not found in properties....
-				prop.getProperty("MultiwordsDetection").trim().contentEquals("yes"), // mw,
-				prop.getProperty("NERecognition").trim().contentEquals("yes"), // ner,
+				prop.getProperty("MultiwordsDetection").trim().contentEquals("no"), // mw,
+				prop.getProperty("NERecognition").trim().contentEquals("no"), // ner,
 				prop.getProperty("QuantitiesDetection").trim().contentEquals("yes"), // qt,
 				prop.getProperty("ProbabilityAssignment").trim().contentEquals("yes")// prb
 		);
@@ -342,13 +342,13 @@ public class FreeLingWrapper extends SegmenterBase {
 
 	@Override
 	protected void process(JCas cas, String line, int SentStart) throws AnalysisEngineProcessException {
-		try {
-			init(language);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		try {
+//			init(language);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 
-		getLogger().info(" start processing from " + SentStart + " size " + line.length());
+//		getLogger().info(" start processing from " + SentStart + " size " + line.length());
 
 		String[] LineList = line.split("\n");
 		for (String text : LineList) {
@@ -406,7 +406,7 @@ public class FreeLingWrapper extends SegmenterBase {
 		// read the configuration file
 		Properties prop = new Properties();
 		InputStream input = new FileInputStream(DATA + "config/" + lang + ".cfg");
-		System.out.println(DATA);
+//		System.out.println(DATA);
 		prop.load(input);
 
 		// Create options set for maco analyzer.
@@ -440,8 +440,8 @@ public class FreeLingWrapper extends SegmenterBase {
 				prop.getProperty("AffixAnalysis").trim().contentEquals("yes"), // aff,
 				prop.getProperty("CompoundAnalysis").trim().contentEquals("yes"), // comp,
 				true, // rtk, // not found in properties....
-				prop.getProperty("MultiwordsDetection").trim().contentEquals("yes"), // mw,
-				prop.getProperty("NERecognition").trim().contentEquals("yes"), // ner,
+				prop.getProperty("MultiwordsDetection").trim().contentEquals("no"), // mw,
+				prop.getProperty("NERecognition").trim().contentEquals("no"), // ner,
 				prop.getProperty("QuantitiesDetection").trim().contentEquals("yes"), // qt,
 				prop.getProperty("ProbabilityAssignment").trim().contentEquals("yes")// prb
 		);
@@ -560,8 +560,14 @@ public class FreeLingWrapper extends SegmenterBase {
 					// create POS
 					// getLogger().info(" processing token from: " + (start + begin) +" to:" +(start
 					// + end)+ " token:" + w.getForm() + " with POS tag: " + w.getTag() );
-					Type defposTagT = posMappingProvider.getTagType("*");
-					Type posTagT = posMappingProvider.getTagType(w.getTag());
+					
+					// Comment not needed parts 
+//					Type defposTagT = posMappingProvider.getTagType("*");
+//					Type posTagT = posMappingProvider.getTagType(w.getTag());
+					// Comment not needed parts 
+
+					
+					
 //                    int l=w.getTag().length()+1;
 //                    while(posTagT==defposTagT && --l>0){
 //                     posTagT = posMappingProvider.getTagType(w.getTag().substring(0, l)+"*");
@@ -571,6 +577,7 @@ public class FreeLingWrapper extends SegmenterBase {
 //                    posTag.setCoarseValue(w.getTag());
 //                    posTag.addToIndexes();
 					// token.setPos(posTag);
+					
 					token.setPartOfSpeech(w.getTag());
 
 					// create lema
@@ -578,19 +585,23 @@ public class FreeLingWrapper extends SegmenterBase {
 //                  lemma.setValue(w.getLemma());
 //                  lemma.addToIndexes();
 //                  token.setLemma(lemma);
-					token.setNormalizedForm(w.getForm());
+					
+					// Comment not needed parts 
+//					token.setNormalizedForm(w.getForm());
 
-					Map<String, Set<String>> lemmaMap = null;
-					Collection<Lemma> lemmas = new ArrayList<>(1);
+//					Map<String, Set<String>> lemmaMap = null;
+//					Collection<Lemma> lemmas = new ArrayList<>(1);
+//
+//					Lemma lemmaa = new Lemma(aJCas);
+//					lemmaa.setKey(w.getLemma());
+//					lemmaa.setPosTag(w.getTag());
+//					lemmas.add(lemmaa);
+//
+//					Lemma[] lemmaArray = (Lemma[]) lemmas.toArray(new Lemma[lemmas.size()]);
+//					FSList fsList = ListFactory.buildList(aJCas, lemmaArray);
+//					token.setLemmaEntries(fsList);
+					// Comment not needed parts 
 
-					Lemma lemmaa = new Lemma(aJCas);
-					lemmaa.setKey(w.getLemma());
-					lemmaa.setPosTag(w.getTag());
-					lemmas.add(lemmaa);
-
-					Lemma[] lemmaArray = (Lemma[]) lemmas.toArray(new Lemma[lemmas.size()]);
-					FSList fsList = ListFactory.buildList(aJCas, lemmaArray);
-					token.setLemmaEntries(fsList);
 
 				} catch (Exception e) {
 

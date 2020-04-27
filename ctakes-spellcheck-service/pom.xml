@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.ihtsdo.otf</groupId>
 	<artifactId>ctakes-spellcheck-service-parent</artifactId>
-    <version>1.1.2</version>
+	<version>1.1.2</version>
 	<packaging>pom</packaging>
-	
 
-    <name>Spell Check Service</name>
+
+	<name>Spell Check Service</name>
 	<description>A Lucene Based Spell Check Service</description>
 
 	<properties>
 		<packageName>${project.artifactId}</packageName>
-		<!-- <lucene.version>7.5.0</lucene.version> --><lucene.version>4.0.0</lucene.version>
-		 <java.version>1.7</java.version>
+		<!-- <lucene.version>7.5.0</lucene.version> -->
+		<lucene.version>4.0.0</lucene.version>
+		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
@@ -46,6 +48,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
 

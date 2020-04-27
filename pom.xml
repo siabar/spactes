@@ -143,7 +143,7 @@
 	</parent>
 
 	<modules>
-		<!-- SpaCTeS modules -->
+		<!-- SoaCTeS modules -->
 		<module>ctakes-openminted-freeling</module>
 		<module>ctakes-spellcheck-service</module>
 		<module>ctakes-fuzzy-dictionary-lookup</module>
@@ -151,7 +151,7 @@
 		<module>ctakes-SpaCTeS</module>
 		<module>ctakes-SpaCTeS-res</module>
 		<module>ctakes-heideltime</module>
-		<!-- SpaCTeS modules -->
+		<!-- SoaCTeS modules -->
 		<module>ctakes-gui</module>
 		<module>ctakes-gui-res</module>
 		<module>ctakes-fhir</module>
@@ -1032,9 +1032,9 @@
 							<additionalClasspathElement>ctakes-temporal-res/src/main/resources</additionalClasspathElement>
 							<additionalClasspathElement>ctakes-ytex-res/src/main/resources</additionalClasspathElement>
 							<additionalClasspathElement>ctakes-dictionary-lookup-fast-res/src/main/resources</additionalClasspathElement>
-`							<!-- SpaCTES classpath-->
 							<additionalClasspathElement>ctakes-fuzzy-dictionary-lookup-res/src/main/resources</additionalClasspathElement>
 							<additionalClasspathElement>ctakes-openminted-freeling/src/main/resources</additionalClasspathElement>
+							<additionalClasspathElement>ctakes-SpaCTeS-res/src/main/resources</additionalClasspathElement>
 
 						</additionalClasspathElements>
 					</configuration>

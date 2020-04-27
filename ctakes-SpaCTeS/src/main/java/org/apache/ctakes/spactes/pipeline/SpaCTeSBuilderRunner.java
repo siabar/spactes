@@ -21,8 +21,8 @@ final public class SpaCTeSBuilderRunner {
 
 	static private final Logger LOGGER = Logger.getLogger("StaCTeSBuilderRunner");
 	
-	static String INPUT_DIR = "/home/siabar/30yamak/git/EHR-HeaderDetector/documents/TXT/victoria/07";
-	static String OUTPUT_DIR = "/home/siabar/30yamak/git/EHR-normalizer/documents/XML/victoria/07" ;
+	static String INPUT_DIR = "/home/siamak/Documents/Data/TXT/07";
+	static String OUTPUT_DIR = "/home/siamak/Documents/Data/XML/07" ;
 
 	
 	private SpaCTeSBuilderRunner() {
@@ -34,6 +34,7 @@ final public class SpaCTeSBuilderRunner {
 	 */
 	public static void main(final String... args) {
 		try {
+			LOGGER.info("StaCTeSBuilderRunner");
 
 //			String INPUT_DIR = args[0];
 //			String OUTPUT_DIR = args[1];
@@ -48,7 +49,7 @@ final public class SpaCTeSBuilderRunner {
 					// Freeling Wrapper (Tokenzier + POS + Lemma+ Sentence)
 					.add(FreeLingWrapper.class, Collections.emptyList(), 
 							FreeLingWrapper.PARAM_LANGUAGE, "es",
-							FreeLingWrapper.PARAM_DO_DEPENDECY_PARSING, true, 
+							FreeLingWrapper.PARAM_DO_DEPENDECY_PARSING, false, 
 							FreeLingWrapper.PARAM_USE_RULE_BASED, false, 
 							FreeLingWrapper.PARAM_LANGUAGE_AUTODETECT, false,
 							FreeLingWrapper.PARAM_LEMMA,ConfigParameterConstants.lemmaForm)
@@ -73,7 +74,7 @@ final public class SpaCTeSBuilderRunner {
 
 					.collectEntities();
 			builder
-			.writeXMIs(OUTPUT_DIR)
+//			.writeXMIs(OUTPUT_DIR)
 			// Brat Writter Component
 			.writeBrat(OUTPUT_DIR);
 			// Brat HTML Component

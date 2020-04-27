@@ -20,6 +20,7 @@ package org.apache.ctakes.dictionary.lookup2.ae;
 
 import org.apache.ctakes.core.config.ConfigParameterConstants;
 import org.apache.ctakes.core.pipeline.PipeBitInfo;
+import org.apache.ctakes.core.resource.FileLocator;
 import org.apache.ctakes.core.util.collection.CollectionMap;
 import org.apache.ctakes.dictionary.lookup2.dictionary.RareWordDictionary;
 import org.apache.ctakes.dictionary.lookup2.term.RareWordTerm;
@@ -33,7 +34,10 @@ import org.apache.uima.resource.ResourceInitializationException;
 import org.ihtsdo.otf.spellcheck.service.RemoveAccents;
 import org.ihtsdo.otf.spellcheck.service.SpellCheckService;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -64,15 +68,17 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		// TODO Auto-generated constructor stub
 		try {
 
-			LOGGER.info("Loading SpellChecker Dictionary");
+			LOGGER.info("Loading SpellChecker Dictionaries");
 			spellchecker = new SpellCheckService();
 			spellchecker_Sent = new SpellCheckService();
 			if (ConfigParameterConstants.lemmaForm)
 				spellchecker.loadDirectoryOfDictionaries(
 						"org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/");
 			else {
-				spellchecker.loadDirectoryOfDictionaries("org/apache/ctakes/examples/dictionary/lookup/spellchecker/lexicon");
-				spellchecker_Sent.loadDirectoryOfDictionaries("org/apache/ctakes/examples/dictionary/lookup/spellchecker/dic");
+				InputStream descriptorStream = FileLocator.getAsStream("org/apache/ctakes/examples/dictionary/lookup/spellchecker/lexicon/lexicon.txt");
+				spellchecker.loadDirectoryOfDictionaries(descriptorStream, "lexicon");
+				descriptorStream = FileLocator.getAsStream("org/apache/ctakes/examples/dictionary/lookup/spellchecker/dic/dic.txt");
+				spellchecker_Sent.loadDirectoryOfDictionaries(descriptorStream, "dic");
 			}
 
 		} catch (IOException e) {

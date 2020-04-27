@@ -1,5 +1,0 @@
-NP00O00=de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization
-NP00SP0=de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person
-NP00G00=de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location
-#MISC
-*=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity      

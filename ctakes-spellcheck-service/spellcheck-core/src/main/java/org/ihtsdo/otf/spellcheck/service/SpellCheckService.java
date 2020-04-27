@@ -5,12 +5,16 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.search.spell.PlainTextDictionary;
 import org.apache.lucene.search.spell.SpellChecker;
 import org.apache.lucene.store.RAMDirectory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
+
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -25,7 +29,8 @@ public class SpellCheckService {
 	private static final Pattern LOOSE_NUMBER_PATTERN = Pattern.compile("^[\\d,.]+$");
 	public static final Pattern MEASUREMENT_PATTERN = Pattern.compile("[,.\\d]+([^\\d]+)");
 
-	private final Logger logger = LoggerFactory.getLogger(getClass());
+//	private final Logger logger = LoggerFactory.getLogger(getClass());
+	private final Logger logger = Logger.getLogger(getClass());
 
 	public SpellCheckService() throws IOException {
 		clearIndex();
@@ -39,10 +44,23 @@ public class SpellCheckService {
 		spellChecker.indexDictionary(new PlainTextDictionary(reader), new IndexWriterConfig(null, new StandardAnalyzer(null)), true);
 	}
 
+	
+	public void loadDirectoryOfDictionaries(InputStream DirectoryPath, String filename) throws IOException {
+		
+		Reader reader = new InputStreamReader(DirectoryPath);
+		loadDictionary(reader);
+		logger.info(filename + " dictionary loaded");
+
+		
+
+	}
+
 	public void loadDirectoryOfDictionaries(String dictionariesDirectoryPath) throws IOException {
+				
+
 		File dictionariesDir = new File(dictionariesDirectoryPath);
 		if (!dictionariesDir.isDirectory()) {
-			logger.error("Specified dictionaries directory is not a directory {}", dictionariesDir.getAbsolutePath());
+			logger.error("Specified dictionaries directory is not a directory: " + dictionariesDir.getAbsolutePath());
 			return;
 		}
 
@@ -51,7 +69,7 @@ public class SpellCheckService {
 		if (files != null) {
 			for (File file : files) {
 				if (file.isFile() && file.getName().endsWith(".txt")) {
-					logger.info("Loading dictionary {}.", file.getName());
+					logger.info("Loading dictionary "+ file.getName());
 					FileReader reader = new FileReader(file);
 					loadDictionary(reader);
 					dictionariesLoaded++;
@@ -60,7 +78,7 @@ public class SpellCheckService {
 		}
 
 		if (dictionariesLoaded > 0) {
-			logger.info("{} dictionaries loaded.", dictionariesLoaded);
+			logger.info(dictionariesLoaded + " dictionaries loaded");
 		} else {
 			logger.error("No dictionaries loaded.");
 		}
