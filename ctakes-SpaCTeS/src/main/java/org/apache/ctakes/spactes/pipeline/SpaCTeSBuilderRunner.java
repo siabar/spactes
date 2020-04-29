@@ -24,7 +24,9 @@ final public class SpaCTeSBuilderRunner {
 	static String INPUT_DIR = "/ICTUSnet/data/TXT";
 	static String OUTPUT_DIR = "/ICTUSnet/data/ANN_VARIABLE" ;
 
-	
+//	static String INPUT_DIR = "/home/siamak/Documents/Data/TXT/07";
+//	static String OUTPUT_DIR = "/home/siamak/Documents/Data/XML/07" ;
+//	
 	private SpaCTeSBuilderRunner() {
 	}
 

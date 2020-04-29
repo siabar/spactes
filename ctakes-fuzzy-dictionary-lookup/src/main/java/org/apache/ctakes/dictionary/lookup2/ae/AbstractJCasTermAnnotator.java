@@ -108,26 +108,26 @@ abstract public class AbstractJCasTermAnnotator extends JCasAnnotator_ImplBase
 			throw new ResourceInitializationException(cnfE);
 		}
 
-		LOGGER.info("Using dictionary lookup window type: " + _windowClassName);
-//      _lookupWindowType = JCasUtil.getType( _windowClassName );
-		final String[] tagArr = _exclusionPosTags.split(",");
-		for (String tag : tagArr) {
-			_exclusionPartsOfSpeech.add(tag.toUpperCase());
-		}
-		final List<String> posList = new ArrayList<>(_exclusionPartsOfSpeech);
-		Collections.sort(posList);
-		final StringBuilder sb = new StringBuilder();
-		for (String pos : posList) {
-			sb.append(pos).append(" ");
-		}
-		LOGGER.info("Exclusion tagset loaded: " + sb.toString());
+//		LOGGER.info("Using dictionary lookup window type: " + _windowClassName);
+////      _lookupWindowType = JCasUtil.getType( _windowClassName );
+//		final String[] tagArr = _exclusionPosTags.split(",");
+//		for (String tag : tagArr) {
+//			_exclusionPartsOfSpeech.add(tag.toUpperCase());
+//		}
+//		final List<String> posList = new ArrayList<>(_exclusionPartsOfSpeech);
+//		Collections.sort(posList);
+//		final StringBuilder sb = new StringBuilder();
+//		for (String pos : posList) {
+//			sb.append(pos).append(" ");
+//		}
+//		LOGGER.info("Exclusion tagset loaded: " + sb.toString());
 
 		// optional minimum span, default is 3
-		final Object minimumSpan = uimaContext.getConfigParameterValue(PARAM_MIN_SPAN_KEY);
-		if (minimumSpan != null) {
-			_minimumLookupSpan = parseInt(minimumSpan, PARAM_MIN_SPAN_KEY, _minimumLookupSpan);
-		}
-		LOGGER.info("Using minimum term text span: " + _minimumLookupSpan);
+//		final Object minimumSpan = uimaContext.getConfigParameterValue(PARAM_MIN_SPAN_KEY);
+//		if (minimumSpan != null) {
+//			_minimumLookupSpan = parseInt(minimumSpan, PARAM_MIN_SPAN_KEY, _minimumLookupSpan);
+//		}
+//		LOGGER.info("Using minimum term text span: " + _minimumLookupSpan);
 		String descriptorFilePath = _descriptorFilePath;
 		if (_lookupXml != null && !_lookupXml.isEmpty()) {
 			descriptorFilePath = _lookupXml;

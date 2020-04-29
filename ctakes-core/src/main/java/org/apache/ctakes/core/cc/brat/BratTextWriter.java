@@ -24,8 +24,12 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.*;
 import java.util.stream.Collectors;
 import static org.apache.ctakes.core.pipeline.PipeBitInfo.TypeProduct.*;
@@ -650,8 +654,10 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 		final File bratFile = new File(outputDir, fileName + ".ann");
 		LOGGER.info("Writing BRAT to " + bratFile.getPath() + " ...");
 
+// 		try (final BufferedWriter writer = new BufferedWriter(new FileWriter(bratFile))) {
 
-		try (final BufferedWriter writer = new BufferedWriter(new FileWriter(bratFile))) {
+		try (final BufferedWriter writer = new BufferedWriter
+			    (new OutputStreamWriter(new FileOutputStream(bratFile), StandardCharsets.UTF_8))) {
 			final Collection<Segment> sections = JCasUtil.select(jCas, Segment.class);
 			final Map<Segment, Collection<Sentence>> sectionSentences = JCasUtil.indexCovered(jCas, Segment.class,
 					Sentence.class);

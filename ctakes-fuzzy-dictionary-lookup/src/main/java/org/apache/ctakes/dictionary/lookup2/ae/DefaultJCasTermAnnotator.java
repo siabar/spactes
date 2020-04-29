@@ -118,8 +118,10 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 
 			final FastLookupToken lookupToken = allTokens.get(lookupTokenIndex);
 			String tempText = lookupToken.getText();
+//			LOGGER.info("New Words:     " + tempText);
 			RemoveAccents rc = new RemoveAccents();
 			tempText = rc.removeAccents(tempText);
+//			LOGGER.info("Removed: " + tempText);
 
 //			if (tempText.equalsIgnoreCase("habitual")) {
 //				System.out.println("Token");
@@ -146,10 +148,13 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 			} catch (Exception e) {
 				System.out.println(lookupToken.getText());
 			}
+			
+//			LOGGER.info("dic: " + temp);
 
 //         rareWordHits = dictionary.getRareWordHits( lookupToken );
 			
 			String removedTemp = punctuationRemover(temp);
+//			LOGGER.info("removedTemp: " + removedTemp);
 			if (score_list.contains(removedTemp))
 				rareWordHits = dictionary.getRareWordHits(removedTemp);
 			else
@@ -159,6 +164,8 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 				continue;
 			}
 			for (RareWordTerm rareWordHit : rareWordHits) {
+//				LOGGER.info("rareWordHit: " + rareWordHit.getText());
+
 				if (rareWordHit.getText().length() < _minimumLookupSpan) {
 					continue;
 				}
@@ -184,6 +191,8 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 						System.out.println(lookupToken.getText());
 					}
 					if (rareWordHit.getRareWord().contentEquals(temp_one))
+//						LOGGER.info("OK temo_one: " + rareWordHit.getText());
+
 						termsFromDictionary.placeValue(lookupToken.getTextSpan(), rareWordHit.getCuiCode());
 					continue;
 				}
@@ -297,6 +306,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 	public static boolean isTermMatch(final String temp, final RareWordTerm rareWordHit,
 			final List<FastLookupToken> allTokens, final int termStartIndex, final int termEndIndex) {
 
+//		LOGGER.info("isTermMatch Started");
 		String inputToken = "";
 		for (int i = termStartIndex; i <= termEndIndex; i++) {
 			try {
@@ -308,20 +318,37 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		inputToken = inputToken.trim();
 
 		String rareWord = rareWordHit.getText();
+//		LOGGER.info("rareWord: " + rareWordHit.getText());
+
 		String tempText = inputToken;
+//		LOGGER.info("inputToken: " + inputToken);
+
 		RemoveAccents rc = new RemoveAccents();
 		tempText = rc.removeAccents(tempText);
+//		LOGGER.info("tempText: " + tempText);
+
 
 		Map<String, List<String>> suggestions = spellchecker_Sent.checkWordsReturnErrorSuggestions(Arrays.asList(tempText),
 				accuracy_sentence);
+		
+//		if ((suggestions.entrySet().stream().count() >= 1) && !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty()) {
+//			LOGGER.info("Suggestions: " + suggestions
+//					.entrySet().stream().findFirst().get().getValue().get(0));
+//		}
+//		else {
+//			LOGGER.info("Suggestions: ZERO!");
+//
+//		}
 
 		try {
 			if (((suggestions.entrySet().stream().count() >= 1
 					&& !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty() && (suggestions
 							.entrySet().stream().findFirst().get().getValue().get(0).equalsIgnoreCase(rareWord))))
 					|| tempText.equalsIgnoreCase(rareWord)) {
+//				LOGGER.info("OK isTERMMatch: " + rareWord);
 				return true;
 			} else {
+//				LOGGER.info("isTermMatch Ended");
 				return false;
 			}
 

@@ -1,0 +1,13 @@
+escala de rankin modificada 0
+escala nihss 0
+puntuacion total nih:0
+aspects 0
+aspects score 0
+mrankin 0
+mrs 0
+rankin 0
+nih 0
+nihss 0
+nhiss 0
+nishss 0
+nissh 0

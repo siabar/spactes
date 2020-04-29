@@ -26,7 +26,7 @@ import org.apache.ctakes.dictionary.lookup2.term.RareWordTerm;
 import org.apache.ctakes.dictionary.lookup2.util.CuiCodeUtil;
 import org.apache.log4j.Logger;
 import org.apache.ctakes.freeling.FreeLingWrapper;
-import org.apache.ctakes.freeling.RemoveAccents;
+//import org.apache.ctakes.freeling.RemoveAccents;
 
 import java.util.*;
 
@@ -106,18 +106,21 @@ final public class RareWordTermMapCreator {
 
 	static public CollectionMap<String, RareWordTerm, List<RareWordTerm>> createRareWordTermMap(
 			final Iterable<CuiTerm> cuiTerms) {
+		LOGGER.info("Reading Variables");
 		FreeLingWrapper freeling = new FreeLingWrapper();
 		freeling.lemmaForm = ConfigParameterConstants.lemmaForm;
 		freeling.init_dict();
-		RemoveAccents rc = new RemoveAccents();
+//		RemoveAccents rc = new RemoveAccents();
 		final CollectionMap<String, RareWordTerm, List<RareWordTerm>> rareWordTermMap = new ArrayListMap<>();
 //		final Map<String, Integer> tokenCountMap = createTokenCountMap(cuiTerms, rc, freeling);
 		for (CuiTerm cuiTerm : cuiTerms) {
 			final List<String> tempTerm = freeling.tokenizer(cuiTerm.getTerm());
 			String temprc = String.join(" ", tempTerm); 
-			final String term = rc.removeAccents(temprc);
-			final String rareWord = rc.removeAccents(tempTerm.get(0));//getRareWord(term, tokenCountMap);
-			final int wordIndex =0; //getWordIndex(term, rareWord);
+//			final String term = rc.removeAccents(temprc);
+//			final String rareWord = rc.removeAccents(tempTerm.get(0));//getRareWord(term, tokenCountMap);
+			final String term = temprc;
+			final String rareWord = tempTerm.get(0);//getRareWord(term, tokenCountMap);
+			final int wordIndex = 0; //getWordIndex(term, rareWord);
 //			final int tokenCount = getTokenCount(term,freeling);
 			final int tokenCount = tempTerm.size();
 //			if (wordIndex < 0) {
