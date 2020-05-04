@@ -23,11 +23,17 @@ public class RemoveAccents {
 	
 	public static void main( final String... args ) throws IOException {
 		RemoveAccents ra = new RemoveAccents();
-//		String input = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker_test/dic.txt";
-		String input = "/home/siamak/Documents/ctakes/ctakes-SpaCTeS-res/src/main/resources/org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDict_15_04_2020_bunch_8.bsv";
+		
 
-
-		String output_lexicon = "/home/siamak/Documents/ctakes/ctakes-SpaCTeS-res/src/main/resources/org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDict.bsv";
+		// Removing accents from IctusnetDict.bsv file
+		// Save in ctakes-SpaCTeS-res/src/main/resources/org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDict.bsv
+		// IctusnetDict.bsv should have 3 columns and separated with a vertical bar: "|". 
+		// For example: CUI NUMBER (UMLS)|CATEGORY|VARIABLE
+		// See a example in above path
+		String input = args[0];
+		String output_lexicon = args[1];
+		
+		
 //	FreeLingWrapper freeling = new FreeLingWrapper();
 //	freeling.init_dict();
 

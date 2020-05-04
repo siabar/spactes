@@ -48,63 +48,17 @@ public class FreelingXMIReaderWriter
 
     public static void main(String[] args) throws Exception
     {   
-    	//System.loadLibrary("/usr/local/share/freeling/APIs/java/Jfreeling.jar");
+//    	System.loadLibrary("/usr/local/share/freeling/APIs/java/Jfreeling.jar");
     	System.out.println(System.getProperty("java.library.path"));
-        if (args.length>3 && args[3].equals("txt")){
-               if (args[2].equals("auto")){
-                   SimplePipeline.runPipeline(
-                           createReaderDescription(TextReader.class,
-                                   TextReader.PARAM_SOURCE_LOCATION, args[0],
-                                   TextReader.PARAM_PATTERNS, "*.txt"),
-                           createEngineDescription(FreeLingWrapper.class,
-                                   FreeLingWrapper.PARAM_LANGUAGE, args[2],
-                                   FreeLingWrapper.PARAM_DO_DEPENDECY_PARSING,true,
-                                   FreeLingWrapper.PARAM_USE_RULE_BASED,false,
-                                   FreeLingWrapper.PARAM_LANGUAGE_AUTODETECT,true),
-                           createEngineDescription(XmiWriter.class,
-                                   XmiWriter.PARAM_TARGET_LOCATION, args[1],
-                                   XmiWriter.PARAM_OVERWRITE,true));
-                                              
-                } else {     
-                         SimplePipeline.runPipeline(
-                        createReaderDescription(TextReader.class,
-                                TextReader.PARAM_SOURCE_LOCATION, args[0],
-                                TextReader.PARAM_PATTERNS, "*.txt",
-                                TextReader.PARAM_LANGUAGE, args[2]),
-                        createEngineDescription(FreeLingWrapper.class,
-                                FreeLingWrapper.PARAM_LANGUAGE,  args[2],
-                                FreeLingWrapper.PARAM_DO_DEPENDECY_PARSING,true,
-                                FreeLingWrapper.PARAM_USE_RULE_BASED,false,
-                                FreeLingWrapper.PARAM_LANGUAGE_AUTODETECT,false),
-                        createEngineDescription(XmiWriter.class,
-                                XmiWriter.PARAM_TARGET_LOCATION, args[1],
-                                XmiWriter.PARAM_OVERWRITE,true));
-                }
-        } else if (args.length>2){
-              System.out.println("xmi second param 2 -"+args[2]+ "-");
-                if (args[2].equals("auto")){
-                    SimplePipeline.runPipeline(
-                            createReaderDescription(XmiReader.class,
-                                    XmiReader.PARAM_SOURCE_LOCATION, args[0],
-                                    XmiReader.PARAM_PATTERNS, "*.xmi"),
-                            createEngineDescription(FreeLingWrapper.class,
-                                    FreeLingWrapper.PARAM_LANGUAGE, args[2],
-                                    FreeLingWrapper.PARAM_DO_DEPENDECY_PARSING,true,
-                                    FreeLingWrapper.PARAM_USE_RULE_BASED,false,
-                                    FreeLingWrapper.PARAM_LANGUAGE_AUTODETECT,true),
-                            createEngineDescription(XmiWriter.class,
-                                    XmiWriter.PARAM_TARGET_LOCATION, args[1],
-                                    XmiWriter.PARAM_OVERWRITE,true ));
-                   
-                } else {       
+        if (args.length>1){
                SimplePipeline.runPipeline(
                         createReaderDescription(XmiReader.class,
                                 XmiReader.PARAM_SOURCE_LOCATION, args[0],
-                                XmiReader.PARAM_PATTERNS, "*.xmi",
-                                XmiReader.PARAM_LANGUAGE, args[2]),
+                                XmiReader.PARAM_PATTERNS, "*.txt",
+                                XmiReader.PARAM_LANGUAGE, "es"),
                         createEngineDescription(FreeLingWrapper.class,
-                                FreeLingWrapper.PARAM_LANGUAGE,  args[2],
-                                FreeLingWrapper.PARAM_DO_DEPENDECY_PARSING,true,
+                                FreeLingWrapper.PARAM_LANGUAGE,  "es",
+                                FreeLingWrapper.PARAM_DO_DEPENDECY_PARSING,false,
                                 FreeLingWrapper.PARAM_USE_RULE_BASED,false,
                                 FreeLingWrapper.PARAM_LANGUAGE_AUTODETECT,false,
                                 FreeLingWrapper.PARAM_DICTIONARY,true,
@@ -112,9 +66,8 @@ public class FreelingXMIReaderWriter
                         createEngineDescription(XmiWriter.class,
                                 XmiWriter.PARAM_TARGET_LOCATION, args[1],
                                 XmiWriter.PARAM_OVERWRITE,true ));
-                }
             } else {
-                System.out.println("arguments are \n - input folder, \n - output foder \n - language  and \n -if input not in xmi format then it can be txt");
+                System.out.println("arguments are \n - input folder, \n - output foder \n ");
             }
             
     }

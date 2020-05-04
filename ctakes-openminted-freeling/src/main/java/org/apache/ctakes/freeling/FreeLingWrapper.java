@@ -69,11 +69,11 @@ import edu.upc.Jfreeling.TreePreorderIteratorDepnode;
 import edu.upc.Jfreeling.Util;
 import edu.upc.Jfreeling.Word;
 import org.apache.ctakes.typesystem.type.textspan.Sentence;
+import org.apache.ctakes.core.config.ConfigParameterConstants;
 import org.apache.ctakes.core.util.ListFactory;
 import org.apache.ctakes.typesystem.type.syntax.Lemma;
 import org.apache.ctakes.typesystem.type.syntax.WordToken;
 import org.apache.ctakes.typesystem.type.dependency.Dependency;
-
 
 /**
  * Tokenizer and sentence splitter, POS tagger using FreeLing. parser is pending
@@ -162,9 +162,9 @@ public class FreeLingWrapper extends SegmenterBase {
 	// this could be taken from config files...
 	private static Set<String> TreelerLangs = new HashSet<String>(Arrays.asList("es"));
 	private static Set<String> TxalaLangs = new HashSet<String>(Arrays.asList("es")); // removed
-																												// "as"
-																												// and
-																												// "gl"
+																						// "as"
+																						// and
+																						// "gl"
 	private LangIdent lgid;
 
 //	private HashMap<String, Tokenizer> tks = new HashMap<>();
@@ -382,6 +382,8 @@ public class FreeLingWrapper extends SegmenterBase {
 	}
 
 	public void init_dict() {
+		System.loadLibrary("Jfreeling");
+		Util.initLocale("default");
 		try {
 			init_token(language);
 		} catch (Exception e) {
@@ -560,14 +562,12 @@ public class FreeLingWrapper extends SegmenterBase {
 					// create POS
 					// getLogger().info(" processing token from: " + (start + begin) +" to:" +(start
 					// + end)+ " token:" + w.getForm() + " with POS tag: " + w.getTag() );
-					
-					// Comment not needed parts 
+
+					// Comment not needed parts
 //					Type defposTagT = posMappingProvider.getTagType("*");
 //					Type posTagT = posMappingProvider.getTagType(w.getTag());
-					// Comment not needed parts 
+					// Comment not needed parts
 
-					
-					
 //                    int l=w.getTag().length()+1;
 //                    while(posTagT==defposTagT && --l>0){
 //                     posTagT = posMappingProvider.getTagType(w.getTag().substring(0, l)+"*");
@@ -577,7 +577,7 @@ public class FreeLingWrapper extends SegmenterBase {
 //                    posTag.setCoarseValue(w.getTag());
 //                    posTag.addToIndexes();
 					// token.setPos(posTag);
-					
+
 					token.setPartOfSpeech(w.getTag());
 
 					// create lema
@@ -585,8 +585,8 @@ public class FreeLingWrapper extends SegmenterBase {
 //                  lemma.setValue(w.getLemma());
 //                  lemma.addToIndexes();
 //                  token.setLemma(lemma);
-					
-					// Comment not needed parts 
+
+					// Comment not needed parts
 //					token.setNormalizedForm(w.getForm());
 
 //					Map<String, Set<String>> lemmaMap = null;
@@ -600,8 +600,7 @@ public class FreeLingWrapper extends SegmenterBase {
 //					Lemma[] lemmaArray = (Lemma[]) lemmas.toArray(new Lemma[lemmas.size()]);
 //					FSList fsList = ListFactory.buildList(aJCas, lemmaArray);
 //					token.setLemmaEntries(fsList);
-					// Comment not needed parts 
-
+					// Comment not needed parts
 
 				} catch (Exception e) {
 
@@ -615,8 +614,8 @@ public class FreeLingWrapper extends SegmenterBase {
 				tokennumber++;
 				tokens[i++] = token;
 			} // end for tokens
-			
-				// Add dependencies.
+
+			// Add dependencies.
 			if (doDeps) {
 				DepTree dtree = s.getDepTree(s.getBestSeq());
 				for (int n = 0; n < s.size(); n++) {
@@ -649,124 +648,85 @@ public class FreeLingWrapper extends SegmenterBase {
 
 //                createSentence(aJCas, start + sBegin, start + end);
 			}
-			
-    		int[] span = new int[] { start + sBegin, start + end };
-    		trim(aJCas.getDocumentText(), span);
-    		if (!isEmpty(span[0], span[1])) {
-    			Sentence seg = new Sentence(aJCas, span[0], span[1]);
-    			seg.addToIndexes(aJCas);
-    			
-    		}
+
+			int[] span = new int[] { start + sBegin, start + end };
+			trim(aJCas.getDocumentText(), span);
+			if (!isEmpty(span[0], span[1])) {
+				Sentence seg = new Sentence(aJCas, span[0], span[1]);
+				seg.addToIndexes(aJCas);
+
+			}
 		}
-		if (dictionary_parser) {
-			RemoveAccents ra = new RemoveAccents();
-//			String input = "/home/siabar/eclipse-workspace/ctakes/ctakes-examples/org/apache/ctakes/examples/dictionary/lookup/spellchecker_test/dic.txt";
-			String input = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS-res/src/main/resources/org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDict.bsv";
 
-			String output_lexicon = "";
-			String output_dic = "";
-			if (lemmaForm) {
-				output_lexicon = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/lexicon.txt";
-				output_dic = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker_lemma/dic.txt";
-			} else {
-				output_lexicon = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker/lexicon/lexicon.txt";
-				output_dic = "/home/siabar/eclipse-workspace/ctakes/ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker/dic/dic.txt";
-			}
-//
-//		FreeLingWrapper freeling = new FreeLingWrapper();
-//		freeling.init_dict();
+	}
 
-			try {
-				FileReader reader = new FileReader(input);
-				BufferedReader bufferedReader = new BufferedReader(reader);
+	public static void main(final String... args) throws Exception {
+		FreeLingWrapper freeling = new FreeLingWrapper();
+		freeling.init_dict();
 
-				FileWriter writer_lexicon = new FileWriter(output_lexicon);
-				FileWriter writer_dic = new FileWriter(output_dic);
+		RemoveAccents ra = new RemoveAccents();
+		// input should be
+		// ctakes-SpaCTeS-res/src/main/resources/org/apache/ctakes/examples/dictionary/lookup/fuzzy/IctusnetDict.bsv
+		String input = args[0];
+		// output_lexicon is
+		// ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker/lexicon/lexicon.txt
+		// output_dic is
+		// ctakes-SpaCTeS/org/apache/ctakes/examples/dictionary/lookup/spellchecker/dic/dic.txt
+		// outputs is using for spellchecker dictionary
+		String output_lexicon = args[1];
+		String output_dic = args[2];
+		
+		
+		try {
+			FileReader reader = new FileReader(input);
+			BufferedReader bufferedReader = new BufferedReader(reader);
 
-				String line_original = null;
-				String line = null;
+			FileWriter writer_lexicon = new FileWriter(output_lexicon);
+			FileWriter writer_dic = new FileWriter(output_dic);
 
-				Map<String, Integer> lexiconkepper = new HashMap<String, Integer>();
-				BufferedWriter bufferedWriter_lexicon = new BufferedWriter(writer_lexicon);
+			String line_original = null;
+			String line = null;
 
-				BufferedWriter bufferedWriter_dic = new BufferedWriter(writer_dic);
+			Map<String, Integer> lexiconkepper = new HashMap<String, Integer>();
+			BufferedWriter bufferedWriter_lexicon = new BufferedWriter(writer_lexicon);
 
-				while ((line_original = bufferedReader.readLine()) != null) {
-					String temp_line = "";
-					String[] templine = line_original.trim().split("\\|");
-					
-	            	String[] temp_lower = templine[2].trim().split(" ");
-	            	for (String temp :temp_lower) {
-	            		if (temp.length()>1) {
-	            			temp_line +=  temp.toLowerCase() + " " ;
-	            		}else {
-	            			temp_line +=  temp+ " " ;
-	            		}
-	            	}
+			BufferedWriter bufferedWriter_dic = new BufferedWriter(writer_dic);
 
-//					if (line_original.length() >3) {
-//					line = line_original.trim().toLowerCase();
-//					}else {
-//						line = line_original.trim();
-//					}
-	            	line = temp_line.trim();
-					List<String> temp = tokenizer(line);
-					String tempRC = ra.removeAccents(String.join(" ", temp));
-					bufferedWriter_dic.write(tempRC + "\n");
-//	            	String[] temp = line.trim().split(" ");
-//					for (int i = 0; i < temp.size(); i++) {
-//						tempRC = ra.removeAccents(temp.get(i));
-//						if (!lexiconkepper.containsKey(tempRC)) {
-//							lexiconkepper.put(tempRC, 0);
-//						}
-//					}
-					
-					tempRC = ra.removeAccents(temp.get(0));
-					if (!lexiconkepper.containsKey(tempRC)) {
-						lexiconkepper.put(tempRC, 0);
+			while ((line_original = bufferedReader.readLine()) != null) {
+				String temp_line = "";
+				String[] templine = line_original.trim().split("\\|");
+
+				String[] temp_lower = templine[2].trim().split(" ");
+				for (String temp : temp_lower) {
+					if (temp.length() > 1) {
+						temp_line += temp.toLowerCase() + " ";
+					} else {
+						temp_line += temp + " ";
 					}
-					
-					
 				}
-//					String temp_line = "";
-//	            	String[] temp_lower = line_original.trim().split(" ");
-//	            	for (String temp :temp_lower) {
-//	            		if (temp.length()>3) {
-//	            			temp_line +=  temp.toLowerCase() + " " ;
-//	            		}else {
-//	            			temp_line +=  temp+ " " ;
-//	            		}
-//	            	}
-//
-////					if (line_original.length() >3) {
-////					line = line_original.trim().toLowerCase();
-////					}else {
-////						line = line_original.trim();
-////					}
-//	            	line = temp_line.trim();
-//					List<String> temp = tokenizer(line);
-//					String tempRC = ra.removeAccents(String.join(" ", temp));
-//
-//					bufferedWriter_dic.write(tempRC + "\n");
-////	            	String[] temp = line.trim().split(" ");
-//					for (int i = 0; i < temp.size(); i++) {
-//						tempRC = ra.removeAccents(temp.get(i));
-//						if (!lexiconkepper.containsKey(tempRC)) {
-//							lexiconkepper.put(tempRC, 0);
-//						}
-//					}
-					
-//				}
-				for (String st : lexiconkepper.keySet()) {
-					bufferedWriter_lexicon.write(st + "\n");
+
+				line = temp_line.trim();
+				List<String> temp = freeling.tokenizer(line);
+				String tempRC = ra.removeAccents(String.join(" ", temp));
+				bufferedWriter_dic.write(tempRC + "\n");
+
+				tempRC = ra.removeAccents(temp.get(0));
+				if (!lexiconkepper.containsKey(tempRC)) {
+					lexiconkepper.put(tempRC, 0);
 				}
-				bufferedReader.close();
-				bufferedWriter_lexicon.close();
-				bufferedWriter_dic.close();
-				System.out.println("Pre-processing Done");
-			} catch (IOException e) {
-				e.printStackTrace();
+
 			}
+
+			for (String st : lexiconkepper.keySet()) {
+				bufferedWriter_lexicon.write(st + "\n");
+			}
+			bufferedReader.close();
+			bufferedWriter_lexicon.close();
+			bufferedWriter_dic.close();
+			System.out.println("Pre-processing Done");
+
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }
