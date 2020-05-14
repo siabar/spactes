@@ -1,11 +1,10 @@
 package org.apache.ctakes.spactes.pipeline;
 
-import org.apache.ctakes.core.config.ConfigParameterConstants;
 import org.apache.ctakes.core.ae.SimpleSegmentAnnotator;
+import org.apache.ctakes.core.config.ConfigParameterConstants;
 import org.apache.ctakes.core.pipeline.PipelineBuilder;
-import org.apache.ctakes.freeling.FreeLingWrapper;
 import org.apache.ctakes.dictionary.lookup2.ae.DefaultJCasTermAnnotator;
-
+import org.apache.ctakes.freeling.FreeLingWrapper;
 import org.apache.log4j.Logger;
 import org.apache.uima.UIMAException;
 
@@ -21,12 +20,7 @@ final public class SpaCTeSBuilderRunner {
 
 	static private final Logger LOGGER = Logger.getLogger("StaCTeSBuilderRunner");
 	
-	static String INPUT_DIR = "/ICTUSnet/data/TXT";
-	static String OUTPUT_DIR = "/ICTUSnet/data/ANN_VARIABLE" ;
 
-//	static String INPUT_DIR = "/home/siamak/Documents/Data/TXT/07";
-//	static String OUTPUT_DIR = "/home/siamak/Documents/Data/XML/07" ;
-//	
 	private SpaCTeSBuilderRunner() {
 	}
 
@@ -38,8 +32,8 @@ final public class SpaCTeSBuilderRunner {
 		try {
 			LOGGER.info("StaCTeSBuilderRunner");
 
-//			String INPUT_DIR = args[0];
-//			String OUTPUT_DIR = args[1];
+			String INPUT_DIR = args[0];
+			String OUTPUT_DIR = args[1];
 
 			PipelineBuilder builder = new PipelineBuilder();
 			builder.readFiles(INPUT_DIR)
@@ -47,7 +41,7 @@ final public class SpaCTeSBuilderRunner {
 					// Segment Annotator from cTAKES
 					.add(SimpleSegmentAnnotator.class)
            
-
+//
 					// Freeling Wrapper (Tokenzier + POS + Lemma+ Sentence)
 					.add(FreeLingWrapper.class, Collections.emptyList(), 
 							FreeLingWrapper.PARAM_LANGUAGE, "es",
