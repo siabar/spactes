@@ -22,14 +22,18 @@ ait
 ataque isquemico transitorio
 ictus minor
 infarto clinicamente regresivo
+isquemia cerebral transitoria
 sindrome sensitivo-motor regresivo
+sindrome de alarma capsular
 tia
+aits
 avc hemorragic
 hematoma
 hematoma cerebral
 hemorragia
 hemorragia cerebral
 hemorragia intracerebral
+hemorragia parenquimatosa
 hemorragia parenquimatosa cerebral masiva
 ictus hemorragico
 ecas iv
@@ -39,19 +43,41 @@ fibrinolisis endovenosa
 fibrinolisis iv
 fibrinolisis sistemica con rtpa ev
 rtpa
+rtpa ev
+tpa ev
 tpaev
+tpa
 tractat amb firbinolisi
 trombolisis
+trombolisisendovenosa
+trombolisis endovenosa
+tractament amb rtpa endovenos
 tratamiento con alteplasa
 tratamiento con rtpa
+tto trombolitico con rtpa
 tratamiento fibrinolitico
 tratamiento trombolitico
 trombolisis intravenosa
+tratamiento de repefusion cerebral con r-tpa
+reperfusion intraateria
 tev
-trombectomia
+tevmecanica
+tev mecanica
+tratamiento intraarterial
+tractament neurovascular
+tratamiento recanalizador
+tratamiento revascularizador
+tratamiento de revascularizacion
+tratamiento de reperfusion intrarterial
+tratamiento agudo mecanico
 tratamiento endovascular
+trombectomia
 trombectomia endovascular
+trombectomiamecanica
 trombectomia mecanica
+trombectomiacerebrala
+tractament mecanic endovascular
+terapia endovascular
 trombolisis ia
 trombolisis intraarterial
 test de deglucion
@@ -59,15 +85,18 @@ test de disfagia
 escala de rankin modificada 0
 escala nihss es de 0 puntos
 escala nihss 0
+0 en la escala nihss
 puntuacion total nih:0
 aspects 0
 aspects score 0
+mrankinscale 0
 mrankin 0
 mrs 0
 rankin 0
 nih 0
 nihss 0
 nhiss 0
+nihaa 0
 nishss 0
 nissh 0
 acenocumarol
@@ -96,8 +125,10 @@ eliquis
 enoxaparin
 fragmin
 fraxiparina
+hbpm
 heparin
 heparina
+innohep
 hibor
 lixiana
 nadroparin
@@ -112,6 +143,7 @@ aas
 abciximab
 ac acetilsalicilico
 acetylsalicylic acid
+acetil salicilic , acid
 acetylsalicylic acid , combinations with proton pump inhibitors
 acido acetilsalicilico
 adiro
@@ -149,7 +181,11 @@ ticlopidine
 tiklid
 tirofiban
 triflusal
+tromalyt
+vatoud
+a circunferencial corta
 a coroidea ant
+a basilar
 a2
 ab
 aca
@@ -181,6 +217,7 @@ arteria vertebral
 arteries cerebrals mitges
 c1
 carotida primitiva
+carotida interna
 carotidea
 carotidea
 indeterm I na do
@@ -193,6 +230,8 @@ m4
 m5
 nucleo lenticular
 pica
+lenticulo-estriadas
+lenticulo estriadas
 territorio indeterminado
 tica
 v1
@@ -201,6 +240,8 @@ vertebr basilar
 vertebro-basilar
 vertebrobasilar
 bulbar
+basilar
+putaminal
 capsulo-talamic
 capsulotalamico
 caudado
@@ -282,11 +323,12 @@ inhabitual
 lacunar
 malformacion arteriovenosa
 mecanisme embolic
+microangiopatica
 secundaria a malformacion vascular
 secundaria a tumor
 agiotac
 tac
-tac crani al
+tac crani a l
 tac cerebral
 tac craneal
 tac de craneo
@@ -302,7 +344,6 @@ arteria vertebrobasilar
 cerebrales posteriores
 no especif
 vertebral
-aits
 cardioemebolico
 ce
 etiologia pendent de filiacio
@@ -331,7 +372,5 @@ tomografia axial computeritzada de cap
 test deglucion
 a a s
 acetilsalicilico
-terapia endovascular
-rtpa ev
 recanalizacion
 puerta aguja

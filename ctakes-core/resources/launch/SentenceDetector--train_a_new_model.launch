@@ -10,6 +10,7 @@
 <booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.apache.ctakes.core.ae.SentenceDetector"/>
+<stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="ctakes-core"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="data/test/sample_sd_training_sentences.txt&#13;&#10;resources/sentdetect/sample_sd.mod&#13;&#10;100&#13;&#10;5"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ctakes-core"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>

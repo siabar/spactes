@@ -22,18 +22,14 @@ C0000002|_SUG_Ataque_isquemico_transitorio|AIT
 C0000002|_SUG_Ataque_isquemico_transitorio|ataque isquemico transitorio
 C0000002|_SUG_Ataque_isquemico_transitorio|ICTUS MINOR
 C0000002|_SUG_Ataque_isquemico_transitorio|Infarto clinicamente regresivo
-C0000002|_SUG_Ataque_isquemico_transitorio|Isquemia cerebral transitoria
 C0000002|_SUG_Ataque_isquemico_transitorio|Sindrome sensitivo-motor regresivo
-C0000002|_SUG_Ataque_isquemico_transitorio|SINDROME DE ALARMA CAPSULAR
 C0000002|_SUG_Ataque_isquemico_transitorio|TIA
-C0000002|_SUG_Ataque_isquemico_transitorio|AITs
 C0000003|_SUG_Hemorragia_cerebral|AVC HEMORRAGIC
 C0000003|_SUG_Hemorragia_cerebral|HEMATOMA
 C0000003|_SUG_Hemorragia_cerebral|hematoma cerebral
 C0000003|_SUG_Hemorragia_cerebral|HEMORRAGIA
 C0000003|_SUG_Hemorragia_cerebral|hemorragia cerebral
 C0000003|_SUG_Hemorragia_cerebral|hemorragia intracerebral
-C0000003|_SUG_Hemorragia_cerebral|Hemorragia parenquimatosa
 C0000003|_SUG_Hemorragia_cerebral|HEMORRAGIA PARENQUIMATOSA CEREBRAL MASIVA
 C0000003|_SUG_Hemorragia_cerebral|ictus hemorragico
 C0000004|_SUG_Trombolisis_intravenosa|ECAS IV
@@ -43,41 +39,20 @@ C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis endovenosa
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis iv
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis sistemica con rtPA ev
 C0000004|_SUG_Trombolisis_intravenosa|rtPA
-C0000004|_SUG_Trombolisis_intravenosa|rTPA ev
-C0000004|_SUG_Trombolisis_intravenosa|TPA ev
 C0000004|_SUG_Trombolisis_intravenosa|tPAev
-C0000004|_SUG_Trombolisis_intravenosa|tPA
 C0000004|_SUG_Trombolisis_intravenosa|tractat amb firbinolisi
 C0000004|_SUG_Trombolisis_intravenosa|trombolisis
-C0000004|_SUG_Trombolisis_intravenosa|Trombolisisendovenosa
-C0000004|_SUG_Trombolisis_intravenosa|Trombolisis endovenosa
-C0000004|_SUG_Trombolisis_intravenosa|tractament amb rtPA endovenos
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento con alteplasa
 C0000004|_SUG_Trombolisis_intravenosa|Tratamiento con RTPA
-C0000004|_SUG_Trombolisis_intravenosa|tto trombolitico con rtPA
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolitico
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento trombolitico
 C0000004|_SUG_Trombolisis_intravenosa|trombolisis intravenosa
-C0000004|_SUG_Trombolisis_intravenosa|tratamiento de repefusion cerebral con r-tPA
-C0000005|_SUG_Trombectomia_mecanica|reperfusion intraateria
 C0000005|_SUG_Trombectomia_mecanica|TEV
-C0000005|_SUG_Trombectomia_mecanica|TEVMecanica
-C0000005|_SUG_Trombectomia_mecanica|TEV Mecanica
-C0000005|_SUG_Trombectomia_mecanica|Tratamiento intraarterial
-C0000005|_SUG_Trombectomia_mecanica|tractament neurovascular
-C0000005|_SUG_Trombectomia_mecanica|tratamiento recanalizador
-C0000005|_SUG_Trombectomia_mecanica|tratamiento revascularizador
-C0000005|_SUG_Trombectomia_mecanica|tratamiento de revascularizacion
-C0000005|_SUG_Trombectomia_mecanica|tratamiento de reperfusion intrarterial
+C0000005|_SUG_Trombectomia_mecanica|trombectomia
 C0000005|_SUG_Trombectomia_mecanica|tratamiento agudo mecanico
 C0000005|_SUG_Trombectomia_mecanica|tratamiento endovascular
-C0000005|_SUG_Trombectomia_mecanica|trombectomia
 C0000005|_SUG_Trombectomia_mecanica|Trombectomia endovascular
-C0000005|_SUG_Trombectomia_mecanica|Trombectomiamecanica
 C0000005|_SUG_Trombectomia_mecanica|Trombectomia mecanica
-C0000005|_SUG_Trombectomia_mecanica|Trombectomiacerebrala
-C0000005|_SUG_Trombectomia_mecanica|tractament mecanic endovascular
-C0000005|_SUG_Trombectomia_mecanica|terapia endovascular
 C0000006|_SUG_Trombolisis_intraarterial|trombolisis ia
 C0000006|_SUG_Trombolisis_intraarterial|trombolisis intraarterial
 C0000007|_SUG_Test_de_disfagia|test de deglucion
@@ -85,7 +60,6 @@ C0000007|_SUG_Test_de_disfagia|test de disfagia
 C0000011|_SUG_mRankin|Escala de Rankin modificada 0
 C0000012|_SUG_NIHSS|escala NIHSS es de 0 puntos
 C0000012|_SUG_NIHSS|Escala NIHSS 0
-C0000012|_SUG_NIHSS|0 en la escala NIHSS
 C0000012|_SUG_NIHSS|PUNTUACION TOTAL NIH:0
 C0000010|_SUG_ASPECTS|ASPECTS 0
 C0000010|_SUG_ASPECTS|ASPECTS score 0
@@ -96,7 +70,6 @@ C0000011|_SUG_mRankin|Rankin 0
 C0000012|_SUG_NIHSS|NIH 0
 C0000012|_SUG_NIHSS|NIHSS 0
 C0000012|_SUG_NIHSS|NHISS 0
-C0000012|_SUG_NIHSS|NIHAA 0
 C0000012|_SUG_NIHSS|NISHSS 0
 C0000012|_SUG_NIHSS|NISSH 0
 C0000013|_SUG_Tratamiento_anticoagulante|acenocumarol
@@ -125,10 +98,8 @@ C0000013|_SUG_Tratamiento_anticoagulante|eliquis
 C0000013|_SUG_Tratamiento_anticoagulante|enoxaparin
 C0000013|_SUG_Tratamiento_anticoagulante|fragmin
 C0000013|_SUG_Tratamiento_anticoagulante|fraxiparina
-C0000013|_SUG_Tratamiento_anticoagulante|HBPM
 C0000013|_SUG_Tratamiento_anticoagulante|heparin
 C0000013|_SUG_Tratamiento_anticoagulante|Heparina
-C0000013|_SUG_Tratamiento_anticoagulante|INNOHEP
 C0000013|_SUG_Tratamiento_anticoagulante|hibor
 C0000013|_SUG_Tratamiento_anticoagulante|lixiana
 C0000013|_SUG_Tratamiento_anticoagulante|nadroparin
@@ -143,7 +114,6 @@ C0000016|_SUG_Tratamiento_antiagregante|AAS
 C0000016|_SUG_Tratamiento_antiagregante|abciximab
 C0000016|_SUG_Tratamiento_antiagregante|AC ACETILSALICILICO
 C0000016|_SUG_Tratamiento_antiagregante|acetylsalicylic acid
-C0000016|_SUG_Tratamiento_antiagregante|ACETIL SALICILIC,ACID
 C0000016|_SUG_Tratamiento_antiagregante|acetylsalicylic acid, combinations with proton pump inhibitors
 C0000016|_SUG_Tratamiento_antiagregante|Acido acetilsalicilico
 C0000016|_SUG_Tratamiento_antiagregante|Adiro
@@ -181,11 +151,7 @@ C0000016|_SUG_Tratamiento_antiagregante|ticlopidine
 C0000016|_SUG_Tratamiento_antiagregante|tiklid
 C0000016|_SUG_Tratamiento_antiagregante|tirofiban
 C0000016|_SUG_Tratamiento_antiagregante|triflusal
-C0000016|_SUG_Tratamiento_antiagregante|TROMALYT
-C0000016|_SUG_Tratamiento_antiagregante|Vatoud
-C0000017|_SUG_Arteria_afectada|a. circunferencial corta
 C0000017|_SUG_Arteria_afectada|A.COROIDEA ANT
-C0000017|_SUG_Arteria_afectada|a. basilar
 C0000017|_SUG_Arteria_afectada|A2
 C0000017|_SUG_Arteria_afectada|AB
 C0000017|_SUG_Arteria_afectada|ACA
@@ -217,7 +183,6 @@ C0000017|_SUG_Arteria_afectada|Arteria vertebral
 C0000017|_SUG_Arteria_afectada|ARTERIES CEREBRALS MITGES
 C0000017|_SUG_Arteria_afectada|C1
 C0000017|_SUG_Arteria_afectada|carotida primitiva
-C0000017|_SUG_Arteria_afectada|CARoTIDA INTERNA
 C0000017|_SUG_Arteria_afectada|carotidea
 C0000017|_SUG_Arteria_afectada|CAROTIDEA
 C0000017|_SUG_Arteria_afectada|INDETERM I NA DO
@@ -230,8 +195,6 @@ C0000017|_SUG_Arteria_afectada|M4
 C0000017|_SUG_Arteria_afectada|M5
 C0000017|_SUG_Arteria_afectada|nucleo lenticular
 C0000017|_SUG_Arteria_afectada|PICA
-C0000017|_SUG_Arteria_afectada|LENTICULO-ESTRIADAS
-C0000017|_SUG_Arteria_afectada|LENTICULO ESTRIADAS
 C0000017|_SUG_Arteria_afectada|territorio indeterminado
 C0000017|_SUG_Arteria_afectada|TICA
 C0000017|_SUG_Arteria_afectada|V1
@@ -240,8 +203,6 @@ C0000017|_SUG_Arteria_afectada|VERTEBR BASILAR
 C0000017|_SUG_Arteria_afectada|vertebro-basilar
 C0000017|_SUG_Arteria_afectada|vertebrobasilar
 C0000018|_SUG_Localizacion|BULBAR
-C0000018|_SUG_Localizacion|BASILAR
-C0000018|_SUG_Localizacion|putaminal
 C0000018|_SUG_Localizacion|capsulo-talamic
 C0000018|_SUG_Localizacion|capsulotalamico
 C0000018|_SUG_Localizacion|caudado
@@ -323,7 +284,6 @@ C0000020|_SUG_Etiologia|Inhabitual
 C0000020|_SUG_Etiologia|Lacunar
 C0000020|_SUG_Etiologia|malformacion arteriovenosa
 C0000020|_SUG_Etiologia|mecanisme embolic
-C0000020|_SUG_Etiologia|microangiopatica
 C0000020|_SUG_Etiologia|secundaria a malformacion vascular
 C0000020|_SUG_Etiologia|secundaria a tumor
 C0000021|_SUG_TAC_craneal|AgioTAC
@@ -344,6 +304,7 @@ C0000017|_SUG_Arteria_afectada|ARTERIA VERTEBROBASILAR
 C0000017|_SUG_Arteria_afectada|CEREBRALES POSTERIORES
 C0000017|_SUG_Arteria_afectada|NO ESPECIF.
 C0000017|_SUG_Arteria_afectada|vertebral
+C0000002|_SUG_Ataque_isquemico_transitorio|AITs
 C0000020|_SUG_Etiologia|cardioemebolico
 C0000020|_SUG_Etiologia|CE
 C0000020|_SUG_Etiologia|etiologia pendent de filiacio
@@ -372,5 +333,7 @@ C0000021|_SUG_TAC_craneal|Tomografia axial computeritzada de cap
 C0000007|_SUG_Test_de_disfagia|Test deglucion
 C0000016|_SUG_Tratamiento_antiagregante|A.A.S.
 C0000016|_SUG_Tratamiento_antiagregante|acetilsalicilico
+C0000005|_SUG_Trombectomia_mecanica|terapia endovascular
+C0000004|_SUG_Trombolisis_intravenosa|rTPA ev
 C0000024|_SUG_Recanalizacion|Recanalizacion
 C0000025|_SUG_Puerta_aguja|puerta aguja

@@ -33,6 +33,8 @@ import org.apache.uima.fit.factory.AnalysisEngineFactory;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.ihtsdo.otf.spellcheck.service.RemoveAccents;
 import org.ihtsdo.otf.spellcheck.service.SpellCheckService;
+import org.apache.ctakes.dictionary.lookup2.textspan.TextSpan;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -60,8 +62,8 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 	final static private float accuracy_sentence = 0.8f;
 	
 	List<String> score_list = Arrays.asList("niss", "nih", "nhiss","nishss","nissh", "nihss", "mrankin", "rankin","aspects", "mrs", "escala nihss",
-			"excala de rankin modificada", "aspects score", "mRs");
-	static List<String> score_after = Arrays.asList("", "puntos", "a", "de", "total", "estimado", "actual", "al", "alta", "b", "c", "resulta", "entre", "previo", "previ", "historico", "basal", "es", "score");
+			"excala de rankin modificada", "aspects score", "mRs", "mrankinscale");
+	static List<String> score_after = Arrays.asList("h", "lalta", "puntos", "a", "de", "total", "estimado", "actual", "al", "alta", "b", "c", "resulta", "entre", "previo", "previ", "historico", "basal", "es", "score", "las");
 
 
 	public DefaultJCasTermAnnotator() {
@@ -122,6 +124,11 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 			RemoveAccents rc = new RemoveAccents();
 			tempText = rc.removeAccents(tempText);
 //			LOGGER.info("Removed: " + tempText);
+			
+			
+			if(tempText.toLowerCase().startsWith("aspecto")) {
+				continue;
+			}
 
 //			if (tempText.equalsIgnoreCase("habitual")) {
 //				System.out.println("Token");
@@ -148,12 +155,18 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 			} catch (Exception e) {
 				System.out.println(lookupToken.getText());
 			}
+
 			
 //			LOGGER.info("dic: " + temp);
 
 //         rareWordHits = dictionary.getRareWordHits( lookupToken );
 			
 			String removedTemp = punctuationRemover(temp);
+			String acm_word = "l'acm";
+			
+			if (temp.equalsIgnoreCase(acm_word)) {
+				temp = "acm";
+			}
 //			LOGGER.info("removedTemp: " + removedTemp);
 			if (score_list.contains(removedTemp))
 				rareWordHits = dictionary.getRareWordHits(removedTemp);
@@ -186,14 +199,20 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 							temp_one = suggestions_sent.entrySet().stream().findFirst().get().getValue().get(0);
 						else {
 							temp_one = tempText;
+							if (temp_one.equalsIgnoreCase(acm_word)) {
+								temp_one = "acm";
+							}
 						}
 					} catch (Exception e) {
 						System.out.println(lookupToken.getText());
 					}
 					if (rareWordHit.getRareWord().contentEquals(temp_one))
 //						LOGGER.info("OK temo_one: " + rareWordHit.getText());
-
+						if (tempText.equalsIgnoreCase(acm_word)){
+							termsFromDictionary.placeValue(lookupToken.getTexTSpanACM(), rareWordHit.getCuiCode());
+						}else {
 						termsFromDictionary.placeValue(lookupToken.getTextSpan(), rareWordHit.getCuiCode());
+						}
 					continue;
 				}
 				final int termStartIndex = lookupTokenIndex - rareWordHit.getRareWordIndex();
@@ -287,7 +306,11 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 			}
 			word += allTokens.get(i).getText() + " ";
 		}
+		
 		word = word.trim();
+		if (word.endsWith(" a")){
+			word = word.substring(0, word.lastIndexOf(" a"));
+		}
 //		Integer count = word.length() - 1;
 //		if (!myList.contains(allTokens.get(allTokens.size() - 1).getText())) {
 //			for (int i = count; i >= 0; i--) {

@@ -199,7 +199,7 @@ public class HeidelTime extends JCasAnnotator_ImplBase {
 		// run preprocessing processors
 		procMan.executeProcessors(jcas, Priority.PREPROCESSING);
 		
-		RuleManager rulem = RuleManager.getInstance(language, find_temponyms);
+
 		
 		timexID = 1; // reset counter once per document processing
 
@@ -224,6 +224,7 @@ public class HeidelTime extends JCasAnnotator_ImplBase {
 		
 		while (sentIter.hasNext()) {
 			Sentence s = (Sentence) sentIter.next();
+			RuleManager rulem = RuleManager.getInstance(language, find_temponyms);
 			
 			Boolean debugIteration = false;
 			Boolean oldDebugState = Logger.getPrintDetails();

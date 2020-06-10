@@ -453,6 +453,55 @@ public class FreeLingWrapper extends SegmenterBase {
 		tgs.put(lang, new HmmTagger(DATA + lang + "/tagger.dat", true, 2));
 
 	}
+	
+	public List<String> sentece_splitter(String line) {
+		ListWord l = tks.get(language).tokenize(line);
+		// Split the tokens into distinct sentences.
+		// getLogger().info(" sentence split" );
+		ls = sps.get(language).split(sids.get(language), l, true);
+		// Perform morphological analysis
+		// getLogger().info(" morpho" );
+		mfs.get(language).analyze(ls);
+		// Perform part-of-speech tagging.
+		// getLogger().info(" POS" );
+		tgs.get(language).analyze(ls);
+
+		ListSentenceIterator sIt = new ListSentenceIterator(ls);
+
+//		final StringBuilder sb = new StringBuilder();
+		List<String> listStr = new ArrayList<String>();
+		int begin;
+		int end = 0;
+		while (sIt.hasNext()) {
+			edu.upc.Jfreeling.Sentence s = sIt.next();
+			ListWordIterator wIt = new ListWordIterator(s);
+			// iterate over tokens
+
+			Boolean first = true;
+			int sBegin = 0;
+			String new_sent = "";
+
+			while (wIt.hasNext()) {
+				Word w = wIt.next();
+				begin = (int) w.getSpanStart();
+				if (first) {
+					first = false;
+					sBegin = begin;
+				}
+				end = (int) w.getSpanFinish();
+
+//				sb.append(line.subSequence(begin, end)).append(" ");
+
+
+			}
+			listStr.add((String) line.subSequence(sBegin, end));
+		}
+
+		// sb.setLength(Math.max(0, sb.length() - 2));
+
+		return listStr;
+
+	}
 
 	public List<String> tokenizer(String line) {
 		ListWord l = tks.get(language).tokenize(line);

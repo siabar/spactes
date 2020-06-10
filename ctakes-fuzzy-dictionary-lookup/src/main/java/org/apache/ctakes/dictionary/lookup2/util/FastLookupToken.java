@@ -76,6 +76,10 @@ final public class FastLookupToken {
 	public TextSpan getTextSpan() {
 		return _textSpan;
 	}
+	
+	public TextSpan getTexTSpanACM() {
+		return new DefaultTextSpan(_textSpan.getStart()+2, _textSpan.getEnd());
+	}
 
 	/**
 	 * @return the start index used for this lookup token
@@ -104,6 +108,8 @@ final public class FastLookupToken {
 	public String getText() {
 		return _text;
 	}
+	
+	
 
 	/**
 	 * @return possible canonical variant text for the lookup token, in lowercase,
