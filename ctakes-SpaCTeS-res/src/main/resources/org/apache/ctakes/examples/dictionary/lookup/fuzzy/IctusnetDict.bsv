@@ -1,6 +1,7 @@
 C0000001|_SUG_Ictus_isquemico|accidente cerebrovascular
 C0000001|_SUG_Ictus_isquemico|AVC
 C0000001|_SUG_Ictus_isquemico|AVC isquemic
+C0000001|_SUG_Ictus_isquemico|Isquemia en territorio cortical
 C0000001|_SUG_Ictus_isquemico|E. CEREBROVASCULAR AGUDA ISQUEMICA: INFARTO
 C0000001|_SUG_Ictus_isquemico|ECVA ISQUEMICA
 C0000001|_SUG_Ictus_isquemico|ECVA ISQUEMICA: INFARTO
@@ -42,6 +43,7 @@ C0000002|_SUG_Ataque_isquemico_transitorio|TIA
 C0000003|_SUG_Hemorragia_cerebral|AVC HEMORRAGIC
 C0000003|_SUG_Hemorragia_cerebral|HEMATOMA
 C0000003|_SUG_Hemorragia_cerebral|hematoma cerebral
+C0000003|_SUG_Hemorragia_cerebral|HEMATOMA PARENQUIMATOSO
 C0000003|_SUG_Hemorragia_cerebral|HEMORRAGIA
 C0000003|_SUG_Hemorragia_cerebral|hemorragia cerebral
 C0000003|_SUG_Hemorragia_cerebral|hemorragia intracerebral
@@ -51,8 +53,15 @@ C0000003|_SUG_Hemorragia_cerebral|HIC
 C0000003|_SUG_Hemorragia_cerebral|ictus hemorragico
 C0000004|_SUG_Trombolisis_intravenosa|ECAS IV
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis
+C0000004|_SUG_Trombolisis_intravenosa|fibrinolizado
+C0000004|_SUG_Trombolisis_intravenosa|trombolisado
+C0000004|_SUG_Trombolisis_intravenosa|FIBRINOLISI RTPA
+C0000004|_SUG_Trombolisis_intravenosa|Fibrinolisis con alteplase
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis con rtPA
+C0000004|_SUG_Trombolisis_intravenosa|Fibrinolisis con r-TPA
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis endovenosa
+C0000004|_SUG_Trombolisis_intravenosa|Fibrinolisis endovenosa rTPA
+C0000004|_SUG_Trombolisis_intravenosa|FIBRINOLISIS ENDOVENOSA CON rtPA
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis iv
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolisis sistemica con rtPA ev
 C0000004|_SUG_Trombolisis_intravenosa|fibrinolitic amb rTPA
@@ -67,11 +76,15 @@ C0000004|_SUG_Trombolisis_intravenosa|tPA
 C0000004|_SUG_Trombolisis_intravenosa|TPA ev
 C0000004|_SUG_Trombolisis_intravenosa|tPAev
 C0000004|_SUG_Trombolisis_intravenosa|tracament fibrinolitic
+C0000004|_SUG_Trombolisis_intravenosa|tractament fibrinolític
 C0000004|_SUG_Trombolisis_intravenosa|tractament amb rtPA endovenos
+C0000004|_SUG_Trombolisis_intravenosa|tractament rPTA ev
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento de repermeabilizacion
 C0000004|_SUG_Trombolisis_intravenosa|tractament fibrinolitic endovenos amb rTPA
 C0000004|_SUG_Trombolisis_intravenosa|tractat amb firbinolisi
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento con alteplasa
 C0000004|_SUG_Trombolisis_intravenosa|Tratamiento con RTPA
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento con rt-PA intravenoso
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento con rTPA ev
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento de repefusion cerebral con r-tPA
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento de reperfusion
@@ -80,15 +93,23 @@ C0000004|_SUG_Trombolisis_intravenosa|tratamiento de revascularizacion
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolitico
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolitico con alteplase
 C0000004|_SUG_Trombolisis_intravenosa|Tratamiento fibrinolitico con rtPA ev
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolitico ev con rtPA
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolitico con rtPA endovenosa
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolitico endovenoso
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolitico rtPA
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento fibrinolotico IV
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento recanalizador endovenoso
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento recanalizador
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento reperfusion
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento revascularizador
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento trombolitico rtPA
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento trombolitico
+C0000004|_SUG_Trombolisis_intravenosa|tratamiento trombolitico intravenoso con rtPA
 C0000004|_SUG_Trombolisis_intravenosa|Tratamiento trombolitico con rtPA
 C0000004|_SUG_Trombolisis_intravenosa|tratamiento trombolitico con tPA endovenoso
+C0000004|_SUG_Trombolisis_intravenosa|terapia de rescate
 C0000004|_SUG_Trombolisis_intravenosa|trombolisis
+C0000004|_SUG_Trombolisis_intravenosa|trombolisis EV
 C0000004|_SUG_Trombolisis_intravenosa|Trombolisis cerebral
 C0000004|_SUG_Trombolisis_intravenosa|Trombolisis endovenosa
 C0000004|_SUG_Trombolisis_intravenosa|trombolisis intravenosa
@@ -100,7 +121,9 @@ C0000005|_SUG_Trombectomia_mecanica|rescat endovascular
 C0000005|_SUG_Trombectomia_mecanica|rescat intraarterial
 C0000005|_SUG_Trombectomia_mecanica|rescate intraarterial
 C0000005|_SUG_Trombectomia_mecanica|terapia de reperfusion
+C0000005|_SUG_Trombectomia_mecanica|terapia de rescate
 C0000005|_SUG_Trombectomia_mecanica|terapia endovascular
+C0000005|_SUG_Trombectomia_mecanica|terapia endovascular (trombectomia mecanica)
 C0000005|_SUG_Trombectomia_mecanica|TEV
 C0000005|_SUG_Trombectomia_mecanica|TEV (trombectomia mecanica)
 C0000005|_SUG_Trombectomia_mecanica|TEV Mecanica
@@ -109,10 +132,13 @@ C0000005|_SUG_Trombectomia_mecanica|tractament mecanic endovascular
 C0000005|_SUG_Trombectomia_mecanica|tractament neurovascular
 C0000005|_SUG_Trombectomia_mecanica|tratamiento agudo mecanico
 C0000005|_SUG_Trombectomia_mecanica|tratamiento de reperfusion
+C0000005|_SUG_Trombectomia_mecanica|tratamiento de rescate
 C0000005|_SUG_Trombectomia_mecanica|tratamiento de reperfusion intrarterial
 C0000005|_SUG_Trombectomia_mecanica|tratamiento de reperfusionmediante trombectomia mecanica
+C0000005|_SUG_Trombectomia_mecanica|tratamiento de repermeabilizacion
 C0000005|_SUG_Trombectomia_mecanica|tratamiento de revascularizacion
 C0000005|_SUG_Trombectomia_mecanica|tratamiento endovascular
+C0000005|_SUG_Trombectomia_mecanica|tratamiento endovascular mediante trombectomia mecnica
 C0000005|_SUG_Trombectomia_mecanica|Tratamiento intraarterial
 C0000005|_SUG_Trombectomia_mecanica|TRATAMIENTO MECANICO DEL ICTUS
 C0000005|_SUG_Trombectomia_mecanica|tratamiento recanalizador
@@ -120,8 +146,14 @@ C0000005|_SUG_Trombectomia_mecanica|tratamiento recanalizador endovenoso
 C0000005|_SUG_Trombectomia_mecanica|tratamiento reperfusion
 C0000005|_SUG_Trombectomia_mecanica|tratamiento rescate endovascular
 C0000005|_SUG_Trombectomia_mecanica|tratamiento revascularizador
+C0000005|_SUG_Trombectomia_mecanica|tratamiento neurointervencionista
 C0000005|_SUG_Trombectomia_mecanica|trombectomia
+C0000005|_SUG_Trombectomia_mecanica|trombectomia endovenosa
 C0000005|_SUG_Trombectomia_mecanica|Trombectomia endovascular
+C0000005|_SUG_Trombectomia_mecanica|Trombectomia INTRACRANEAL
+C0000005|_SUG_Trombectomia_mecanica|Trombectomia Trombectomiamecanica
+C0000005|_SUG_Trombectomia_mecanica|ANGIORADIOLOGIA INTERVENCIONISTA
+C0000005|_SUG_Trombectomia_mecanica|Trombectomia intracraneal mecanica
 C0000005|_SUG_Trombectomia_mecanica|TROMBECTOMIA INTRA I EXTRA CRANEAL MECANICA
 C0000005|_SUG_Trombectomia_mecanica|Trombectomia intra y extracranea
 C0000005|_SUG_Trombectomia_mecanica|Trombectomia intra y extracraneal mecanica
@@ -135,6 +167,7 @@ C0000006|_SUG_Trombolisis_intraarterial|trombolisis intraarterial
 C0000007|_SUG_Test_de_disfagia|test de deglucion
 C0000007|_SUG_Test_de_disfagia|test de disfagia
 C0000007|_SUG_Test_de_disfagia|Test deglucion
+C0000007|_SUG_Test_de_disfagia|test MECV-V
 C0000010|_SUG_ASPECTS|ASPECTS 0
 C0000010|_SUG_ASPECTS|ASPECTS score 0
 C0000011|_SUG_mRankin|Escala de Rankin modificada 0
@@ -194,6 +227,7 @@ C0000013|_SUG_Tratamiento_anticoagulante|warfarin
 C0000013|_SUG_Tratamiento_anticoagulante|xarelto
 C0000016|_SUG_Tratamiento_antiagregante|A.A.S.
 C0000016|_SUG_Tratamiento_antiagregante|AAS
+C0000016|_SUG_Tratamiento_antiagregante|Duoplavin
 C0000016|_SUG_Tratamiento_antiagregante|abciximab
 C0000016|_SUG_Tratamiento_antiagregante|AC ACETILSALICILICO
 C0000016|_SUG_Tratamiento_antiagregante|ACETIL SALICILIC,ACID
@@ -241,6 +275,7 @@ C0000016|_SUG_Tratamiento_antiagregante|triflusal
 C0000016|_SUG_Tratamiento_antiagregante|TROMALYT
 C0000016|_SUG_Tratamiento_antiagregante|Vatoud
 C0000017|_SUG_Arteria_afectada|a.basilar
+C0000017|_SUG_Arteria_afectada|ICA
 C0000017|_SUG_Arteria_afectada|A.carotida interna
 C0000017|_SUG_Arteria_afectada|a.circunferencial corta
 C0000017|_SUG_Arteria_afectada|a. basilar
@@ -253,6 +288,7 @@ C0000017|_SUG_Arteria_afectada|AB
 C0000017|_SUG_Arteria_afectada|ACA
 C0000017|_SUG_Arteria_afectada|ACC
 C0000017|_SUG_Arteria_afectada|ACI
+C0000017|_SUG_Arteria_afectada|ACoA
 C0000017|_SUG_Arteria_afectada|ACI-T
 C0000017|_SUG_Arteria_afectada|ACM
 C0000017|_SUG_Arteria_afectada|ACP
@@ -428,6 +464,7 @@ C0000020|_SUG_Etiologia|malformacion arteriovenosa
 C0000020|_SUG_Etiologia|mecanisme embolic
 C0000020|_SUG_Etiologia|microangiopatica
 C0000020|_SUG_Etiologia|no determinada
+C0000020|_SUG_Etiologia|por determinar
 C0000020|_SUG_Etiologia|origen cardiaco
 C0000020|_SUG_Etiologia|secundaria a malformacion vascular
 C0000020|_SUG_Etiologia|secundaria a tumor
@@ -443,6 +480,7 @@ C0000021|_SUG_TAC_craneal|TAC DE CAP
 C0000021|_SUG_TAC_craneal|Tac de craneo
 C0000021|_SUG_TAC_craneal|TC
 C0000021|_SUG_TAC_craneal|TAC - craneal
+C0000021|_SUG_TAC_craneal|TAC perfusióncerebral
 C0000021|_SUG_TAC_craneal|TC - craneal
 C0000021|_SUG_TAC_craneal|TC Arterias cerebrales
 C0000021|_SUG_TAC_craneal|TC cerebral
@@ -455,6 +493,7 @@ C0000021|_SUG_TAC_craneal|TC cranial
 C0000021|_SUG_TAC_craneal|TC de craneo
 C0000021|_SUG_TAC_craneal|TAC PERFUSION CEREBRAL
 C0000021|_SUG_TAC_craneal|TC PERFUSION CEREBRAL
+C0000021|_SUG_TAC_craneal|TC perfusióncerebral
 C0000021|_SUG_TAC_craneal|Tomografia axial computeritzada de cap
 C0000024|_SUG_Recanalizacion|Recanalizacion
 C0000025|_SUG_Puerta_aguja|puerta aguja

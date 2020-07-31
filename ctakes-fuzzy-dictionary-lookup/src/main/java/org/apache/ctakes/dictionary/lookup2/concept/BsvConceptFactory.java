@@ -13,6 +13,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
+import java.util.regex.Pattern;
 
 /**
  * Author: SPF
@@ -91,8 +92,52 @@ final public class BsvConceptFactory implements ConceptFactory {
     * @param bsvFilePath file containing term rows and bsv columns
     * @return collection of all valid terms read from the bsv file
     */
+   // Function recursively prints the strings having space pattern 
+   // i and j are indices in 'String str' and 'buf[]' respectively  
+   static void printPatternUtil(Collection<String> terms, String[] str_s, String buf[], int i, int j, int n) 
+   { 
+       if(i == n) 
+       { 
+//           buf[j] = ""; 
+           terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
+           return; 
+       } 
+ 
+       // Either put the character 
+       buf[j] = str_s[i]; 
+       printPatternUtil(terms, str_s, buf, i+1, j+1, n); 
+ 
+       // Or put a space followed by next character 
+       buf[j] = " "; 
+       buf[j+1] = str_s[i]; 
+ 
+       printPatternUtil(terms, str_s, buf, i+1, j+2, n); 
+   } 
+ 
+   // Function creates buf[] to store individual output string and uses 
+   // printPatternUtil() to print all permutations 
+   static Collection<String> printPattern(String str) 
+   { 
+	   Collection<String> terms = new ArrayList<>();
+       String[] str_s = str.split(" ");
+       int len = str_s.length; 
+ 
+       // Buffer to hold the string containing spaces 
+       // 2n-1 characters and 1 string terminator 
+       String[] buf = new String[2*len]; 
+ 
+       // Copy the first character as it is, since it will be always 
+       // at first position 
+       buf[0] = str_s[0]; 
+       printPatternUtil(terms, str_s, buf, 1, 1, len); 
+       return terms;
+       
+   } 
+   
    static private Collection<CuiTuiTerm> parseBsvFile( final String bsvFilePath ) {
       final Collection<CuiTuiTerm> cuiTuiTerms = new ArrayList<>();
+	   Collection<String> terms = new ArrayList<>();
+	   
       try ( final BufferedReader reader
                   = new BufferedReader( new InputStreamReader( FileLocator.getAsStream( bsvFilePath ) ) ) ) {
          String line = reader.readLine();
@@ -103,12 +148,32 @@ final public class BsvConceptFactory implements ConceptFactory {
             }
 //            final String[] columns = LookupUtil.fastSplit( line, '|' );
             final String[] columns = StringUtil.fastSplit( line, '|' );
-            final CuiTuiTerm cuiTuiTerm = createCuiTuiTerm( columns );
-            if ( cuiTuiTerm != null ) {
-               cuiTuiTerms.add( cuiTuiTerm );
-            } else {
-               LOGGER.warn( "Bad BSV line " + line + " in " + bsvFilePath );
+            terms = printPattern(columns[2]);
+//            
+            for (String term : terms) {
+            	columns[2] = term;
+                final CuiTuiTerm cuiTuiTerm = createCuiTuiTerm( columns );
+                if ( cuiTuiTerm != null ) {
+                   cuiTuiTerms.add( cuiTuiTerm );
+                } else {
+                   LOGGER.warn( "Bad BSV line " + line + " in " + bsvFilePath );
+                }
+                
+                String term_s = term.replaceAll("\\p{Punct}", "");
+                
+                if (! term_s.equalsIgnoreCase(term)) {
+                	
+                	columns[2] = term.replaceAll("\\p{Punct}", "");
+                    final CuiTuiTerm cuiTuiTerm_punct = createCuiTuiTerm( columns );
+                    if ( cuiTuiTerm_punct != null ) {
+                       cuiTuiTerms.add( cuiTuiTerm_punct );
+                    } else {
+                       LOGGER.warn( "Bad BSV line " + line + " in " + bsvFilePath );
+                    }
+                }
+            	
             }
+            
             line = reader.readLine();
          }
       } catch ( IOException ioE ) {

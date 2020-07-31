@@ -1,104 +1,190 @@
 accidente cerebrovascular
 avc
 avc isquemic
+isquemia en territorio cortical
+e cerebrovascular aguda isquemica : infarto
 ecva isquemica
 ecva isquemica : infarto
+ecva isquemica : infarto cerebral
 ecva : infartos isquemicos
+enfermedad cerebrovascular aguda isquemica
 ictus
 ictus isquemic
+ictus isquemic agut
+ictus isquemico agudo
+ictus isquemico agudo
 ictus isquemico con transformacion hemorragica
-infart isquemic
 infart
-infartos
-infartos isquemicos
+infart cerebral
+infart isquemic
 infarto
+infarto agudo
+infarto cerebeloso
 infarto cerebral
 infarto isquemico
 infarto isquemico agudo
+infarto isquemico cerebral
+infartos
+infartos isquemicos
 sufusion hemorragica
 transformacion hemorragica
 accidente transitori isquemico
 ait
+aits
 ataque isquemico transitorio
+ictus isquemico minor
 ictus minor
 infarto clinicamente regresivo
 isquemia cerebral transitoria
-sindrome sensitivo-motor regresivo
 sindrome de alarma capsular
+sindrome sensitivo motor
+sindrome sensitivo-motor regresivo
 tia
-aits
 avc hemorragic
 hematoma
 hematoma cerebral
+hematoma parenquimatoso
 hemorragia
 hemorragia cerebral
 hemorragia intracerebral
 hemorragia parenquimatosa
 hemorragia parenquimatosa cerebral masiva
+hic
 ictus hemorragico
 ecas iv
-fibrinolotico
 fibrinolisis
+fibrinolizado
+trombolisado
+fibrinolisi rtpa
+fibrinolisis con alteplase
+fibrinolisis con rtpa
+fibrinolisis con r-tpa
 fibrinolisis endovenosa
+fibrinolisis endovenosa rtpa
+fibrinolisis endovenosa con rtpa
 fibrinolisis iv
 fibrinolisis sistemica con rtpa ev
+fibrinolitic amb rtpa
+fibrinolitico con rtpa
+fibrinolotico
+procedimiento de revascularizacion
 rtpa
 rtpa ev
+rtpaev
+terapia de reperfusion
+tpa
 tpa ev
 tpaev
-tpa
-tractat amb firbinolisi
-trombolisis
-trombolisisendovenosa
-trombolisis endovenosa
+tracament fibrinolitic
+tractament fibrinolitic
 tractament amb rtpa endovenos
+tractament rpta ev
+tratamiento de repermeabilizacion
+tractament fibrinolitic endovenos amb rtpa
+tractat amb firbinolisi
 tratamiento con alteplasa
 tratamiento con rtpa
-tto trombolitico con rtpa
-tratamiento fibrinolitico
-tratamiento trombolitico
-trombolisis intravenosa
+tratamiento con rt-pa intravenoso
+tratamiento con rtpa ev
 tratamiento de repefusion cerebral con r-tpa
-reperfusion intraateria
-tev
-tevmecanica
-tev mecanica
-tratamiento intraarterial
-tractament neurovascular
-tratamiento recanalizador
-tratamiento revascularizador
+tratamiento de reperfusion
+tratamiento de reperfusion ev
 tratamiento de revascularizacion
-tratamiento de reperfusion intrarterial
-tratamiento agudo mecanico
-tratamiento endovascular
-trombectomia
-trombectomia endovascular
-trombectomiamecanica
-trombectomia mecanica
-trombectomiacerebrala
-tractament mecanic endovascular
+tratamiento fibrinolitico
+tratamiento fibrinolitico con alteplase
+tratamiento fibrinolitico con rtpa ev
+tratamiento fibrinolitico ev con rtpa
+tratamiento fibrinolitico con rtpa endovenosa
+tratamiento fibrinolitico endovenoso
+tratamiento fibrinolitico rtpa
+tratamiento fibrinolotico iv
+tratamiento recanalizador endovenoso
+tratamiento recanalizador
+tratamiento reperfusion
+tratamiento revascularizador
+tratamiento trombolitico rtpa
+tratamiento trombolitico
+tratamiento trombolitico intravenoso con rtpa
+tratamiento trombolitico con rtpa
+tratamiento trombolitico con tpa endovenoso
+terapia de rescate
+trombolisis
+trombolisis ev
+trombolisis cerebral
+trombolisis endovenosa
+trombolisis intravenosa
+trombolisisendovenosa
+tto trombolitico con rtpa
+procedimiento de revascularizacion
+reperfusion intraateria
+rescat endovascular
+rescat intraarterial
+rescate intraarterial
+terapia de reperfusion
+terapia de rescate
 terapia endovascular
+terapia endovascular ( trombectomia mecanica )
+tev
+tev ( trombectomia mecanica )
+tev mecanica
+tevmecanica
+tractament mecanic endovascular
+tractament neurovascular
+tratamiento agudo mecanico
+tratamiento de reperfusion
+tratamiento de rescate
+tratamiento de reperfusion intrarterial
+tratamiento de reperfusionmediante trombectomia mecanica
+tratamiento de repermeabilizacion
+tratamiento de revascularizacion
+tratamiento endovascular
+tratamiento endovascular mediante trombectomia mecnica
+tratamiento intraarterial
+tratamiento mecanico d l ictus
+tratamiento recanalizador
+tratamiento recanalizador endovenoso
+tratamiento reperfusion
+tratamiento rescate endovascular
+tratamiento revascularizador
+tratamiento neurointervencionista
+trombectomia
+trombectomia endovenosa
+trombectomia endovascular
+trombectomia intracraneal
+trombectomia trombectomiamecanica
+angioradiologia intervencionista
+trombectomia intracraneal mecanica
+trombectomia intra I extra craneal mecanica
+trombectomia intra y extracranea
+trombectomia intra y extracraneal mecanica
+trombectomia mecanica
+trombectomia cerebrala
+trombectomiacerebrala
+trombectomiamecanica
+tto endovascular
 trombolisis ia
 trombolisis intraarterial
 test de deglucion
 test de disfagia
-escala de rankin modificada 0
-escala nihss es de 0 puntos
-escala nihss 0
-0 en la escala nihss
-puntuacion total nih:0
+test deglucion
+test mecv-v
 aspects 0
 aspects score 0
-mrankinscale 0
+escala de rankin modificada 0
 mrankin 0
+mrankinscale 0
 mrs 0
 rankin 0
-nih 0
-nihss 0
+0 en la escala nihss
+escala nihss 0
+escala nihss es de 0 puntos
 nhiss 0
+nih 0
 nihaa 0
+nihss 0
 nishss 0
 nissh 0
+puntuacion total nih:0
 acenocumarol
 aldocumar
 apixaban
@@ -128,8 +214,8 @@ fraxiparina
 hbpm
 heparin
 heparina
-innohep
 hibor
+innohep
 lixiana
 nadroparin
 parnaparin
@@ -139,11 +225,15 @@ rivaroxaban
 sintrom
 warfarin
 xarelto
+a a s
 aas
+duoplavin
 abciximab
 ac acetilsalicilico
-acetylsalicylic acid
 acetil salicilic , acid
+acetilsalicilico
+acetilsalicilico acido
+acetylsalicylic acid
 acetylsalicylic acid , combinations with proton pump inhibitors
 acido acetilsalicilico
 adiro
@@ -171,6 +261,7 @@ combinations
 dipyridamole
 disgren
 ekistol
+hepraina
 persantin
 plavix
 pletal
@@ -183,20 +274,30 @@ tirofiban
 triflusal
 tromalyt
 vatoud
+a basilar
+ica
+a carotida interna
+a circunferencial corta
+a basilar
+a carotida interna
 a circunferencial corta
 a coroidea ant
-a basilar
+a coroidea ant
 a2
 ab
 aca
 acc
 aci
+acoa
 aci-t
 acm
 acp
 acs
 aica
+art basilar
 art vertebral
+art cerebral media
+art. cerebral media
 arteria basilar
 arteria carotida comun
 arteria carotida interna
@@ -213,48 +314,65 @@ arteria cerebral posterior
 arteria coroidea anterior
 arteria coroidea posterior
 arteria lenticuloestriada
+arteria paramediana
 arteria vertebral
+arteria vertebrobasilar
+arterias carotida interna
 arteries cerebrals mitges
 c1
-carotida primitiva
 carotida interna
+carotida primitiva
 carotidea
 carotidea
+carotidi
+cerebrales posteriores
 indeterm I na do
 indeterminado
+lenticulo estriadas
+lenticulo-estriadas
 m1
-m6
 m2
 m3
 m4
 m5
+m6
+no especif
 nucleo lenticular
 pica
-lenticulo-estriadas
-lenticulo estriadas
 territorio indeterminado
 tica
 v1
 vb
 vertebr basilar
+vertebral
+vertebro basilar
 vertebro-basilar
 vertebrobasilar
-bulbar
 basilar
-putaminal
+bulbar
+capsulo talamic
 capsulo-talamic
 capsulotalamico
 caudado
 cerebelosa
 corona radiada
 cortical
+emporo insular
+emporo-insular
 frontal
+frontal y occipital
+fronto insular
+fronto occipital
+fronto temporo insular
 fronto-insular
+fronto-occipital
 fronto-temporo-insular
 ganglicapsular
+gangliobasal
 ganglios basales
 ganglios de la base
 ggbb
+indeterminada
 infarto de circulacion posterior
 infarto lacunar
 infarto parcial de circulacion anterior
@@ -263,6 +381,8 @@ intraventricular
 laci
 lacunar
 lenticular
+lenticulocapsular
+lenticulocapsulotalamico
 lobar
 occipital
 paci
@@ -274,103 +394,106 @@ poci
 posterior
 profunda
 profundes
+protuberancial
 putamen
+putaminal
 subcorticals
 taci
 talamica
 talamo
+talamo capuslar
 talamo-capuslar
 temporal
+temporal basal
+temporobasal
+territorio indeterminado
 tronco
+ventricular
 ventriculos
 ambas
+bihemisferico
 bilateral
 bilaterales
 D
 dcha
+dcho
 derecha
+derecho
 derechos
 dret
 dreta
 E
 e
 esq
+esq
 esquerra
 esquerres
 I
 izda
+izdo
 izq
 izquierda
 tronco cerebral
 a estudio
 aneurisma
 angiopatia amiloide
+angiopatia amiloide cerebral
 ateromatosis
 aterosclerotico
 aterotrombotico
 cardioembolico
+cardioemebolico
 cavernoma de circunvolucion
+ce
 criptogenico
 diseccio
 embolico
 esus
+etiologia pendent de filiacio
 hipertensiva
+hipertensivo
 indeterminada
+indeterminado ( estudio incompleto )
 indeterminado de causa doble
 indeterminado por estudio incompleto
 infrecuente
 inhabitual
+insual
 lacunar
 malformacion arteriovenosa
 mecanisme embolic
 microangiopatica
+no determinada
+por determinar
+origen cardiaco
 secundaria a malformacion vascular
 secundaria a tumor
 agiotac
 tac
-tac crani a l
 tac cerebral
+tac cerebro
 tac craneal
+tac crani
+tac cranial
+tac crani a l
+tac de cap
 tac de craneo
 tc
+tac - craneal
+tac perfusioncerebral
+tc - craneal
+tc arterias cerebrales
+tc cerebral
+tc cerebro
 tc craneal
+tc crani
+tc de cap
+tc crani a l
 tc cranial
 tc de craneo
-a carotida interna
-acm-aca
-art basilar
-art. cerebral media
-arteria vertebrobasilar
-cerebrales posteriores
-no especif
-vertebral
-cardioemebolico
-ce
-etiologia pendent de filiacio
-hipertensivo
-indeterminado ( estudio incompleto )
-insual
-origen cardiaco
-bihemisferico
-dcho
-derecho
-esq
-izdo
-emporo-insular
-fronto-occipital
-frontal y occipital
-gangliobasal
-indeterminada
-lenticulocapsular
-lenticulocapsulotalamico
-protuberancial
-temporobasal
-temporal basal
-territorio indeterminado
-ventricular
+tac perfusion cerebral
+tc perfusion cerebral
+tc perfusioncerebral
 tomografia axial computeritzada de cap
-test deglucion
-a a s
-acetilsalicilico
 recanalizacion
 puerta aguja
