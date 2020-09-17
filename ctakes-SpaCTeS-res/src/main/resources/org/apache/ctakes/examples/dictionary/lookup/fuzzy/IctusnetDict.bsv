@@ -14,17 +14,14 @@ C0000001|_SUG_Ictus_isquemico|Ictus isquemic agut
 C0000001|_SUG_Ictus_isquemico|ICTUS isquemico agudo
 C0000001|_SUG_Ictus_isquemico|ICTUS ISQUEMICO AGUDO
 C0000001|_SUG_Ictus_isquemico|ictus isquemico con transformacion hemorragica
-C0000001|_SUG_Ictus_isquemico|Infart
 C0000001|_SUG_Ictus_isquemico|infart cerebral
 C0000001|_SUG_Ictus_isquemico|Infart isquemic
-C0000001|_SUG_Ictus_isquemico|infarto
 C0000001|_SUG_Ictus_isquemico|Infarto agudo
 C0000001|_SUG_Ictus_isquemico|Infarto cerebeloso
 C0000001|_SUG_Ictus_isquemico|infarto cerebral
 C0000001|_SUG_Ictus_isquemico|infarto isquemico
 C0000001|_SUG_Ictus_isquemico|Infarto isquemico agudo
 C0000001|_SUG_Ictus_isquemico|infarto isquemico cerebral
-C0000001|_SUG_Ictus_isquemico|Infartos
 C0000001|_SUG_Ictus_isquemico|Infartos isquemicos
 C0000001|_SUG_Ictus_isquemico|sufusion hemorragica
 C0000001|_SUG_Ictus_isquemico|transformacion hemorragica
