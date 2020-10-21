@@ -46,6 +46,9 @@ final public class RareWordTermMapCreator {
 
 	private RareWordTermMapCreator() {
 	}
+	
+	static private final int LowerCaseLenght = 1;
+
 
 	static private final Collection<String> PREFIXES = new HashSet<>(Arrays.asList("e-", "a-", "u-", "x-", "agro-",
 			"ante-", "anti-", "arch-", "be-", "bi-", "bio-", "co-", "counter-", "cross-", "cyber-", "de-", "eco-",
@@ -114,12 +117,26 @@ final public class RareWordTermMapCreator {
 		final CollectionMap<String, RareWordTerm, List<RareWordTerm>> rareWordTermMap = new ArrayListMap<>();
 //		final Map<String, Integer> tokenCountMap = createTokenCountMap(cuiTerms, rc, freeling);
 		for (CuiTerm cuiTerm : cuiTerms) {
+			if (cuiTerm.getTerm().equalsIgnoreCase("ARTERIAS")){
+				int x = 0;
+			}
 			final List<String> tempTerm = freeling.tokenizer(cuiTerm.getTerm());
-			String temprc = String.join(" ", tempTerm); 
+			String temprc = "";
+
+			
+			for (String temp : tempTerm) {
+				if (temp.length() > LowerCaseLenght)
+					temprc += " " + temp.toLowerCase();
+				else {
+					temprc += " " +  temp;
+				}
+		
+			}
+			temprc = temprc.trim();
 //			final String term = rc.removeAccents(temprc);
 //			final String rareWord = rc.removeAccents(tempTerm.get(0));//getRareWord(term, tokenCountMap);
 			final String term = temprc;
-			final String rareWord = tempTerm.get(0);//getRareWord(term, tokenCountMap);
+			final String rareWord = temprc.split(" ")[0];//getRareWord(term, tokenCountMap);
 			final int wordIndex = 0; //getWordIndex(term, rareWord);
 //			final int tokenCount = getTokenCount(term,freeling);
 			final int tokenCount = tempTerm.size();

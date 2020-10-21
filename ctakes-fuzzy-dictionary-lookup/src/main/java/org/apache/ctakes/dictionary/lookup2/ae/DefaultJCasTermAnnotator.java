@@ -59,7 +59,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 	static SpellCheckService spellchecker;
 	static SpellCheckService spellchecker_Sent;
 	final private float accuracy_oneToken = 0.7f;
-	final static private float accuracy_sentence = 0.8f;
+	final static private float accuracy_sentence = 0.85f;
 	
 	List<String> score_list = Arrays.asList("niss", "nih", "nhiss","nishss","nissh", "nihss", "mrankin", "rankin","aspects", "mrs", "escala nihss",
 			"excala de rankin modificada", "aspects score", "mRs", "mrankinscale");
@@ -126,8 +126,8 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 //			LOGGER.info("Removed: " + tempText);
 			
 			
-			if(tempText.toLowerCase().startsWith("aspecto")) {
-				continue;
+			if(tempText.toLowerCase().startsWith("arterias")) {
+				int xxx = 0;
 			}
 
 //			if (tempText.equalsIgnoreCase("habitual")) {
@@ -155,6 +155,20 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 			} catch (Exception e) {
 				System.out.println(lookupToken.getText());
 			}
+			
+			
+			String temp_sent = "";
+			try {
+//  		System.out.println(suggestions.entrySet().stream().count());
+				if (suggestions.entrySet().stream().count() >= 1
+						&& !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty())
+					temp_sent = suggestions.entrySet().stream().findFirst().get().getValue().get(0);
+				else {
+					temp_sent = tempText;
+				}
+			} catch (Exception e) {
+				System.out.println(lookupToken.getText());
+			}
 
 			
 //			LOGGER.info("dic: " + temp);
@@ -172,6 +186,10 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 				rareWordHits = dictionary.getRareWordHits(removedTemp);
 			else
 				rareWordHits = dictionary.getRareWordHits(temp);
+			
+			if (rareWordHits == null) {
+				rareWordHits = dictionary.getRareWordHits(temp_sent);
+			}
 
 			if (rareWordHits == null || rareWordHits.isEmpty()) {
 				continue;
@@ -194,9 +212,9 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 					String temp_one = "";
 					try {
 //		  		System.out.println(suggestions.entrySet().stream().count());
-						if (suggestions_sent.entrySet().stream().count() >= 1
-								&& !suggestions_sent.entrySet().stream().findFirst().get().getValue().isEmpty())
-							temp_one = suggestions_sent.entrySet().stream().findFirst().get().getValue().get(0);
+						if (suggestions.entrySet().stream().count() >= 1
+								&& !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty())
+							temp_one = suggestions.entrySet().stream().findFirst().get().getValue().get(0);
 						else {
 							temp_one = tempText;
 							if (temp_one.equalsIgnoreCase(acm_word)) {
@@ -333,7 +351,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		String inputToken = "";
 		for (int i = termStartIndex; i <= termEndIndex; i++) {
 			try {
-				inputToken += allTokens.get(i).getText() + " ";
+				 inputToken += allTokens.get(i).getText() + " ";
 			} catch (Exception e) {
 				System.out.println(e);
 			}
@@ -341,6 +359,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		inputToken = inputToken.trim();
 
 		String rareWord = rareWordHit.getText();
+
 //		LOGGER.info("rareWord: " + rareWordHit.getText());
 
 		String tempText = inputToken;
@@ -349,6 +368,11 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		RemoveAccents rc = new RemoveAccents();
 		tempText = rc.removeAccents(tempText);
 //		LOGGER.info("tempText: " + tempText);
+		
+		String[] listtempText = tempText.split(" ");
+		listtempText[0] = rareWordHit.getRareWord();
+		tempText = String.join(" ", listtempText);
+		
 
 
 		Map<String, List<String>> suggestions = spellchecker_Sent.checkWordsReturnErrorSuggestions(Arrays.asList(tempText),

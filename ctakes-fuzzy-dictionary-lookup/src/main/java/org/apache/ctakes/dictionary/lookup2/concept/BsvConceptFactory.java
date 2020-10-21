@@ -25,6 +25,9 @@ final public class BsvConceptFactory implements ConceptFactory {
    static private final Logger LOGGER = Logger.getLogger( "BsvConceptFactory" );
 
    static private final String BSV_FILE_PATH = "bsvPath";
+   
+	static private final int LowerCaseLenght = 1;
+
 
 
    final private ConceptFactory _delegateFactory;

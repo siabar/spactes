@@ -539,7 +539,7 @@ public class FreeLingWrapper extends SegmenterBase {
 				end = (int) w.getSpanFinish();
 
 //				sb.append(line.subSequence(begin, end)).append(" ");
-				if (!w.getForm().equalsIgnoreCase("."))
+				//if (!w.getForm().equalsIgnoreCase("."))
 					try {
 						if (lemmaForm) {
 							if (line.length() <= 4) {
@@ -708,6 +708,82 @@ public class FreeLingWrapper extends SegmenterBase {
 		}
 
 	}
+	
+	   static void printPatternUtil(Collection<String> terms, String[] str_s, String buf[], int i, int j, int n) 
+	   { 
+	       if(i == n) 
+	       { 
+//	           buf[j] = ""; 
+	    	   try 
+	    	   {
+	    	   if (
+	    			   ((j >= 3) && (buf[0].length() >=3 && buf[1].length() >=3 && buf[2].equalsIgnoreCase(" ")  || buf[1].equalsIgnoreCase(" ") || (buf[0].length() >=2 && buf[2].length() >=2 && buf[2].length() >=2))) ||
+	    			   ((j == 2) && ((buf[0].length() >4 && buf[1].length() >3 || buf[1].equals(" ")) || (buf[0].length() <= 3 && buf[1].length() >=2 || buf[1].equals(" ")) || (buf[0].length() == 4 && buf[1].length() >=3 || buf[1].equals(" ")))) ||
+	    			   (j == 1) 
+	              )
+	    	   {
+	              terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
+	    	   }
+	    	   }
+	    	   catch (Exception e) {
+	    		   int x = 0;
+	    	   }
+	    	  
+	           return; 
+	       } 
+	 
+	       // Either put the character 
+	       buf[j] = str_s[i]; 
+	       printPatternUtil(terms, str_s, buf, i+1, j+1, n); 
+	 
+	       // Or put a space followed by next character 
+	       buf[j] = " "; 
+	       buf[j+1] = str_s[i]; 
+	 
+	       printPatternUtil(terms, str_s, buf, i+1, j+2, n); 
+	   } 
+	 
+	   // Function creates buf[] to store individual output string and uses 
+	   // printPatternUtil() to print all permutations 
+	   static Collection<String> printPattern(String str) 
+	   { 
+		   Collection<String> terms = new ArrayList<>();
+	       String[] str_s = str.split(" ");
+	       int len = str_s.length; 
+	 
+	       // Buffer to hold the string containing spaces 
+	       // 2n-1 characters and 1 string terminator 
+	       String[] buf = new String[2*len]; 
+	 
+	       // Copy the first character as it is, since it will be always 
+	       // at first position 
+	       buf[0] = str_s[0]; 
+	       printPatternUtil(terms, str_s, buf, 1, 1, len); 
+	       return terms;
+	       
+	   } 
+	   
+	   static Collection<String> part2Pattern(String str) 
+	   { 
+		   Collection<String> terms = new ArrayList<>();
+	       String[] buf = str.split(" ");
+	       int len = buf.length; 
+	       terms.add(String.join(" ", buf));
+	 
+	       if (
+	    		  ((len > 2) && ((buf[0].length() >3 && buf[1].length() >3) && buf[2].length() >3)) 
+	    		 || (len == 2) && ((buf[0].length() >4 && buf[1].length() >3 || buf[1].equals(" ")) || (buf[0].length() <= 3 && buf[1].length() >=2 || buf[1].equals(" ")) || (buf[0].length() == 4 && buf[1].length() >=3 || buf[1].equals(" ")))
+	    	  ) 
+           {
+	    	   terms.add(String.join("", buf));
+	       }
+	    	   
+
+	       
+	       return terms;
+	       
+	   } 
+	   
 
 	public static void main(final String... args) throws Exception {
 		FreeLingWrapper freeling = new FreeLingWrapper();
@@ -744,24 +820,44 @@ public class FreeLingWrapper extends SegmenterBase {
 			while ((line_original = bufferedReader.readLine()) != null) {
 				String temp_line = "";
 				String[] templine = line_original.trim().split("\\|");
+				if (templine[2].equalsIgnoreCase("avc")){
+					int x = 0;
+				}
+//				String[] temp_ = templine[2].trim().split(" ");
+//
+//
+//				line = String.join(" ", temp_).trim();
+				
 
-				String[] temp_lower = templine[2].trim().split(" ");
-				for (String temp : temp_lower) {
-					if (temp.length() > 1) {
-						temp_line += temp.toLowerCase() + " ";
+				List<String> temp = freeling.tokenizer(templine[2].trim());
+				
+				for (String tem : temp) {
+					if (tem.length() > 1) {
+						temp_line += tem.toLowerCase() + " ";
 					} else {
-						temp_line += temp + " ";
+						temp_line += tem + " ";
 					}
 				}
+				
+				String tempRC = ra.removeAccents(temp_line.trim());
 
-				line = temp_line.trim();
-				List<String> temp = freeling.tokenizer(line);
-				String tempRC = ra.removeAccents(String.join(" ", temp));
-				bufferedWriter_dic.write(tempRC + "\n");
-
-				tempRC = ra.removeAccents(temp.get(0));
-				if (!lexiconkepper.containsKey(tempRC)) {
-					lexiconkepper.put(tempRC, 0);
+				
+				Collection<String> terms = new ArrayList<>();
+//				terms = printPattern(tempRC);
+				terms = part2Pattern(tempRC);
+				
+				
+				for (String term : terms) {
+					
+					bufferedWriter_dic.write(term + "\n");
+	
+					tempRC = term.split(" ")[0];
+					if (tempRC.length() >6){
+						tempRC = tempRC.replaceAll("\\.", "");
+					}
+					if (!lexiconkepper.containsKey(tempRC)) {
+						lexiconkepper.put(tempRC, 0);
+					}
 				}
 
 			}

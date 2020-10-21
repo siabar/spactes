@@ -21,6 +21,7 @@ package org.apache.ctakes.dictionary.lookup2.dictionary;
 import org.apache.ctakes.core.resource.FileLocator;
 import org.apache.ctakes.core.util.StringUtil;
 import org.apache.ctakes.core.util.collection.CollectionMap;
+import org.apache.ctakes.dictionary.lookup2.concept.BsvConceptFactory.CuiTuiTerm;
 import org.apache.ctakes.dictionary.lookup2.term.RareWordTerm;
 import org.apache.ctakes.dictionary.lookup2.util.FastLookupToken;
 import org.apache.log4j.Logger;
@@ -29,6 +30,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Properties;
 
@@ -48,8 +50,6 @@ final public class BsvRareWordDictionary implements RareWordDictionary {
 
 	static private final String BSV_FILE_PATH = "bsvPath";
 	
-	static private final int LowerCaseLenght = 1;
-
 	final private RareWordDictionary _delegateDictionary;
 
 	public BsvRareWordDictionary(final String name, final UimaContext uimaContext, final Properties properties) {
@@ -110,31 +110,134 @@ final public class BsvRareWordDictionary implements RareWordDictionary {
 	 * @param bsvFilePath path to file containing term rows and bsv columns
 	 * @return collection of all valid terms read from the bsv file
 	 */
-	static private Collection<CuiTerm> parseBsvFile(final String bsvFilePath) {
-		final Collection<CuiTerm> cuiTerms = new ArrayList<>();
-		try (final BufferedReader reader = new BufferedReader(
-				new InputStreamReader(FileLocator.getAsStream(bsvFilePath)))) {
-			String line = reader.readLine();
-			while (line != null) {
-				if (line.isEmpty() || line.startsWith("//") || line.startsWith("#")) {
-					line = reader.readLine();
-					continue;
-				}
-//            final String[] columns = LookupUtil.fastSplit( line, '|' );
-				final String[] columns = StringUtil.fastSplit(line, '|');
-				final CuiTerm cuiTerm = createCuiTuiTerm(columns);
-				if (cuiTerm != null) {
-					cuiTerms.add(cuiTerm);
-				} else {
-					LOGGER.warn("Bad BSV line " + line + " in " + bsvFilePath);
-				}
-				line = reader.readLine();
-			}
-		} catch (IOException ioE) {
-			LOGGER.error(ioE.getMessage());
-		}
-		return cuiTerms;
-	}
+	
+	   static void printPatternUtil(Collection<String> terms, String[] str_s, String buf[], int i, int j, int n) 
+	   { 
+	       if(i == n) 
+	       { 
+//	           buf[j] = ""; 
+	    	   if (
+	    			   ((j >= 3) && (buf[0].length() >=3 && buf[1].length() >=3 && buf[2].equalsIgnoreCase(" ")  || buf[1].equalsIgnoreCase(" ") || (buf[0].length() >=2 && buf[2].length() >=2 && buf[2].length() >=2))) ||
+	    			   ((j == 2) && ((buf[0].length() >4 && buf[1].length() >3 || buf[1].equals(" ")) || (buf[0].length() <= 3 && buf[1].length() >=2 || buf[1].equals(" ")) || (buf[0].length() == 4 && buf[1].length() >=3 || buf[1].equals(" ")))) ||
+	    			   (j == 1) 
+	              )
+	    	   {
+	              terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
+	    	   }
+	           return; 
+	       } 
+//	       if(i == n) 
+//	       { 
+////	           buf[j] = ""; 
+//	           terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
+//	           return; 
+//	       } 
+	 
+	       // Either put the character 
+	       buf[j] = str_s[i]; 
+	       printPatternUtil(terms, str_s, buf, i+1, j+1, n); 
+	 
+	       // Or put a space followed by next character 
+	       buf[j] = " "; 
+	       buf[j+1] = str_s[i]; 
+	 
+	       printPatternUtil(terms, str_s, buf, i+1, j+2, n); 
+	   } 
+	 
+	   // Function creates buf[] to store individual output string and uses 
+	   // printPatternUtil() to print all permutations 
+	   static Collection<String> printPattern(String str) 
+	   { 
+		   Collection<String> terms = new ArrayList<>();
+	       String[] str_s = str.split(" ");
+	       int len = str_s.length; 
+	 
+	       // Buffer to hold the string containing spaces 
+	       // 2n-1 characters and 1 string terminator 
+	       String[] buf = new String[2*len]; 
+	 
+	       // Copy the first character as it is, since it will be always 
+	       // at first position 
+	       buf[0] = str_s[0]; 
+	       printPatternUtil(terms, str_s, buf, 1, 1, len); 
+	       return terms;
+	       
+	   } 
+	   
+	   static private Collection<CuiTerm> parseBsvFile( final String bsvFilePath ) {
+		      final Collection<CuiTerm> cuiTuiTerms = new ArrayList<>();
+			   Collection<String> terms = new ArrayList<>();
+			   
+		      try ( final BufferedReader reader
+		                  = new BufferedReader( new InputStreamReader( FileLocator.getAsStream( bsvFilePath ) ) ) ) {
+		         String line = reader.readLine();
+		         while ( line != null ) {
+		            if ( line.isEmpty() || line.startsWith( "//" ) || line.startsWith( "#" ) ) {
+		               line = reader.readLine();
+		               continue;
+		            }
+//		            final String[] columns = LookupUtil.fastSplit( line, '|' );
+		            final String[] columns = StringUtil.fastSplit( line, '|' );
+		            terms = printPattern(columns[2]);
+//		            
+		            for (String term : terms) {
+		            	columns[2] = term;
+		            	final CuiTerm cuiTuiTerm = createCuiTuiTerm( columns );
+		                if ( cuiTuiTerm != null ) {
+		                   cuiTuiTerms.add( cuiTuiTerm );
+		                } else {
+		                   LOGGER.warn( "Bad BSV line " + line + " in " + bsvFilePath );
+		                }
+		                
+		                String term_s = term.replaceAll("\\p{Punct}", "");
+		                
+		                if (! term_s.equalsIgnoreCase(term)) {
+		                	
+		                	columns[2] = term.replaceAll("\\p{Punct}", "");
+		                    final CuiTerm cuiTuiTerm_punct = createCuiTuiTerm( columns );
+		                    if ( cuiTuiTerm_punct != null ) {
+		                       cuiTuiTerms.add( cuiTuiTerm_punct );
+		                    } else {
+		                       LOGGER.warn( "Bad BSV line " + line + " in " + bsvFilePath );
+		                    }
+		                }
+		            	
+		            }
+		            
+		            line = reader.readLine();
+		         }
+		      } catch ( IOException ioE ) {
+		         LOGGER.error( ioE.getMessage() );
+		      }
+		      return cuiTuiTerms;
+		   }
+	   
+//	static private Collection<CuiTerm> parseBsvFile(final String bsvFilePath) {
+//		final Collection<CuiTerm> cuiTerms = new ArrayList<>();
+//		
+//		try (final BufferedReader reader = new BufferedReader(
+//				new InputStreamReader(FileLocator.getAsStream(bsvFilePath)))) {
+//			String line = reader.readLine();
+//			while (line != null) {
+//				if (line.isEmpty() || line.startsWith("//") || line.startsWith("#")) {
+//					line = reader.readLine();
+//					continue;
+//				}
+////            final String[] columns = LookupUtil.fastSplit( line, '|' );
+//				final String[] columns = StringUtil.fastSplit(line, '|');
+//				final CuiTerm cuiTerm = createCuiTuiTerm(columns);
+//				if (cuiTerm != null) {
+//					cuiTerms.add(cuiTerm);
+//				} else {
+//					LOGGER.warn("Bad BSV line " + line + " in " + bsvFilePath);
+//				}
+//				line = reader.readLine();
+//			}
+//		} catch (IOException ioE) {
+//			LOGGER.error(ioE.getMessage());
+//		}
+//		return cuiTerms;
+//	}
 
 	/**
 	 * @param columns two or three columns representing CUI,Text or CUI,TUI,Text
@@ -157,19 +260,19 @@ final public class BsvRareWordDictionary implements RareWordDictionary {
 		final String cui = columns[cuiIndex];
 
 		String tempTerm = "";
-		String[] tempTermList = columns[termIndex].trim().split(" ");
-		for (String temp : tempTermList) {
-			if (temp.length() > LowerCaseLenght)
-				tempTerm += " " + temp.toLowerCase();
-			else {
-				tempTerm += " " +  temp;
-			}
-			
-		}
+//		String[] tempTermList = columns[termIndex].trim().split(" ");
+//		for (String temp : tempTermList) {
+//			if (temp.length() > LowerCaseLenght)
+//				tempTerm += " " + temp.toLowerCase();
+//			else {
+//				tempTerm += " " +  temp;
+//			}
+//			
+//		}
 //		if (tempTerm.length() > LowerCaseLenght)
 //			tempTerm = tempTerm.toLowerCase();
 
-		final String term = tempTerm;
+		final String term = columns[termIndex].trim();
 
 		return new CuiTerm(cui, term);
 	}
