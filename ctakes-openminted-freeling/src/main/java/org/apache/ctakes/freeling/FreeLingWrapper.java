@@ -166,6 +166,7 @@ public class FreeLingWrapper extends SegmenterBase {
 																						// and
 																						// "gl"
 	private LangIdent lgid;
+	List<String> afectada = Arrays.asList("ACMD", "ACMI", "ACPI");
 
 //	private HashMap<String, Tokenizer> tks = new HashMap<>();
 //	private HashMap<String, Splitter> sps = new HashMap<>();
@@ -453,7 +454,7 @@ public class FreeLingWrapper extends SegmenterBase {
 		tgs.put(lang, new HmmTagger(DATA + lang + "/tagger.dat", true, 2));
 
 	}
-	
+
 	public List<String> sentece_splitter(String line) {
 		ListWord l = tks.get(language).tokenize(line);
 		// Split the tokens into distinct sentences.
@@ -491,7 +492,6 @@ public class FreeLingWrapper extends SegmenterBase {
 				end = (int) w.getSpanFinish();
 
 //				sb.append(line.subSequence(begin, end)).append(" ");
-
 
 			}
 			listStr.add((String) line.subSequence(sBegin, end));
@@ -539,21 +539,21 @@ public class FreeLingWrapper extends SegmenterBase {
 				end = (int) w.getSpanFinish();
 
 //				sb.append(line.subSequence(begin, end)).append(" ");
-				//if (!w.getForm().equalsIgnoreCase("."))
-					try {
-						if (lemmaForm) {
-							if (line.length() <= 4) {
-								listStr.add((String) line.subSequence(begin, end));
-							} else {
-								listStr.add(w.getLemma());
-							}
-
-						} else {
+				// if (!w.getForm().equalsIgnoreCase("."))
+				try {
+					if (lemmaForm) {
+						if (line.length() <= 4) {
 							listStr.add((String) line.subSequence(begin, end));
+						} else {
+							listStr.add(w.getLemma());
 						}
-					} catch (Exception e) {
-						System.out.println(line + " -> " + begin + " - " + end);
+
+					} else {
+						listStr.add((String) line.subSequence(begin, end));
 					}
+				} catch (Exception e) {
+					System.out.println(line + " -> " + begin + " - " + end);
+				}
 
 			}
 		}
@@ -586,6 +586,7 @@ public class FreeLingWrapper extends SegmenterBase {
 			Boolean first = true;
 			WordToken[] tokens = new WordToken[(int) s.size()];
 			int i = 0;
+			int new_size = 0;
 
 			ListWordIterator wIt = new ListWordIterator(s);
 			// iterate over tokens
@@ -597,58 +598,93 @@ public class FreeLingWrapper extends SegmenterBase {
 					sBegin = begin;
 				}
 				end = (int) w.getSpanFinish();
+
+				if (afectada.contains(w.getForm())) {
+					
+					new_size += 1;
+					WordToken[] new_tokens = new WordToken[(int) s.size() + new_size];
+					System.arraycopy(tokens, 0, new_tokens, 0, tokens.length);
+
+					WordToken token = new WordToken(aJCas, start + begin, start + end - 1);
+					token.addToIndexes();
+					token.setPartOfSpeech(w.getTag());
+					token.setTokenNumber(tokennumber);
+					tokennumber++;
+					new_tokens[i++] = token;
+
+					token = new WordToken(aJCas, start + end - 1, start + end);
+					token.addToIndexes();
+					token.setPartOfSpeech(w.getTag());
+					token.setTokenNumber(tokennumber);
+					tokennumber++;
+					new_tokens[i++] = token;
+
+
+					tokens = new WordToken[(int) s.size() + new_size];
+					System.arraycopy(new_tokens, 0, tokens, 0, new_tokens.length);
+					continue;
+				}
 				// create token
 				// Token token = this.createToken(aJCas, start + begin, start + end);
 				// Token token = new Token(aJCas, start + begin, start + end);
 				WordToken token = new WordToken(aJCas, start + begin, start + end);
 
 				token.addToIndexes();
+				token.setPartOfSpeech(w.getTag());
+
 				try {
 					// create form
-//                TokenForm f = new TokenForm(aJCas, start + begin, start + end);
-//                f.setValue(w.getForm());
-//                token.setForm(f);
+//        TokenForm f = new TokenForm(aJCas, start + begin, start + end);
+//        f.setValue(w.getForm());
+//        token.setForm(f);
 					// create POS
 					// getLogger().info(" processing token from: " + (start + begin) +" to:" +(start
 					// + end)+ " token:" + w.getForm() + " with POS tag: " + w.getTag() );
 
 					// Comment not needed parts
-//					Type defposTagT = posMappingProvider.getTagType("*");
-//					Type posTagT = posMappingProvider.getTagType(w.getTag());
+//                              Type defposTagT = posMappingProvider.getTagType("*");
+//                              Type posTagT = posMappingProvider.getTagType(w.getTag());
 					// Comment not needed parts
 
-//                    int l=w.getTag().length()+1;
-//                    while(posTagT==defposTagT && --l>0){
-//                     posTagT = posMappingProvider.getTagType(w.getTag().substring(0, l)+"*");
-//                    }
-//                    POS posTag = (POS) cas.createAnnotation(posTagT, start + begin, start + end);
-//                    posTag.setPosValue(posTag.getPosValue());
-//                    posTag.setCoarseValue(w.getTag());
-//                    posTag.addToIndexes();
+//            int l=w.getTag().length()+1;
+//            while(posTagT==defposTagT && --l>0){
+//             posTagT = posMappingProvider.getTagType(w.getTag().substring(0, l)+"*");
+//            }
+//            POS posTag = (POS) cas.createAnnotation(posTagT, start + begin, start + end);
+//            posTag.setPosValue(posTag.getPosValue());
+//            posTag.setCoarseValue(w.getTag());
+//            posTag.addToIndexes();
 					// token.setPos(posTag);
 
-					token.setPartOfSpeech(w.getTag());
-
 					// create lema
-//                  Lemma lemma = new Lemma(aJCas, start + begin, start + end);
-//                  lemma.setValue(w.getLemma());
-//                  lemma.addToIndexes();
-//                  token.setLemma(lemma);
+//          Lemma lemma = new Lemma(aJCas, start + begin, start + end);
+//          lemma.setValue(w.getLemma());
+//          lemma.addToIndexes();
+//          token.setLemma(lemma);
 
 					// Comment not needed parts
-//					token.setNormalizedForm(w.getForm());
+//                              token.setNormalizedForm(w.getForm());
 
-//					Map<String, Set<String>> lemmaMap = null;
-//					Collection<Lemma> lemmas = new ArrayList<>(1);
+//                              Map<String, Set<String>> lemmaMap = null;
+//                              Collection<Lemma> lemmas = new ArrayList<>(1);
 //
-//					Lemma lemmaa = new Lemma(aJCas);
-//					lemmaa.setKey(w.getLemma());
-//					lemmaa.setPosTag(w.getTag());
-//					lemmas.add(lemmaa);
+//                              Lemma lemmaa = new Lemma(aJCas);
+//                              lemmaa.setKey(w.getLemma());
+
+					// Comment not needed parts
+//                          token.setNormalizedForm(w.getForm());
+
+//                          Map<String, Set<String>> lemmaMap = null;
+//                          Collection<Lemma> lemmas = new ArrayList<>(1);
 //
-//					Lemma[] lemmaArray = (Lemma[]) lemmas.toArray(new Lemma[lemmas.size()]);
-//					FSList fsList = ListFactory.buildList(aJCas, lemmaArray);
-//					token.setLemmaEntries(fsList);
+//                          Lemma lemmaa = new Lemma(aJCas);
+//                          lemmaa.setKey(w.getLemma());
+//                          lemmaa.setPosTag(w.getTag());
+//                          lemmas.add(lemmaa);
+//
+//                          Lemma[] lemmaArray = (Lemma[]) lemmas.toArray(new Lemma[lemmas.size()]);
+//                          FSList fsList = ListFactory.buildList(aJCas, lemmaArray);
+//                          token.setLemmaEntries(fsList);
 					// Comment not needed parts
 
 				} catch (Exception e) {
@@ -695,7 +731,7 @@ public class FreeLingWrapper extends SegmenterBase {
 					}
 				}
 
-//                createSentence(aJCas, start + sBegin, start + end);
+//    createSentence(aJCas, start + sBegin, start + end);
 			}
 
 			int[] span = new int[] { start + sBegin, start + end };
@@ -708,82 +744,73 @@ public class FreeLingWrapper extends SegmenterBase {
 		}
 
 	}
-	
-	   static void printPatternUtil(Collection<String> terms, String[] str_s, String buf[], int i, int j, int n) 
-	   { 
-	       if(i == n) 
-	       { 
-//	           buf[j] = ""; 
-	    	   try 
-	    	   {
-	    	   if (
-	    			   ((j >= 3) && (buf[0].length() >=3 && buf[1].length() >=3 && buf[2].equalsIgnoreCase(" ")  || buf[1].equalsIgnoreCase(" ") || (buf[0].length() >=2 && buf[2].length() >=2 && buf[2].length() >=2))) ||
-	    			   ((j == 2) && ((buf[0].length() >4 && buf[1].length() >3 || buf[1].equals(" ")) || (buf[0].length() <= 3 && buf[1].length() >=2 || buf[1].equals(" ")) || (buf[0].length() == 4 && buf[1].length() >=3 || buf[1].equals(" ")))) ||
-	    			   (j == 1) 
-	              )
-	    	   {
-	              terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
-	    	   }
-	    	   }
-	    	   catch (Exception e) {
-	    		   int x = 0;
-	    	   }
-	    	  
-	           return; 
-	       } 
-	 
-	       // Either put the character 
-	       buf[j] = str_s[i]; 
-	       printPatternUtil(terms, str_s, buf, i+1, j+1, n); 
-	 
-	       // Or put a space followed by next character 
-	       buf[j] = " "; 
-	       buf[j+1] = str_s[i]; 
-	 
-	       printPatternUtil(terms, str_s, buf, i+1, j+2, n); 
-	   } 
-	 
-	   // Function creates buf[] to store individual output string and uses 
-	   // printPatternUtil() to print all permutations 
-	   static Collection<String> printPattern(String str) 
-	   { 
-		   Collection<String> terms = new ArrayList<>();
-	       String[] str_s = str.split(" ");
-	       int len = str_s.length; 
-	 
-	       // Buffer to hold the string containing spaces 
-	       // 2n-1 characters and 1 string terminator 
-	       String[] buf = new String[2*len]; 
-	 
-	       // Copy the first character as it is, since it will be always 
-	       // at first position 
-	       buf[0] = str_s[0]; 
-	       printPatternUtil(terms, str_s, buf, 1, 1, len); 
-	       return terms;
-	       
-	   } 
-	   
-	   static Collection<String> part2Pattern(String str) 
-	   { 
-		   Collection<String> terms = new ArrayList<>();
-	       String[] buf = str.split(" ");
-	       int len = buf.length; 
-	       terms.add(String.join(" ", buf));
-	 
-	       if (
-	    		  ((len > 2) && ((buf[0].length() >3 && buf[1].length() >3) && buf[2].length() >3)) 
-	    		 || (len == 2) && ((buf[0].length() >4 && buf[1].length() >3 || buf[1].equals(" ")) || (buf[0].length() <= 3 && buf[1].length() >=2 || buf[1].equals(" ")) || (buf[0].length() == 4 && buf[1].length() >=3 || buf[1].equals(" ")))
-	    	  ) 
-           {
-	    	   terms.add(String.join("", buf));
-	       }
-	    	   
 
-	       
-	       return terms;
-	       
-	   } 
-	   
+	static void printPatternUtil(Collection<String> terms, String[] str_s, String buf[], int i, int j, int n) {
+		if (i == n) {
+//	           buf[j] = ""; 
+			try {
+				if (((j >= 3) && (buf[0].length() >= 3 && buf[1].length() >= 3 && buf[2].equalsIgnoreCase(" ")
+						|| buf[1].equalsIgnoreCase(" ")
+						|| (buf[0].length() >= 2 && buf[2].length() >= 2 && buf[2].length() >= 2)))
+						|| ((j == 2) && ((buf[0].length() > 4 && buf[1].length() > 3 || buf[1].equals(" "))
+								|| (buf[0].length() <= 3 && buf[1].length() >= 2 || buf[1].equals(" "))
+								|| (buf[0].length() == 4 && buf[1].length() >= 3 || buf[1].equals(" "))))
+						|| (j == 1)) {
+					terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
+				}
+			} catch (Exception e) {
+				int x = 0;
+			}
+
+			return;
+		}
+
+		// Either put the character
+		buf[j] = str_s[i];
+		printPatternUtil(terms, str_s, buf, i + 1, j + 1, n);
+
+		// Or put a space followed by next character
+		buf[j] = " ";
+		buf[j + 1] = str_s[i];
+
+		printPatternUtil(terms, str_s, buf, i + 1, j + 2, n);
+	}
+
+	// Function creates buf[] to store individual output string and uses
+	// printPatternUtil() to print all permutations
+	static Collection<String> printPattern(String str) {
+		Collection<String> terms = new ArrayList<>();
+		String[] str_s = str.split(" ");
+		int len = str_s.length;
+
+		// Buffer to hold the string containing spaces
+		// 2n-1 characters and 1 string terminator
+		String[] buf = new String[2 * len];
+
+		// Copy the first character as it is, since it will be always
+		// at first position
+		buf[0] = str_s[0];
+		printPatternUtil(terms, str_s, buf, 1, 1, len);
+		return terms;
+
+	}
+
+	static Collection<String> part2Pattern(String str) {
+		Collection<String> terms = new ArrayList<>();
+		String[] buf = str.split(" ");
+		int len = buf.length;
+		terms.add(String.join(" ", buf));
+
+		if (((len > 2) && ((buf[0].length() > 3 && buf[1].length() > 3) && buf[2].length() > 3))
+				|| (len == 2) && ((buf[0].length() > 4 && buf[1].length() > 3 || buf[1].equals(" "))
+						|| (buf[0].length() <= 3 && buf[1].length() >= 2 || buf[1].equals(" "))
+						|| (buf[0].length() == 4 && buf[1].length() >= 3 || buf[1].equals(" ")))) {
+			terms.add(String.join("", buf));
+		}
+
+		return terms;
+
+	}
 
 	public static void main(final String... args) throws Exception {
 		FreeLingWrapper freeling = new FreeLingWrapper();
@@ -800,8 +827,7 @@ public class FreeLingWrapper extends SegmenterBase {
 		// outputs is using for spellchecker dictionary
 		String output_lexicon = args[1];
 		String output_dic = args[2];
-		
-		
+
 		try {
 			FileReader reader = new FileReader(input);
 			BufferedReader bufferedReader = new BufferedReader(reader);
@@ -820,17 +846,16 @@ public class FreeLingWrapper extends SegmenterBase {
 			while ((line_original = bufferedReader.readLine()) != null) {
 				String temp_line = "";
 				String[] templine = line_original.trim().split("\\|");
-				if (templine[2].equalsIgnoreCase("avc")){
+				if (templine[2].equalsIgnoreCase("avc")) {
 					int x = 0;
 				}
 //				String[] temp_ = templine[2].trim().split(" ");
 //
 //
 //				line = String.join(" ", temp_).trim();
-				
 
 				List<String> temp = freeling.tokenizer(templine[2].trim());
-				
+
 				for (String tem : temp) {
 					if (tem.length() > 1) {
 						temp_line += tem.toLowerCase() + " ";
@@ -838,21 +863,19 @@ public class FreeLingWrapper extends SegmenterBase {
 						temp_line += tem + " ";
 					}
 				}
-				
+
 				String tempRC = ra.removeAccents(temp_line.trim());
 
-				
 				Collection<String> terms = new ArrayList<>();
 //				terms = printPattern(tempRC);
 				terms = part2Pattern(tempRC);
-				
-				
+
 				for (String term : terms) {
-					
+
 					bufferedWriter_dic.write(term + "\n");
-	
+
 					tempRC = term.split(" ")[0];
-					if (tempRC.length() >6){
+					if (tempRC.length() > 6) {
 						tempRC = tempRC.replaceAll("\\.", "");
 					}
 					if (!lexiconkepper.containsKey(tempRC)) {

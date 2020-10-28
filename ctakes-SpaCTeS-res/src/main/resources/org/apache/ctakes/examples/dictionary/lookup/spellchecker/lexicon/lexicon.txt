@@ -345,7 +345,6 @@ trombectomiamecanica
 artcerebralmedia
 territorio
 probablementecardioemebolico
-cardioemebolico
 posiblementeinsual
 hic
 rtpa

@@ -24,6 +24,7 @@ infarto isquemia
 infartoisquemia
 infarto agudo
 infartoagudo
+infarto
 infarto cerebeloso
 infartocerebeloso
 infarto cerebral
@@ -630,7 +631,6 @@ ateromatosis
 aterosclerotico
 aterotrombotico
 cardioembolico
-cardioemebolico
 cavernoma de circunvolucion
 ce
 criptogenico

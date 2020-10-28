@@ -15,6 +15,7 @@ C0000001|_SUG_Ictus_isquemico|ictus isquemiA con transformacion Hemorragia
 C0000001|_SUG_Ictus_isquemico|Infarto cerebral
 C0000001|_SUG_Ictus_isquemico|Infarto isquemia
 C0000001|_SUG_Ictus_isquemico|Infarto agudo
+C0000001|_SUG_Ictus_isquemico|Infarto
 C0000001|_SUG_Ictus_isquemico|Infarto cerebeloso
 C0000001|_SUG_Ictus_isquemico|Infarto cerebral
 C0000001|_SUG_Ictus_isquemico|Infarto isquemia
@@ -469,7 +470,6 @@ C0000020|_SUG_Etiologia|ateromatosis
 C0000020|_SUG_Etiologia|aterosclerotico
 C0000020|_SUG_Etiologia|Aterotrombotico
 C0000020|_SUG_Etiologia|Cardioembolico
-C0000020|_SUG_Etiologia|cardioemebolico
 C0000020|_SUG_Etiologia|Cavernoma de circunvolucion
 C0000020|_SUG_Etiologia|CE
 C0000020|_SUG_Etiologia|criptogenico
