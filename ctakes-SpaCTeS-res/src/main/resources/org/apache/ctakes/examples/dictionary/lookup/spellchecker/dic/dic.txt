@@ -2,7 +2,6 @@ accidente cerebrovascular
 accidentecerebrovascular
 avc
 avc isquemia
-avcisquemia
 isquemia en territorio cortical
 e. cerebrovascular aguda isquemia : infarto
 ecva isquemia

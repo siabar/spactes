@@ -59,7 +59,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 	static SpellCheckService spellchecker;
 	static SpellCheckService spellchecker_Sent;
 	final private float accuracy_oneToken = 0.7f;
-	final static private float accuracy_sentence = 0.85f;
+	final static private float accuracy_sentence = 0.83f;
 	
 	List<String> score_list = Arrays.asList("niss", "nih", "nhiss","nishss","nissh", "nihss", "mrankin", "rankin","aspects", "mrs", "escala nihss",
 			"excala de rankin modificada", "aspects score", "mRs", "mrankinscale");
@@ -375,8 +375,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		
 
 
-		Map<String, List<String>> suggestions = spellchecker_Sent.checkWordsReturnErrorSuggestions(Arrays.asList(tempText),
-				accuracy_sentence);
+		Map<String, List<String>> suggestions = spellchecker_Sent.checkWordsReturnErrorSuggestions(Arrays.asList(tempText), accuracy_sentence);
 		
 //		if ((suggestions.entrySet().stream().count() >= 1) && !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty()) {
 //			LOGGER.info("Suggestions: " + suggestions
