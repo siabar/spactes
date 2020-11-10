@@ -359,6 +359,10 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		inputToken = inputToken.trim();
 
 		String rareWord = rareWordHit.getText();
+		
+		if (rareWord.equalsIgnoreCase("causa Cardio embolico")){
+			int check = 0;
+		}
 
 //		LOGGER.info("rareWord: " + rareWordHit.getText());
 
@@ -385,11 +389,25 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 //			LOGGER.info("Suggestions: ZERO!");
 //
 //		}
+		String first_one = "";
+		if (suggestions.entrySet().stream().count() >= 1
+				&& !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty()) { 
+			first_one = suggestions.entrySet().stream().findFirst().get().getValue().get(0);
+			for(Map.Entry<String, List<String>> listEntry : suggestions.entrySet()){
+	            // iterating over a list
+	            for(String suggested_one : listEntry.getValue()){
+	            	if (suggested_one.split(" ").length == termEndIndex - termStartIndex + 1 ) {
+	            		first_one = suggested_one;
+	            		break;
+	            	}
+	            }
+	        }
+		}
+            
 
 		try {
 			if (((suggestions.entrySet().stream().count() >= 1
-					&& !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty() && (suggestions
-							.entrySet().stream().findFirst().get().getValue().get(0).equalsIgnoreCase(rareWord))))
+					&& !suggestions.entrySet().stream().findFirst().get().getValue().isEmpty() && (first_one.equalsIgnoreCase(rareWord))))
 					|| tempText.equalsIgnoreCase(rareWord)) {
 //				LOGGER.info("OK isTERMMatch: " + rareWord);
 				return true;
