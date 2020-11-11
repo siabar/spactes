@@ -766,6 +766,262 @@ C0000020|_SUG_Etiologia|d'etiologia probablemente secundario a diseccion
 C0000020|_SUG_Etiologia|d'etiologia secundaria a malformacion vascular
 C0000020|_SUG_Etiologia|d'etiologia secundaria a tumor
 C0000020|_SUG_Etiologia|d'etiologia secundario a diseccion
+C0000020|_SUG_Etiologia|origen a estudio
+C0000020|_SUG_Etiologia|origen aneurisma
+C0000020|_SUG_Etiologia|origen angiopatia amiloide
+C0000020|_SUG_Etiologia|origen ANGIOPATIA AMILOIDE CEREBRAL
+C0000020|_SUG_Etiologia|origen ateromatosis
+C0000020|_SUG_Etiologia|origen aterosclerotico
+C0000020|_SUG_Etiologia|origen Aterotrombotico
+C0000020|_SUG_Etiologia|origen cardiaco
+C0000020|_SUG_Etiologia|origen Cardio embolico
+C0000020|_SUG_Etiologia|origen cardioemebolico
+C0000020|_SUG_Etiologia|origen Cavernoma de circunvolucion
+C0000020|_SUG_Etiologia|origen CE
+C0000020|_SUG_Etiologia|origen con estudio incompleto
+C0000020|_SUG_Etiologia|origen criptogenico
+C0000020|_SUG_Etiologia|origen de probable causa embolica
+C0000020|_SUG_Etiologia|origen de probable origen aterotrombotico
+C0000020|_SUG_Etiologia|origen Diseccio
+C0000020|_SUG_Etiologia|origen embolico
+C0000020|_SUG_Etiologia|origen embolismo paradojico
+C0000020|_SUG_Etiologia|origen ESUS
+C0000020|_SUG_Etiologia|origen hipertensivo
+C0000020|_SUG_Etiologia|origen indeterminada per estudi incomplet
+C0000020|_SUG_Etiologia|origen indeterminado
+C0000020|_SUG_Etiologia|origen indeterminado (estudio incompleto)
+C0000020|_SUG_Etiologia|origen Indeterminado de causa doble
+C0000020|_SUG_Etiologia|origen indeterminado pendiente de estudio
+C0000020|_SUG_Etiologia|origen indeterminado por doble causa
+C0000020|_SUG_Etiologia|origen Indeterminado por estudio incompleto
+C0000020|_SUG_Etiologia|origen infrecuente
+C0000020|_SUG_Etiologia|origen Inhabitual
+C0000020|_SUG_Etiologia|origen insual
+C0000020|_SUG_Etiologia|origen Lacunar
+C0000020|_SUG_Etiologia|origen malformacion arteriovenosa
+C0000020|_SUG_Etiologia|origen mecanisme embolic
+C0000020|_SUG_Etiologia|origen microangiopatica
+C0000020|_SUG_Etiologia|origen no determinada
+C0000020|_SUG_Etiologia|origen pendent de completar l'estudi
+C0000020|_SUG_Etiologia|origen pendent de filiacio
+C0000020|_SUG_Etiologia|origen por determinar
+C0000020|_SUG_Etiologia|origen posiblemente a estudio
+C0000020|_SUG_Etiologia|origen posiblemente aneurisma
+C0000020|_SUG_Etiologia|origen posiblemente angiopatia amiloide
+C0000020|_SUG_Etiologia|origen posiblemente ANGIOPATIA AMILOIDE CEREBRAL
+C0000020|_SUG_Etiologia|origen posiblemente ateromatosis
+C0000020|_SUG_Etiologia|origen posiblemente aterosclerotico
+C0000020|_SUG_Etiologia|origen posiblemente Aterotrombotico
+C0000020|_SUG_Etiologia|origen posiblemente cardiaco
+C0000020|_SUG_Etiologia|origen posiblemente cardiaco
+C0000020|_SUG_Etiologia|origen posiblemente Cardio embolico
+C0000020|_SUG_Etiologia|origen posiblemente cardioemebolico
+C0000020|_SUG_Etiologia|origen posiblemente Cavernoma de circunvolucion
+C0000020|_SUG_Etiologia|origen posiblemente CE
+C0000020|_SUG_Etiologia|origen posiblemente criptogenico
+C0000020|_SUG_Etiologia|origen posiblemente Diseccio
+C0000020|_SUG_Etiologia|origen posiblemente embolico
+C0000020|_SUG_Etiologia|origen posiblemente ESUS
+C0000020|_SUG_Etiologia|origen posiblemente hipertensivo
+C0000020|_SUG_Etiologia|origen posiblemente indeterminado
+C0000020|_SUG_Etiologia|origen posiblemente indeterminado (estudio incompleto)
+C0000020|_SUG_Etiologia|origen posiblemente Indeterminado de causa doble
+C0000020|_SUG_Etiologia|origen posiblemente Indeterminado por estudio incompleto
+C0000020|_SUG_Etiologia|origen posiblemente infrecuente
+C0000020|_SUG_Etiologia|origen posiblemente Inhabitual
+C0000020|_SUG_Etiologia|origen posiblemente insual
+C0000020|_SUG_Etiologia|origen posiblemente Lacunar
+C0000020|_SUG_Etiologia|origen posiblemente malformacion arteriovenosa
+C0000020|_SUG_Etiologia|origen posiblemente mecanisme embolic
+C0000020|_SUG_Etiologia|origen posiblemente microangiopatica
+C0000020|_SUG_Etiologia|origen posiblemente no determinada
+C0000020|_SUG_Etiologia|origen posiblemente pendent de filiacio
+C0000020|_SUG_Etiologia|origen posiblemente por determinar
+C0000020|_SUG_Etiologia|origen posiblemente secundaria a malformacion vascular
+C0000020|_SUG_Etiologia|origen posiblemente secundaria a tumor
+C0000020|_SUG_Etiologia|origen posiblemente secundario a diseccion
+C0000020|_SUG_Etiologia|origen posiblementecon estudio incompleto
+C0000020|_SUG_Etiologia|origen posiblementede probable causa embolica
+C0000020|_SUG_Etiologia|origen posiblementede probable origen aterotrombotico
+C0000020|_SUG_Etiologia|origen posiblementeembolismo paradojico
+C0000020|_SUG_Etiologia|origen posiblementeindeterminada per estudi incomplet
+C0000020|_SUG_Etiologia|origen posiblementeindeterminado pendiente de estudio
+C0000020|_SUG_Etiologia|origen posiblementeindeterminado por doble causa
+C0000020|_SUG_Etiologia|origen posiblementependent de completar l'estudi
+C0000020|_SUG_Etiologia|origen probablemente a estudio
+C0000020|_SUG_Etiologia|origen probablemente aneurisma
+C0000020|_SUG_Etiologia|origen probablemente angiopatia amiloide
+C0000020|_SUG_Etiologia|origen probablemente ANGIOPATIA AMILOIDE CEREBRAL
+C0000020|_SUG_Etiologia|origen probablemente ateromatosis
+C0000020|_SUG_Etiologia|origen probablemente aterosclerotico
+C0000020|_SUG_Etiologia|origen probablemente Aterotrombotico
+C0000020|_SUG_Etiologia|origen probablemente cardiaco
+C0000020|_SUG_Etiologia|origen probablemente cardiaco
+C0000020|_SUG_Etiologia|origen probablemente Cardio embolico
+C0000020|_SUG_Etiologia|origen probablemente cardioemebolico
+C0000020|_SUG_Etiologia|origen probablemente Cavernoma de circunvolucion
+C0000020|_SUG_Etiologia|origen probablemente CE
+C0000020|_SUG_Etiologia|origen probablemente con estudio incompleto
+C0000020|_SUG_Etiologia|origen probablemente criptogenico
+C0000020|_SUG_Etiologia|origen probablemente de probable causa embolica
+C0000020|_SUG_Etiologia|origen probablemente de probable origen aterotrombotico
+C0000020|_SUG_Etiologia|origen probablemente Diseccio
+C0000020|_SUG_Etiologia|origen probablemente embolico
+C0000020|_SUG_Etiologia|origen probablemente embolismo paradojico
+C0000020|_SUG_Etiologia|origen probablemente ESUS
+C0000020|_SUG_Etiologia|origen probablemente hipertensivo
+C0000020|_SUG_Etiologia|origen probablemente indeterminada per estudi incomplet
+C0000020|_SUG_Etiologia|origen probablemente indeterminado
+C0000020|_SUG_Etiologia|origen probablemente indeterminado (estudio incompleto)
+C0000020|_SUG_Etiologia|origen probablemente Indeterminado de causa doble
+C0000020|_SUG_Etiologia|origen probablemente indeterminado pendiente de estudio
+C0000020|_SUG_Etiologia|origen probablemente indeterminado por doble causa
+C0000020|_SUG_Etiologia|origen probablemente Indeterminado por estudio incompleto
+C0000020|_SUG_Etiologia|origen probablemente infrecuente
+C0000020|_SUG_Etiologia|origen probablemente Inhabitual
+C0000020|_SUG_Etiologia|origen probablemente insual
+C0000020|_SUG_Etiologia|origen probablemente Lacunar
+C0000020|_SUG_Etiologia|origen probablemente malformacion arteriovenosa
+C0000020|_SUG_Etiologia|origen probablemente mecanisme embolic
+C0000020|_SUG_Etiologia|origen probablemente microangiopatica
+C0000020|_SUG_Etiologia|origen probablemente no determinada
+C0000020|_SUG_Etiologia|origen probablemente pendent de completar l'estudi
+C0000020|_SUG_Etiologia|origen probablemente pendent de filiacio
+C0000020|_SUG_Etiologia|origen probablemente por determinar
+C0000020|_SUG_Etiologia|origen probablemente secundaria a malformacion vascular
+C0000020|_SUG_Etiologia|origen probablemente secundaria a tumor
+C0000020|_SUG_Etiologia|origen probablemente secundario a diseccion
+C0000020|_SUG_Etiologia|origen secundaria a malformacion vascular
+C0000020|_SUG_Etiologia|origen secundaria a tumor
+C0000020|_SUG_Etiologia|origen secundario a diseccion
+C0000020|_SUG_Etiologia|d'origen a estudio
+C0000020|_SUG_Etiologia|d'origen aneurisma
+C0000020|_SUG_Etiologia|d'origen angiopatia amiloide
+C0000020|_SUG_Etiologia|d'origen ANGIOPATIA AMILOIDE CEREBRAL
+C0000020|_SUG_Etiologia|d'origen ateromatosis
+C0000020|_SUG_Etiologia|d'origen aterosclerotico
+C0000020|_SUG_Etiologia|d'origen Aterotrombotico
+C0000020|_SUG_Etiologia|d'origen cardiaco
+C0000020|_SUG_Etiologia|d'origen Cardio embolico
+C0000020|_SUG_Etiologia|d'origen cardioemebolico
+C0000020|_SUG_Etiologia|d'origen Cavernoma de circunvolucion
+C0000020|_SUG_Etiologia|d'origen CE
+C0000020|_SUG_Etiologia|d'origen con estudio incompleto
+C0000020|_SUG_Etiologia|d'origen criptogenico
+C0000020|_SUG_Etiologia|d'origen de probable causa embolica
+C0000020|_SUG_Etiologia|d'origen de probable origen aterotrombotico
+C0000020|_SUG_Etiologia|d'origen Diseccio
+C0000020|_SUG_Etiologia|d'origen embolico
+C0000020|_SUG_Etiologia|d'origen embolismo paradojico
+C0000020|_SUG_Etiologia|d'origen ESUS
+C0000020|_SUG_Etiologia|d'origen hipertensivo
+C0000020|_SUG_Etiologia|d'origen indeterminada per estudi incomplet
+C0000020|_SUG_Etiologia|d'origen indeterminado
+C0000020|_SUG_Etiologia|d'origen indeterminado (estudio incompleto)
+C0000020|_SUG_Etiologia|d'origen Indeterminado de causa doble
+C0000020|_SUG_Etiologia|d'origen indeterminado pendiente de estudio
+C0000020|_SUG_Etiologia|d'origen indeterminado por doble causa
+C0000020|_SUG_Etiologia|d'origen Indeterminado por estudio incompleto
+C0000020|_SUG_Etiologia|d'origen infrecuente
+C0000020|_SUG_Etiologia|d'origen Inhabitual
+C0000020|_SUG_Etiologia|d'origen insual
+C0000020|_SUG_Etiologia|d'origen Lacunar
+C0000020|_SUG_Etiologia|d'origen malformacion arteriovenosa
+C0000020|_SUG_Etiologia|d'origen mecanisme embolic
+C0000020|_SUG_Etiologia|d'origen microangiopatica
+C0000020|_SUG_Etiologia|d'origen no determinada
+C0000020|_SUG_Etiologia|d'origen pendent de completar l'estudi
+C0000020|_SUG_Etiologia|d'origen pendent de filiacio
+C0000020|_SUG_Etiologia|d'origen por determinar
+C0000020|_SUG_Etiologia|d'origen posiblemente a estudio
+C0000020|_SUG_Etiologia|d'origen posiblemente aneurisma
+C0000020|_SUG_Etiologia|d'origen posiblemente angiopatia amiloide
+C0000020|_SUG_Etiologia|d'origen posiblemente ANGIOPATIA AMILOIDE CEREBRAL
+C0000020|_SUG_Etiologia|d'origen posiblemente ateromatosis
+C0000020|_SUG_Etiologia|d'origen posiblemente aterosclerotico
+C0000020|_SUG_Etiologia|d'origen posiblemente Aterotrombotico
+C0000020|_SUG_Etiologia|d'origen posiblemente cardiaco
+C0000020|_SUG_Etiologia|d'origen posiblemente cardiaco
+C0000020|_SUG_Etiologia|d'origen posiblemente Cardio embolico
+C0000020|_SUG_Etiologia|d'origen posiblemente cardioemebolico
+C0000020|_SUG_Etiologia|d'origen posiblemente Cavernoma de circunvolucion
+C0000020|_SUG_Etiologia|d'origen posiblemente CE
+C0000020|_SUG_Etiologia|d'origen posiblemente criptogenico
+C0000020|_SUG_Etiologia|d'origen posiblemente Diseccio
+C0000020|_SUG_Etiologia|d'origen posiblemente embolico
+C0000020|_SUG_Etiologia|d'origen posiblemente ESUS
+C0000020|_SUG_Etiologia|d'origen posiblemente hipertensivo
+C0000020|_SUG_Etiologia|d'origen posiblemente indeterminado
+C0000020|_SUG_Etiologia|d'origen posiblemente indeterminado (estudio incompleto)
+C0000020|_SUG_Etiologia|d'origen posiblemente Indeterminado de causa doble
+C0000020|_SUG_Etiologia|d'origen posiblemente Indeterminado por estudio incompleto
+C0000020|_SUG_Etiologia|d'origen posiblemente infrecuente
+C0000020|_SUG_Etiologia|d'origen posiblemente Inhabitual
+C0000020|_SUG_Etiologia|d'origen posiblemente insual
+C0000020|_SUG_Etiologia|d'origen posiblemente Lacunar
+C0000020|_SUG_Etiologia|d'origen posiblemente malformacion arteriovenosa
+C0000020|_SUG_Etiologia|d'origen posiblemente mecanisme embolic
+C0000020|_SUG_Etiologia|d'origen posiblemente microangiopatica
+C0000020|_SUG_Etiologia|d'origen posiblemente no determinada
+C0000020|_SUG_Etiologia|d'origen posiblemente pendent de filiacio
+C0000020|_SUG_Etiologia|d'origen posiblemente por determinar
+C0000020|_SUG_Etiologia|d'origen posiblemente secundaria a malformacion vascular
+C0000020|_SUG_Etiologia|d'origen posiblemente secundaria a tumor
+C0000020|_SUG_Etiologia|d'origen posiblemente secundario a diseccion
+C0000020|_SUG_Etiologia|d'origen posiblementecon estudio incompleto
+C0000020|_SUG_Etiologia|d'origen posiblementede probable causa embolica
+C0000020|_SUG_Etiologia|d'origen posiblementede probable origen aterotrombotico
+C0000020|_SUG_Etiologia|d'origen posiblementeembolismo paradojico
+C0000020|_SUG_Etiologia|d'origen posiblementeindeterminada per estudi incomplet
+C0000020|_SUG_Etiologia|d'origen posiblementeindeterminado pendiente de estudio
+C0000020|_SUG_Etiologia|d'origen posiblementeindeterminado por doble causa
+C0000020|_SUG_Etiologia|d'origen posiblementependent de completar l'estudi
+C0000020|_SUG_Etiologia|d'origen probablemente a estudio
+C0000020|_SUG_Etiologia|d'origen probablemente aneurisma
+C0000020|_SUG_Etiologia|d'origen probablemente angiopatia amiloide
+C0000020|_SUG_Etiologia|d'origen probablemente ANGIOPATIA AMILOIDE CEREBRAL
+C0000020|_SUG_Etiologia|d'origen probablemente ateromatosis
+C0000020|_SUG_Etiologia|d'origen probablemente aterosclerotico
+C0000020|_SUG_Etiologia|d'origen probablemente Aterotrombotico
+C0000020|_SUG_Etiologia|d'origen probablemente cardiaco
+C0000020|_SUG_Etiologia|d'origen probablemente cardiaco
+C0000020|_SUG_Etiologia|d'origen probablemente Cardio embolico
+C0000020|_SUG_Etiologia|d'origen probablemente cardioemebolico
+C0000020|_SUG_Etiologia|d'origen probablemente Cavernoma de circunvolucion
+C0000020|_SUG_Etiologia|d'origen probablemente CE
+C0000020|_SUG_Etiologia|d'origen probablemente con estudio incompleto
+C0000020|_SUG_Etiologia|d'origen probablemente criptogenico
+C0000020|_SUG_Etiologia|d'origen probablemente de probable causa embolica
+C0000020|_SUG_Etiologia|d'origen probablemente de probable origen aterotrombotico
+C0000020|_SUG_Etiologia|d'origen probablemente Diseccio
+C0000020|_SUG_Etiologia|d'origen probablemente embolico
+C0000020|_SUG_Etiologia|d'origen probablemente embolismo paradojico
+C0000020|_SUG_Etiologia|d'origen probablemente ESUS
+C0000020|_SUG_Etiologia|d'origen probablemente hipertensivo
+C0000020|_SUG_Etiologia|d'origen probablemente indeterminada per estudi incomplet
+C0000020|_SUG_Etiologia|d'origen probablemente indeterminado
+C0000020|_SUG_Etiologia|d'origen probablemente indeterminado (estudio incompleto)
+C0000020|_SUG_Etiologia|d'origen probablemente Indeterminado de causa doble
+C0000020|_SUG_Etiologia|d'origen probablemente indeterminado pendiente de estudio
+C0000020|_SUG_Etiologia|d'origen probablemente indeterminado por doble causa
+C0000020|_SUG_Etiologia|d'origen probablemente Indeterminado por estudio incompleto
+C0000020|_SUG_Etiologia|d'origen probablemente infrecuente
+C0000020|_SUG_Etiologia|d'origen probablemente Inhabitual
+C0000020|_SUG_Etiologia|d'origen probablemente insual
+C0000020|_SUG_Etiologia|d'origen probablemente Lacunar
+C0000020|_SUG_Etiologia|d'origen probablemente malformacion arteriovenosa
+C0000020|_SUG_Etiologia|d'origen probablemente mecanisme embolic
+C0000020|_SUG_Etiologia|d'origen probablemente microangiopatica
+C0000020|_SUG_Etiologia|d'origen probablemente no determinada
+C0000020|_SUG_Etiologia|d'origen probablemente pendent de completar l'estudi
+C0000020|_SUG_Etiologia|d'origen probablemente pendent de filiacio
+C0000020|_SUG_Etiologia|d'origen probablemente por determinar
+C0000020|_SUG_Etiologia|d'origen probablemente secundaria a malformacion vascular
+C0000020|_SUG_Etiologia|d'origen probablemente secundaria a tumor
+C0000020|_SUG_Etiologia|d'origen probablemente secundario a diseccion
+C0000020|_SUG_Etiologia|d'origen secundaria a malformacion vascular
+C0000020|_SUG_Etiologia|d'origen secundaria a tumor
+C0000020|_SUG_Etiologia|d'origen secundario a diseccion
 C0000020|_SUG_Etiologia|de origen a estudio
 C0000020|_SUG_Etiologia|de origen aneurisma
 C0000020|_SUG_Etiologia|de origen angiopatia amiloide
@@ -894,8 +1150,8 @@ C0000020|_SUG_Etiologia|de origen probablemente secundario a diseccion
 C0000020|_SUG_Etiologia|de origen secundaria a malformacion vascular
 C0000020|_SUG_Etiologia|de origen secundaria a tumor
 C0000020|_SUG_Etiologia|de origen secundario a diseccion
-C0000020|_SUG_Etiologia|de probable causa embolica
-C0000020|_SUG_Etiologia|de probable origen aterotrombotico
+C0000020|_SUG_Etiologia|causa embolica
+C0000020|_SUG_Etiologia|origen aterotrombotico
 C0000020|_SUG_Etiologia|Diseccio
 C0000020|_SUG_Etiologia|embolico
 C0000020|_SUG_Etiologia|embolismo paradojico
@@ -1172,90 +1428,15 @@ C0000020|_SUG_Etiologia|perfil secundaria a malformacion vascular
 C0000020|_SUG_Etiologia|perfil secundaria a tumor
 C0000020|_SUG_Etiologia|perfil secundario a diseccion
 C0000020|_SUG_Etiologia|por determinar
-C0000020|_SUG_Etiologia|posiblemente a estudio
-C0000020|_SUG_Etiologia|posiblemente aneurisma
-C0000020|_SUG_Etiologia|posiblemente angiopatia amiloide
-C0000020|_SUG_Etiologia|posiblemente ANGIOPATIA AMILOIDE CEREBRAL
-C0000020|_SUG_Etiologia|posiblemente ateromatosis
-C0000020|_SUG_Etiologia|posiblemente aterosclerotico
-C0000020|_SUG_Etiologia|posiblemente Aterotrombotico
-C0000020|_SUG_Etiologia|posiblemente cardiaco
-C0000020|_SUG_Etiologia|posiblemente Cardio embolico
-C0000020|_SUG_Etiologia|posiblemente cardioemebolico
-C0000020|_SUG_Etiologia|posiblemente Cavernoma de circunvolucion
-C0000020|_SUG_Etiologia|posiblemente CE
-C0000020|_SUG_Etiologia|posiblemente criptogenico
-C0000020|_SUG_Etiologia|posiblemente Diseccio
-C0000020|_SUG_Etiologia|posiblemente embolico
-C0000020|_SUG_Etiologia|posiblemente ESUS
-C0000020|_SUG_Etiologia|posiblemente hipertensivo
-C0000020|_SUG_Etiologia|posiblemente indeterminado
-C0000020|_SUG_Etiologia|posiblemente indeterminado (estudio incompleto)
-C0000020|_SUG_Etiologia|posiblemente Indeterminado de causa doble
-C0000020|_SUG_Etiologia|posiblemente Indeterminado por estudio incompleto
-C0000020|_SUG_Etiologia|posiblemente infrecuente
-C0000020|_SUG_Etiologia|posiblemente Inhabitual
-C0000020|_SUG_Etiologia|posiblemente insual
-C0000020|_SUG_Etiologia|posiblemente Lacunar
-C0000020|_SUG_Etiologia|posiblemente malformacion arteriovenosa
-C0000020|_SUG_Etiologia|posiblemente mecanisme embolic
-C0000020|_SUG_Etiologia|posiblemente microangiopatica
-C0000020|_SUG_Etiologia|posiblemente no determinada
-C0000020|_SUG_Etiologia|posiblemente pendent de filiacio
-C0000020|_SUG_Etiologia|posiblemente por determinar
-C0000020|_SUG_Etiologia|posiblemente secundaria a diseccion
-C0000020|_SUG_Etiologia|posiblemente secundaria a malformacion vascular
-C0000020|_SUG_Etiologia|posiblemente secundaria a tumor
-C0000020|_SUG_Etiologia|posiblementecon estudio incompleto
-C0000020|_SUG_Etiologia|posiblementede probable causa embolica
-C0000020|_SUG_Etiologia|posiblementede probable origen aterotrombotico
-C0000020|_SUG_Etiologia|posiblementeembolismo paradojico
-C0000020|_SUG_Etiologia|posiblementeindeterminada per estudi incomplet
-C0000020|_SUG_Etiologia|posiblementeindeterminado pendiente de estudio
-C0000020|_SUG_Etiologia|posiblementeindeterminado por doble causa
-C0000020|_SUG_Etiologia|posiblementependent de completar l'estudi
-C0000020|_SUG_Etiologia|probablemente a estudio
-C0000020|_SUG_Etiologia|probablemente aneurisma
-C0000020|_SUG_Etiologia|probablemente angiopatia amiloide
-C0000020|_SUG_Etiologia|probablemente ANGIOPATIA AMILOIDE CEREBRAL
-C0000020|_SUG_Etiologia|probablemente ateromatosis
-C0000020|_SUG_Etiologia|probablemente aterosclerotico
-C0000020|_SUG_Etiologia|probablemente Aterotrombotico
-C0000020|_SUG_Etiologia|probablemente cardiaco
-C0000020|_SUG_Etiologia|probablemente Cardio embolico
-C0000020|_SUG_Etiologia|probablemente cardioemebolico
-C0000020|_SUG_Etiologia|probablemente Cavernoma de circunvolucion
-C0000020|_SUG_Etiologia|probablemente CE
-C0000020|_SUG_Etiologia|probablemente con estudio incompleto
-C0000020|_SUG_Etiologia|probablemente criptogenico
-C0000020|_SUG_Etiologia|probablemente de probable causa embolica
-C0000020|_SUG_Etiologia|probablemente de probable origen aterotrombotico
-C0000020|_SUG_Etiologia|probablemente Diseccio
-C0000020|_SUG_Etiologia|probablemente embolico
-C0000020|_SUG_Etiologia|probablemente embolismo paradojico
-C0000020|_SUG_Etiologia|probablemente ESUS
-C0000020|_SUG_Etiologia|probablemente hipertensivo
-C0000020|_SUG_Etiologia|probablemente indeterminada per estudi incomplet
-C0000020|_SUG_Etiologia|probablemente indeterminado
-C0000020|_SUG_Etiologia|probablemente indeterminado (estudio incompleto)
-C0000020|_SUG_Etiologia|probablemente Indeterminado de causa doble
-C0000020|_SUG_Etiologia|probablemente indeterminado pendiente de estudio
-C0000020|_SUG_Etiologia|probablemente indeterminado por doble causa
-C0000020|_SUG_Etiologia|probablemente Indeterminado por estudio incompleto
-C0000020|_SUG_Etiologia|probablemente infrecuente
-C0000020|_SUG_Etiologia|probablemente Inhabitual
-C0000020|_SUG_Etiologia|probablemente insual
-C0000020|_SUG_Etiologia|probablemente Lacunar
-C0000020|_SUG_Etiologia|probablemente malformacion arteriovenosa
-C0000020|_SUG_Etiologia|probablemente mecanisme embolic
-C0000020|_SUG_Etiologia|probablemente microangiopatica
-C0000020|_SUG_Etiologia|probablemente no determinada
-C0000020|_SUG_Etiologia|probablemente pendent de completar l'estudi
-C0000020|_SUG_Etiologia|probablemente pendent de filiacio
-C0000020|_SUG_Etiologia|probablemente por determinar
-C0000020|_SUG_Etiologia|probablemente secundaria a diseccion
-C0000020|_SUG_Etiologia|probablemente secundaria a malformacion vascular
-C0000020|_SUG_Etiologia|probablemente secundaria a tumor
+C0000020|_SUG_Etiologia|indeterminada per estudi incomplet
+C0000020|_SUG_Etiologia|indeterminado
+C0000020|_SUG_Etiologia|indeterminado (estudio incompleto)
+C0000020|_SUG_Etiologia|Indeterminado de causa doble
+C0000020|_SUG_Etiologia|indeterminado pendiente de estudio
+C0000020|_SUG_Etiologia|indeterminado por doble causa
+C0000020|_SUG_Etiologia|Indeterminado por estudio incompleto
+C0000020|_SUG_Etiologia|indeterminado por doble causa
+C0000020|_SUG_Etiologia|pendent de completar l'estudi
 C0000020|_SUG_Etiologia|secundaria a diseccion
 C0000020|_SUG_Etiologia|secundaria a malformacion vascular
 C0000020|_SUG_Etiologia|secundaria a tumor
