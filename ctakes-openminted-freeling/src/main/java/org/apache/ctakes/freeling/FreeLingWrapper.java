@@ -624,6 +624,31 @@ public class FreeLingWrapper extends SegmenterBase {
 					System.arraycopy(new_tokens, 0, tokens, 0, new_tokens.length);
 					continue;
 				}
+				if (w.getForm().startsWith("d'") || w.getForm().startsWith("l'")) {
+					
+					new_size += 1;
+					WordToken[] new_tokens = new WordToken[(int) s.size() + new_size];
+					System.arraycopy(tokens, 0, new_tokens, 0, tokens.length);
+
+					WordToken token = new WordToken(aJCas, start + begin, start + begin + 2);
+					token.addToIndexes();
+					token.setPartOfSpeech(w.getTag());
+					token.setTokenNumber(tokennumber);
+					tokennumber++;
+					new_tokens[i++] = token;
+
+					token = new WordToken(aJCas, start + begin + 2, start + end);
+					token.addToIndexes();
+					token.setPartOfSpeech(w.getTag());
+					token.setTokenNumber(tokennumber);
+					tokennumber++;
+					new_tokens[i++] = token;
+
+
+					tokens = new WordToken[(int) s.size() + new_size];
+					System.arraycopy(new_tokens, 0, tokens, 0, new_tokens.length);
+					continue;
+				}
 				// create token
 				// Token token = this.createToken(aJCas, start + begin, start + end);
 				// Token token = new Token(aJCas, start + begin, start + end);

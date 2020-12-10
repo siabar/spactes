@@ -375,6 +375,13 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 		
 		String[] listtempText = tempText.split(" ");
 		listtempText[0] = rareWordHit.getRareWord();
+		if (rareWordHit.getRareWord().equals("tc")) {
+			listtempText[0] = "tac";
+			String[] tempeareWord = rareWordHit.getText().split(" ");
+			tempeareWord[0] =  "tac";
+			rareWord = String.join(" ", tempeareWord);
+			
+		}
 		tempText = String.join(" ", listtempText);
 		
 
