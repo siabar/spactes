@@ -64,13 +64,13 @@ final public class SpaCTeSBuilderRunner {
 							HeidelTime.PARAM_TYPE_TO_PROCESS, "narratives",
 							HeidelTime.PARAM_LANGUAGE, "spanish")
 
-					// Fast Dictionary LookUp
+					// Fuzzy Dictionary LookUp
 					.addDescription(DefaultJCasTermAnnotator.createAnnotatorDescription(DICT_DESC_PATH, ConfigParameterConstants.lemmaForm))
 
 
 					.collectEntities();
 			builder
-//			.writeXMIs(OUTPUT_DIR)
+			.writeXMIs(OUTPUT_DIR)
 			// Brat Writter Component
 			.writeBrat(OUTPUT_DIR);
 			// Brat HTML Component

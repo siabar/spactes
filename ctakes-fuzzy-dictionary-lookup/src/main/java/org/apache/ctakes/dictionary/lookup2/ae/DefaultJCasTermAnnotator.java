@@ -27,6 +27,7 @@ import org.apache.ctakes.dictionary.lookup2.term.RareWordTerm;
 import org.apache.ctakes.dictionary.lookup2.textspan.DefaultTextSpan;
 import org.apache.ctakes.dictionary.lookup2.textspan.TextSpan;
 import org.apache.ctakes.dictionary.lookup2.util.FastLookupToken;
+import org.apache.ctakes.typesystem.type.heideltime.Timex3;
 import org.apache.log4j.Logger;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import org.apache.uima.fit.factory.AnalysisEngineFactory;
@@ -40,9 +41,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -105,6 +108,9 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 //
 //		for (Integer tokens : lookupTokenIndices)
 //			lookupTokenIndices_original.add(tokens);
+		
+		final Map<TextSpan, Long> placeValue = new HashMap<>();
+
 
 		int intTemp = lookupTokenIndices.get(lookupTokenIndices.size() - 1);
 		try {
@@ -202,7 +208,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 				}
 				if (rareWordHit.getText().length() < 3) {
 					if (rareWordHit.getText().contentEquals(lookupToken.getText())) {
-						termsFromDictionary.placeValue(lookupToken.getTextSpan(), rareWordHit.getCuiCode());
+						placeValue.put(lookupToken.getTextSpan(), rareWordHit.getCuiCode());
 					}
 					continue;
 
@@ -227,9 +233,9 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 					if (rareWordHit.getRareWord().contentEquals(temp_one))
 //						LOGGER.info("OK temo_one: " + rareWordHit.getText());
 						if (tempText.equalsIgnoreCase(acm_word)){
-							termsFromDictionary.placeValue(lookupToken.getTexTSpanACM(), rareWordHit.getCuiCode());
+							placeValue.put(lookupToken.getTexTSpanACM(), rareWordHit.getCuiCode());
 						}else {
-						termsFromDictionary.placeValue(lookupToken.getTextSpan(), rareWordHit.getCuiCode());
+							placeValue.put(lookupToken.getTextSpan(), rareWordHit.getCuiCode());
 						}
 					continue;
 				}
@@ -250,7 +256,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 //						System.out.println(spanStart);
 						final int spanEnd = allTokens.get(termStartIndex + Score - 1).getEnd();
 //						System.out.println(spanEnd);
-						termsFromDictionary.placeValue(new DefaultTextSpan(spanStart, spanEnd),
+						placeValue.put(new DefaultTextSpan(spanStart, spanEnd),
 								rareWordHit.getCuiCode());
 
 					} else {
@@ -261,7 +267,7 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 //							System.out.println(spanStart);
 								final int spanEnd = allTokens.get(termEndIndex).getEnd();
 //							System.out.println(spanEnd);
-								termsFromDictionary.placeValue(new DefaultTextSpan(spanStart, spanEnd),
+								placeValue.put(new DefaultTextSpan(spanStart, spanEnd),
 										rareWordHit.getCuiCode());
 
 							} catch (Exception e) {
@@ -274,6 +280,36 @@ public class DefaultJCasTermAnnotator extends AbstractJCasTermAnnotator {
 				}
 
 			}
+		}
+		
+		// Keeping the longest span for the same categories.
+		Map<TextSpan, Long> placeValue_new =  new HashMap<>(placeValue);
+		for (Map.Entry ent1 : placeValue.entrySet()) {
+			
+			Map<TextSpan, Long> placeValue_copy =  new HashMap<>(placeValue_new);
+			for (Map.Entry ent2 : placeValue_copy.entrySet()) {
+				if (ent1.getValue().equals(ent2.getValue())) {
+					TextSpan e1 = (TextSpan) ent1.getKey();				
+					TextSpan e2 = (TextSpan) ent2.getKey();				
+					if (((e1.getStart() == e2.getStart()) && (e1.getEnd() < e2.getEnd())) ||
+							((e1.getStart() > e2.getStart()) && (e1.getEnd() < e2.getEnd())) ||
+							((e1.getStart() > e2.getStart()) && (e1.getEnd() == e2.getEnd()))) {
+						placeValue_new.remove((TextSpan) ent1.getKey(), (Long) ent1.getValue());
+						break;
+					}
+//					if ((e1.getStart() == e2.getStart()) && (e1.getEnd() < e2.getEnd()))  {
+//						placeValue_new.remove((TextSpan) ent1.getKey(), (Long) ent1.getValue());
+//							break;					
+//					}
+				
+				
+				
+				
+			    }
+		    }
+		}
+		for (Map.Entry ent : placeValue_new.entrySet() ) {
+			termsFromDictionary.placeValue((TextSpan) ent.getKey(), (Long) ent.getValue());
 		}
 	}
 
