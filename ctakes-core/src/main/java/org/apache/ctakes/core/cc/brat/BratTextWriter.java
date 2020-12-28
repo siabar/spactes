@@ -147,7 +147,7 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 			}
 //			String text = getSafeText(baseToken);
 			String text = baseToken.getCoveredText();
-			text += "SIAMAK" + baseToken.getPartOfSpeech();
+			text += "#POS" + baseToken.getPartOfSpeech();
 			if (text.isEmpty()) {
 				continue;
 			}
@@ -782,7 +782,7 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 //				temSB = "";
 //				String text = "";
 //				String pos = "";
-//				String[] ListText = TempText.split("SIAMAK");
+//				String[] ListText = TempText.split("#POS");
 //				if (ListText.length > 1) {
 //					text = ListText[0];
 //					pos = ListText[1];

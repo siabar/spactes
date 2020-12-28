@@ -353,6 +353,8 @@ public class FreeLingWrapper extends SegmenterBase {
 
 		String[] LineList = line.split("\n");
 		for (String text : LineList) {
+			// converting strange white space to normal space
+			text = text.replaceAll(" ", " ");
 			ListWord l = tks.get(language).tokenize(text);
 			// Split the tokens into distinct sentences.
 			// getLogger().info(" sentence split" );
@@ -504,6 +506,8 @@ public class FreeLingWrapper extends SegmenterBase {
 	}
 
 	public List<String> tokenizer(String line) {
+		// converting strange white space to normal space
+		line = line.replace(" ", " ");
 		ListWord l = tks.get(language).tokenize(line);
 		// Split the tokens into distinct sentences.
 		// getLogger().info(" sentence split" );
@@ -514,6 +518,8 @@ public class FreeLingWrapper extends SegmenterBase {
 		// Perform part-of-speech tagging.
 		// getLogger().info(" POS" );
 		tgs.get(language).analyze(ls);
+		
+		
 
 		ListSentenceIterator sIt = new ListSentenceIterator(ls);
 
@@ -521,6 +527,9 @@ public class FreeLingWrapper extends SegmenterBase {
 		List<String> listStr = new ArrayList<String>();
 		int begin;
 		int end = 0;
+		if (line.startsWith("a.a.s.")) {
+			int temp = 0;
+		}
 		while (sIt.hasNext()) {
 			edu.upc.Jfreeling.Sentence s = sIt.next();
 			ListWordIterator wIt = new ListWordIterator(s);
@@ -540,20 +549,33 @@ public class FreeLingWrapper extends SegmenterBase {
 
 //				sb.append(line.subSequence(begin, end)).append(" ");
 				// if (!w.getForm().equalsIgnoreCase("."))
-				try {
-					if (lemmaForm) {
-						if (line.length() <= 4) {
-							listStr.add((String) line.subSequence(begin, end));
-						} else {
-							listStr.add(w.getLemma());
-						}
-
-					} else {
-						listStr.add((String) line.subSequence(begin, end));
-					}
-				} catch (Exception e) {
-					System.out.println(line + " -> " + begin + " - " + end);
+//				try {
+//					if (lemmaForm) {
+//						if (line.length() <= 4) {
+//							listStr.add((String) line.subSequence(begin, end));
+//						} else {
+//							listStr.add(w.getLemma());
+//						}
+//
+//					} else {
+//						listStr.add((String) line.subSequence(begin, end));
+//					}
+//				} catch (Exception e) {
+//					System.out.println(line + " -> " + begin + " - " + end);
+//				}
+				if (afectada.contains(w.getForm())) {
+					
+					listStr.add((String) line.subSequence(begin, end-1));
+					listStr.add((String) line.subSequence(end-1, end));
+					continue;
 				}
+				if (w.getForm().startsWith("d'") || w.getForm().startsWith("l'")) {
+					
+					listStr.add((String) line.subSequence(begin, begin+2));
+					listStr.add((String) line.subSequence(begin+2, end));
+					continue;
+				}
+				listStr.add((String) line.subSequence(begin, end));
 
 			}
 		}

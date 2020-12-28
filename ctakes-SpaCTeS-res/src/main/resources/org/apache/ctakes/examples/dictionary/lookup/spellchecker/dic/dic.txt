@@ -699,7 +699,7 @@ causamecanismeembolic
 causa microangiopatica
 causamicroangiopatica
 causa no determinada
-causa pendent de completar l'estudi
+causa pendent de completar l' estudi
 causa pendent de filiacio
 causa por determinar
 causa posiblemente a estudio
@@ -775,7 +775,7 @@ causa posiblemente indeterminado pendiente de estudio
 causaposiblementeindeterminadopendientedeestudio
 causa posiblemente indeterminado por doble causa
 causaposiblementeindeterminadopordoblecausa
-causa posiblemente pendent de completar l'estudi
+causa posiblemente pendent de completar l' estudi
 causaposiblementependentdecompletarl'estudi
 causa probablemente a estudio
 causa probablemente aneurisma
@@ -841,7 +841,7 @@ causaprobablementemecanismeembolic
 causa probablemente microangiopatica
 causaprobablementemicroangiopatica
 causa probablemente no determinada
-causa probablemente pendent de completar l'estudi
+causa probablemente pendent de completar l' estudi
 causaprobablementependentdecompletarl'estudi
 causa probablemente pendent de filiacio
 causaprobablementependentdefiliacio
@@ -893,7 +893,7 @@ de origen malformacion arteriovenosa
 de origen mecanisme embolic
 de origen microangiopatica
 de origen no determinada
-de origen pendent de completar l'estudi
+de origen pendent de completar l' estudi
 de origen pendent de filiacio
 de origen por determinar
 de origen posiblemente a estudio
@@ -936,7 +936,7 @@ de origen posiblemente embolismo paradojico
 de origen posiblemente indeterminada per estudi incomplet
 de origen posiblemente indeterminado pendiente de estudio
 de origen posiblemente indeterminado por doble causa
-de origen posiblemente pendent de completar l'estudi
+de origen posiblemente pendent de completar l' estudi
 de origen probablemente a estudio
 de origen probablemente aneurisma
 de origen probablemente angiopatia amiloide
@@ -972,7 +972,7 @@ de origen probablemente malformacion arteriovenosa
 de origen probablemente mecanisme embolic
 de origen probablemente microangiopatica
 de origen probablemente no determinada
-de origen probablemente pendent de completar l'estudi
+de origen probablemente pendent de completar l' estudi
 de origen probablemente pendent de filiacio
 de origen probablemente por determinar
 de origen probablemente secundaria a malformacion vascular
@@ -1044,7 +1044,7 @@ etiologiamecanismeembolic
 etiologia microangiopatica
 etiologiamicroangiopatica
 etiologia no determinada
-etiologia pendent de completar l'estudi
+etiologia pendent de completar l' estudi
 etiologia pendent de filiacio
 etiologia por determinar
 etiologia posiblemente a estudio
@@ -1120,7 +1120,7 @@ etiologia posiblemente indeterminado pendiente de estudio
 etiologiaposiblementeindeterminadopendientedeestudio
 etiologia posiblemente indeterminado por doble causa
 etiologiaposiblementeindeterminadopordoblecausa
-etiologia posiblemente pendent de completar l'estudi
+etiologia posiblemente pendent de completar l' estudi
 etiologiaposiblementependentdecompletarl'estudi
 etiologia probablemente a estudio
 etiologia probablemente aneurisma
@@ -1186,7 +1186,7 @@ etiologiaprobablementemecanismeembolic
 etiologia probablemente microangiopatica
 etiologiaprobablementemicroangiopatica
 etiologia probablemente no determinada
-etiologia probablemente pendent de completar l'estudi
+etiologia probablemente pendent de completar l' estudi
 etiologiaprobablementependentdecompletarl'estudi
 etiologia probablemente pendent de filiacio
 etiologiaprobablementependentdefiliacio
@@ -1289,7 +1289,7 @@ origenmecanismeembolic
 origen microangiopatica
 origenmicroangiopatica
 origen no determinada
-origen pendent de completar l'estudi
+origen pendent de completar l' estudi
 origen pendent de filiacio
 origen por determinar
 origen posiblemente a estudio
@@ -1367,7 +1367,7 @@ origen posiblemente indeterminado pendiente de estudio
 origenposiblementeindeterminadopendientedeestudio
 origen posiblemente indeterminado por doble causa
 origenposiblementeindeterminadopordoblecausa
-origen posiblemente pendent de completar l'estudi
+origen posiblemente pendent de completar l' estudi
 origenposiblementependentdecompletarl'estudi
 origen probablemente a estudio
 origen probablemente aneurisma
@@ -1435,7 +1435,7 @@ origenprobablementemecanismeembolic
 origen probablemente microangiopatica
 origenprobablementemicroangiopatica
 origen probablemente no determinada
-origen probablemente pendent de completar l'estudi
+origen probablemente pendent de completar l' estudi
 origenprobablementependentdecompletarl'estudi
 origen probablemente pendent de filiacio
 origenprobablementependentdefiliacio
@@ -1449,8 +1449,8 @@ origenprobablementesecundariaadiseccion
 origen secundaria a malformacion vascular
 origen secundaria a tumor
 origen secundaria a diseccion
-pendent de completar l'estudi
-pendent de completar l'estudi
+pendent de completar l' estudi
+pendent de completar l' estudi
 pendent de filiacio
 perfil a estudio
 perfil aneurisma
@@ -1510,7 +1510,7 @@ perfilmecanismeembolic
 perfil microangiopatica
 perfilmicroangiopatica
 perfil no determinada
-perfil pendent de completar l'estudi
+perfil pendent de completar l' estudi
 perfil pendent de filiacio
 perfil por determinar
 perfil posiblemente a estudio
@@ -1586,7 +1586,7 @@ perfil posiblemente indeterminado pendiente de estudio
 perfilposiblementeindeterminadopendientedeestudio
 perfil posiblemente indeterminado por doble causa
 perfilposiblementeindeterminadopordoblecausa
-perfil posiblemente pendent de completar l'estudi
+perfil posiblemente pendent de completar l' estudi
 perfilposiblementependentdecompletarl'estudi
 perfil probablemente a estudio
 perfil probablemente aneurisma
@@ -1652,7 +1652,7 @@ perfilprobablementemecanismeembolic
 perfil probablemente microangiopatica
 perfilprobablementemicroangiopatica
 perfil probablemente no determinada
-perfil probablemente pendent de completar l'estudi
+perfil probablemente pendent de completar l' estudi
 perfilprobablementependentdecompletarl'estudi
 perfil probablemente pendent de filiacio
 perfilprobablementependentdefiliacio

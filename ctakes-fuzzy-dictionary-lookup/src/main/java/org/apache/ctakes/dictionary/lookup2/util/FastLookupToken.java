@@ -77,9 +77,9 @@ final public class FastLookupToken {
 		return _textSpan;
 	}
 	
-	public TextSpan getTexTSpanACM() {
-		return new DefaultTextSpan(_textSpan.getStart()+2, _textSpan.getEnd());
-	}
+//	public TextSpan getTexTSpanACM() {
+//		return new DefaultTextSpan(_textSpan.getStart()+2, _textSpan.getEnd());
+//	}
 
 	/**
 	 * @return the start index used for this lookup token

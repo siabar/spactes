@@ -100,7 +100,17 @@ final public class BsvConceptFactory implements ConceptFactory {
    static void printPatternUtil(Collection<String> terms, String[] str_s, String buf[], int i, int j, int n) 
    { 
        if(i == n) 
-       { 
+       {
+//    	   if (
+//    			   ((j >= 3) && (buf[0].length() >=3 && buf[1].length() >=3 && buf[2].equalsIgnoreCase(" ")  || buf[1].equalsIgnoreCase(" ") || (buf[0].length() >=2 && buf[2].length() >=2 && buf[2].length() >=2))) ||
+//    			   ((j == 2) && ((buf[0].length() >4 && buf[1].length() >3 || buf[1].equals(" ")) || (buf[0].length() <= 3 && buf[1].length() >=2 || buf[1].equals(" ")) || (buf[0].length() == 4 && buf[1].length() >=3 || buf[1].equals(" ")))) ||
+//    			   (j == 1) 
+//              )
+//    	   {
+//              terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
+//    	   }
+//           return; 
+    	   
 //           buf[j] = ""; 
            terms.add(String.join("", Arrays.copyOfRange(buf, 0, j)));
            return; 

@@ -145,6 +145,7 @@ C0000005|_SUG_Trombectomia_mecanica|procedimiento de revascularizacion
 C0000005|_SUG_Trombectomia_mecanica|reperfusion intraateria
 C0000005|_SUG_Trombectomia_mecanica|rescate endovascular
 C0000005|_SUG_Trombectomia_mecanica|rescate intraarterial
+C0000005|_SUG_Trombectomia_mecanica|rescate intraarterial
 C0000005|_SUG_Trombectomia_mecanica|terapia de reperfusion
 C0000005|_SUG_Trombectomia_mecanica|terapia de rescate
 C0000005|_SUG_Trombectomia_mecanica|terapia endovascular
