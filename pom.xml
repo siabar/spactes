@@ -147,7 +147,7 @@
 		<module>ctakes-openminted-freeling</module>
 		<module>ctakes-spellcheck-service</module>
 		<module>ctakes-fuzzy-dictionary-lookup</module>
-		<module>ctakes-fuzzy-dictionary-lookup-res</module>
+		<!-- <module>ctakes-fuzzy-dictionary-lookup-res</module> -->
 		<module>ctakes-SpaCTeS</module>
 		<module>ctakes-SpaCTeS-res</module>
 		<module>ctakes-heideltime</module>
@@ -845,11 +845,12 @@
 				<artifactId>ctakes-fuzzy-dictionary-lookup</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			<dependency>
+			<!--<dependency>
 				<groupId>org.apache.ctakes</groupId>
 				<artifactId>ctakes-fuzzy-dictionary-lookup-res</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			-->
 			<dependency>
 				<groupId>edu.upf.taln.uima</groupId>
 				<artifactId>ctakes-openminted-freeling</artifactId>
@@ -1032,7 +1033,7 @@
 							<additionalClasspathElement>ctakes-temporal-res/src/main/resources</additionalClasspathElement>
 							<additionalClasspathElement>ctakes-ytex-res/src/main/resources</additionalClasspathElement>
 							<additionalClasspathElement>ctakes-dictionary-lookup-fast-res/src/main/resources</additionalClasspathElement>
-							<additionalClasspathElement>ctakes-fuzzy-dictionary-lookup-res/src/main/resources</additionalClasspathElement>
+							<!-- <additionalClasspathElement>ctakes-fuzzy-dictionary-lookup-res/src/main/resources</additionalClasspathElement> -->
 							<additionalClasspathElement>ctakes-openminted-freeling/src/main/resources</additionalClasspathElement>
 							<additionalClasspathElement>ctakes-SpaCTeS-res/src/main/resources</additionalClasspathElement>
 
