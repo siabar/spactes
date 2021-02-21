@@ -57,11 +57,12 @@ public enum CuiCodeUtil {
       private PrefixerPair( final String cui ) {
          final char[] chars = cui.toCharArray();
          int digitCount = 0;
-         while ( digitCount < chars.length
-                 && digitCount < 7
-                 && Character.isDigit( chars[ chars.length - 1 - digitCount ] ) ) {
-            digitCount++;
-         }
+//         while ( digitCount < chars.length
+//                 && digitCount < 7
+//                 && Character.isDigit( chars[ chars.length - 1 - digitCount ] ) ) {
+//            digitCount++;
+//         }
+         digitCount = chars.length;
          __digitCount = digitCount;
          __prefix = Arrays.copyOfRange( chars, 0, chars.length - digitCount );
          __hashCode = digitCount + Arrays.hashCode( __prefix );

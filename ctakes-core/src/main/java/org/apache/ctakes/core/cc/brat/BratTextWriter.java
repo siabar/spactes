@@ -519,9 +519,11 @@ final public class BratTextWriter extends AbstractJCasFileWriter {
 		}
 		for (UmlsConcept concept : concepts) {
 			final String semanticCode = SemanticGroup.getSemanticWord(concept);
+			final String semanticNormolozedCode = concept.getPreferredText() + "|" + concept.getCui();
+			
 			semanticMap.putIfAbsent(semanticCode, new HashSet<>());
 //			String text = safeText +  "\t" + semanticCode + " "+ annotation.getBegin() + " " + annotation.getEnd() + "\t" + concept.getCui();
-			String text = "T%d" +  "\t" + semanticCode + " "+ annotation.getBegin() + " " + annotation.getEnd() + "\t" + safeText;
+			String text = "T%d" +  "\t" + semanticCode + " "+ annotation.getBegin() + " " + annotation.getEnd() + "\t" + safeText + "#note#%1$d\tAnnotatorNotes T%1$d\t" + semanticNormolozedCode.trim();
 
 			if (annotation instanceof EventMention) {
 				text += getDocTimeRel((EventMention) annotation);

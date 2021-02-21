@@ -1,46 +1,161 @@
-accidente cerebrovascular
-accidentecerebrovascular
-avc
-avc isquemia
-avcisquemia
-e . cerebrovascular aguda isquemia : infarto
-ecva isquemia
-ecvaisquemia
-ecva isquemia : infarto
-ecva isquemia : infarto cerebral
-ecva : infartos isquemicos
-enfermedad cerebrovascular aguda isquemia
-enfermedadcerebrovascularagudaisquemia
-ictus
-ictus isquemia
-ictusisquemia
-ictus isquemia agudo
-ictusisquemiaagudo
-ictus isquemia con transformacion hemorragia
-infarto
-infarto agudo
-infartoagudo
-infarto cerebeloso
-infartocerebeloso
-infarto cerebral
-infartocerebral
-infarto cerebral
-infartocerebral
-infarto isquemia
-infartoisquemia
-infarto isquemia
-infartoisquemia
-infarto isquemia agudo
-infartoisquemiaagudo
-infarto isquemia cerebral
-infartoisquemiacerebral
-infarto isquemicos
-infartoisquemicos
-isquemia en territorio cortical
-sufusion hemorragia
-sufusionhemorragia
-transformacion hemorragia
-transformacionhemorragia
+a . basilar
+a . basilar
+ab
+art basilar
+artbasilar
+arteria basilar
+arteriabasilar
+acc
+arteria acc
+arteria carotida comun
+arteriacarotidacomun
+carotide
+arteria carotide
+arteriacarotide
+arteria carotidea
+arteriacarotidea
+arteria carotidi
+arteriacarotidi
+carotida
+a . carotida interna
+a . carotida interna
+aci
+arteria aci
+arteria carotida interna
+arteriacarotidainterna
+arteria ica
+carotida interna
+carotidainterna
+ica
+arteria c1
+c1
+aci-t
+arteria aci-t
+arteriaaci-t
+arteria carotida interna terminal
+arteriacarotidainternaterminal
+arteria tica
+arteriatica
+tica
+arteria carotida primitiva
+arteriacarotidaprimitiva
+carotida primitiva
+carotidaprimitiva
+aica
+arteria aica
+arteriaaica
+arteria cerebelosa anteroinferior
+arteriacerebelosaanteroinferior
+arteria cerebelosa posteroinferior
+arteriacerebelosaposteroinferior
+arteria cerebelosa superior
+arteriacerebelosasuperior
+arteria pica
+arteriapica
+pica
+acs
+arteria acs
+aca
+acoa
+arteria aca
+arteria acoa
+arteriaacoa
+arteria cerebral anterior
+arteriacerebralanterior
+a2
+arteria a2
+acm
+art cerebral media
+art. cerebral media
+art.cerebralmedia
+arteria acm
+arteria cerebral media
+arteriacerebralmedia
+arteria cerebral mitja
+arteriacerebralmitja
+arteria cerebrals mitges
+arteriacerebralsmitges
+arteria nucleo lenticular
+arterianucleolenticular
+nucleo lenticular
+nucleolenticular
+arteria cerebral media segmento
+arteriacerebralmediasegmento
+arteria m1
+m1
+arteria m2
+m2
+arteria m3
+m3
+arteria m4
+m4
+arteria m5
+m5
+arteria m6
+m6
+acp
+arteria acp
+arteria cerebral posterior
+arteriacerebralposterior
+arteria cerebrales posteriores
+arteriacerebralesposteriores
+cerebrales posteriores
+cerebralesposteriores
+a . circunferencial corta
+a . circunferencial corta
+a . coroidea ant
+a . coroidea ant
+arteria coroidea anterior
+arteriacoroideaanterior
+arteria coroidea posterior
+arteriacoroideaposterior
+arteria lenticular estriadas
+arterialenticularestriadas
+arteria lenticular-estriadas
+arterialenticular-estriadas
+arteria lenticuloestriada
+arterialenticuloestriada
+lenticular estriadas
+lenticularestriadas
+lenticular-estriadas
+a . paramedia
+art. paramedia
+art.paramedia
+arteria paramedia
+arteriaparamedia
+arteria paramediana
+arteriaparamediana
+art vertebral
+artvertebral
+arteria vertebral
+arteriavertebral
+arteria v1
+v1
+arteria indeterm i na do
+arteria indeterminado
+arteriaindeterminado
+arteria no especif .
+arteria territorio indeterminado
+arteriaterritorioindeterminado
+indeterm i na do
+indeterminado
+no especif .
+territorio indeterminado
+territorioindeterminado
+arteria vb
+arteria vertebr basilar
+arteriavertebrbasilar
+arteria vertebro basilar
+arteriavertebrobasilar
+arteria vertebro-basilar
+arteriavertebro-basilar
+vertebro basilar
+vertebrobasilar
+arteria vertebrobasilar
+arteriavertebrobasilar
+vb
+aspects 0
+aspects score 0
 accidente transitori isquemia
 accidentetransitoriisquemia
 ait
@@ -55,14 +170,1034 @@ infarto clinicamente regresivo
 infartoclinicamenteregresivo
 isquemia cerebral transitoria
 isquemiacerebraltransitoria
-sindrome de alarma capsular
-sindrome sensitivo motor
-sindromesensitivomotor
-sindrome sensitivo-motor regresivo
-sindromesensitivo-motorregresivo
 tia
-acv hemorragia
-acvhemorragia
+aneurisma
+causa aneurisma
+causaaneurisma
+causa posiblemente aneurisma
+causaposiblementeaneurisma
+causa probablemente aneurisma
+causaprobablementeaneurisma
+de origen aneurisma
+de origen posiblemente aneurisma
+de origen probablemente aneurisma
+etiologia aneurisma
+etiologiaaneurisma
+etiologia posiblemente aneurisma
+etiologiaposiblementeaneurisma
+etiologia probablemente aneurisma
+etiologiaprobablementeaneurisma
+origen aneurisma
+origenaneurisma
+origen posiblemente aneurisma
+origenposiblementeaneurisma
+origen probablemente aneurisma
+origenprobablementeaneurisma
+perfil aneurisma
+perfilaneurisma
+perfil posiblemente aneurisma
+perfilposiblementeaneurisma
+perfil probablemente aneurisma
+perfilprobablementeaneurisma
+angiopatia amiloide
+angiopatiaamiloide
+angiopatia amiloide cerebral
+angiopatiaamiloidecerebral
+causa angiopatia amiloide
+causaangiopatiaamiloide
+causa angiopatia amiloide cerebral
+causaangiopatiaamiloidecerebral
+causa posiblemente angiopatia amiloide
+causaposiblementeangiopatiaamiloide
+causa posiblemente angiopatia amiloide cerebral
+causaposiblementeangiopatiaamiloidecerebral
+causa probablemente angiopatia amiloide
+causaprobablementeangiopatiaamiloide
+causa probablemente angiopatia amiloide cerebral
+causaprobablementeangiopatiaamiloidecerebral
+de origen angiopatia amiloide
+de origen angiopatia amiloide cerebral
+de origen posiblemente angiopatia amiloide
+de origen posiblemente angiopatia amiloide cerebral
+de origen probablemente angiopatia amiloide
+de origen probablemente angiopatia amiloide cerebral
+etiologia angiopatia amiloide
+etiologiaangiopatiaamiloide
+etiologia angiopatia amiloide cerebral
+etiologiaangiopatiaamiloidecerebral
+etiologia posiblemente angiopatia amiloide
+etiologiaposiblementeangiopatiaamiloide
+etiologia posiblemente angiopatia amiloide cerebral
+etiologiaposiblementeangiopatiaamiloidecerebral
+etiologia probablemente angiopatia amiloide
+etiologiaprobablementeangiopatiaamiloide
+etiologia probablemente angiopatia amiloide cerebral
+etiologiaprobablementeangiopatiaamiloidecerebral
+origen angiopatia amiloide
+origenangiopatiaamiloide
+origen angiopatia amiloide cerebral
+origenangiopatiaamiloidecerebral
+origen posiblemente angiopatia amiloide
+origenposiblementeangiopatiaamiloide
+origen posiblemente angiopatia amiloide cerebral
+origenposiblementeangiopatiaamiloidecerebral
+origen probablemente angiopatia amiloide
+origenprobablementeangiopatiaamiloide
+origen probablemente angiopatia amiloide cerebral
+origenprobablementeangiopatiaamiloidecerebral
+perfil angiopatia amiloide
+perfilangiopatiaamiloide
+perfil angiopatia amiloide cerebral
+perfilangiopatiaamiloidecerebral
+perfil posiblemente angiopatia amiloide
+perfilposiblementeangiopatiaamiloide
+perfil posiblemente angiopatia amiloide cerebral
+perfilposiblementeangiopatiaamiloidecerebral
+perfil probablemente angiopatia amiloide
+perfilprobablementeangiopatiaamiloide
+perfil probablemente angiopatia amiloide cerebral
+perfilprobablementeangiopatiaamiloidecerebral
+ateromatosis
+aterosclerotico
+aterotrombotico
+causa ateromatosis
+causaateromatosis
+causa aterosclerotico
+causaaterosclerotico
+causa aterotrombotico
+causaaterotrombotico
+causa posiblemente ateromatosis
+causaposiblementeateromatosis
+causa posiblemente aterosclerotico
+causaposiblementeaterosclerotico
+causa posiblemente aterotrombotico
+causaposiblementeaterotrombotico
+causa probablemente ateromatosis
+causaprobablementeateromatosis
+causa probablemente aterosclerotico
+causaprobablementeaterosclerotico
+causa probablemente aterotrombotico
+causaprobablementeaterotrombotico
+de origen ateromatosis
+de origen aterosclerotico
+de origen aterotrombotico
+de origen posiblemente ateromatosis
+de origen posiblemente aterosclerotico
+de origen posiblemente aterotrombotico
+de origen probablemente ateromatosis
+de origen probablemente aterosclerotico
+de origen probablemente aterotrombotico
+etiologia ateromatosis
+etiologiaateromatosis
+etiologia aterosclerotico
+etiologiaaterosclerotico
+etiologia aterotrombotico
+etiologiaaterotrombotico
+etiologia posiblemente ateromatosis
+etiologiaposiblementeateromatosis
+etiologia posiblemente aterosclerotico
+etiologiaposiblementeaterosclerotico
+etiologia posiblemente aterotrombotico
+etiologiaposiblementeaterotrombotico
+etiologia probablemente ateromatosis
+etiologiaprobablementeateromatosis
+etiologia probablemente aterosclerotico
+etiologiaprobablementeaterosclerotico
+etiologia probablemente aterotrombotico
+etiologiaprobablementeaterotrombotico
+origen ateromatosis
+origenateromatosis
+origen aterosclerotico
+origenaterosclerotico
+origen aterotrombotico
+origenaterotrombotico
+origen posiblemente ateromatosis
+origenposiblementeateromatosis
+origen posiblemente aterosclerotico
+origenposiblementeaterosclerotico
+origen posiblemente aterotrombotico
+origenposiblementeaterotrombotico
+origen probablemente ateromatosis
+origenprobablementeateromatosis
+origen probablemente aterosclerotico
+origenprobablementeaterosclerotico
+origen probablemente aterotrombotico
+origenprobablementeaterotrombotico
+perfil ateromatosis
+perfilateromatosis
+perfil aterosclerotico
+perfilaterosclerotico
+perfil aterotrombotico
+perfilaterotrombotico
+perfil posiblemente ateromatosis
+perfilposiblementeateromatosis
+perfil posiblemente aterosclerotico
+perfilposiblementeaterosclerotico
+perfil posiblemente aterotrombotico
+perfilposiblementeaterotrombotico
+perfil probablemente ateromatosis
+perfilprobablementeateromatosis
+perfil probablemente aterosclerotico
+perfilprobablementeaterosclerotico
+perfil probablemente aterotrombotico
+perfilprobablementeaterotrombotico
+cardiaco
+cardio embolico
+cardioembolico
+causa cardiaco
+causacardiaco
+causa cardio embolico
+causacardioembolico
+causa cardioemebolico
+causacardioemebolico
+causa ce
+causa embolica
+causaembolica
+causa embolico
+causaembolico
+causa embolismo paradojico
+causaembolismoparadojico
+causa mecanisme embolic
+causamecanismeembolic
+causa posiblemente cardiaco
+causaposiblementecardiaco
+causa posiblemente cardio embolico
+causaposiblementecardioembolico
+causa posiblemente cardioemebolico
+causaposiblementecardioemebolico
+causa posiblemente ce
+causa posiblemente embolico
+causaposiblementeembolico
+causa posiblemente embolismo paradojico
+causaposiblementeembolismoparadojico
+causa posiblemente mecanisme embolic
+causaposiblementemecanismeembolic
+causa probablemente cardiaco
+causaprobablementecardiaco
+causa probablemente cardio embolico
+causaprobablementecardioembolico
+causa probablemente cardioemebolico
+causaprobablementecardioemebolico
+causa probablemente ce
+causa probablemente embolico
+causaprobablementeembolico
+causa probablemente embolismo paradojico
+causaprobablementeembolismoparadojico
+causa probablemente mecanisme embolic
+causaprobablementemecanismeembolic
+ce
+de origen cardiaco
+de origen cardio embolico
+de origen cardioemebolico
+de origen ce
+de origen embolico
+de origen embolismo paradojico
+de origen mecanisme embolic
+de origen posiblemente cardiaco
+de origen posiblemente cardio embolico
+de origen posiblemente cardioemebolico
+de origen posiblemente ce
+de origen posiblemente embolico
+de origen posiblemente embolismo paradojico
+de origen posiblemente mecanisme embolic
+de origen probablemente cardiaco
+de origen probablemente cardio embolico
+de origen probablemente cardioemebolico
+de origen probablemente ce
+de origen probablemente embolico
+de origen probablemente embolismo paradojico
+de origen probablemente mecanisme embolic
+embolica
+embolico
+embolismo paradojico
+embolismoparadojico
+etiologia cardiaco
+etiologiacardiaco
+etiologia cardio embolico
+etiologiacardioembolico
+etiologia cardioemebolico
+etiologiacardioemebolico
+etiologia ce
+etiologia embolico
+etiologiaembolico
+etiologia embolismo paradojico
+etiologiaembolismoparadojico
+etiologia mecanisme embolic
+etiologiamecanismeembolic
+etiologia posiblemente cardiaco
+etiologiaposiblementecardiaco
+etiologia posiblemente cardio embolico
+etiologiaposiblementecardioembolico
+etiologia posiblemente cardioemebolico
+etiologiaposiblementecardioemebolico
+etiologia posiblemente ce
+etiologia posiblemente embolico
+etiologiaposiblementeembolico
+etiologia posiblemente embolismo paradojico
+etiologiaposiblementeembolismoparadojico
+etiologia posiblemente mecanisme embolic
+etiologiaposiblementemecanismeembolic
+etiologia probablemente cardiaco
+etiologiaprobablementecardiaco
+etiologia probablemente cardio embolico
+etiologiaprobablementecardioembolico
+etiologia probablemente cardioemebolico
+etiologiaprobablementecardioemebolico
+etiologia probablemente ce
+etiologia probablemente embolico
+etiologiaprobablementeembolico
+etiologia probablemente embolismo paradojico
+etiologiaprobablementeembolismoparadojico
+etiologia probablemente mecanisme embolic
+etiologiaprobablementemecanismeembolic
+mecanisme embolic
+mecanismeembolic
+origen cardiaco
+origencardiaco
+origen cardio embolico
+origencardioembolico
+origen cardioemebolico
+origencardioemebolico
+origen ce
+origen embolico
+origenembolico
+origen embolismo paradojico
+origenembolismoparadojico
+origen mecanisme embolic
+origenmecanismeembolic
+origen posiblemente cardiaco
+origenposiblementecardiaco
+origen posiblemente cardio embolico
+origenposiblementecardioembolico
+origen posiblemente cardioemebolico
+origenposiblementecardioemebolico
+origen posiblemente ce
+origen posiblemente embolico
+origenposiblementeembolico
+origen posiblemente embolismo paradojico
+origenposiblementeembolismoparadojico
+origen posiblemente mecanisme embolic
+origenposiblementemecanismeembolic
+origen probablemente cardiaco
+origenprobablementecardiaco
+origen probablemente cardio embolico
+origenprobablementecardioembolico
+origen probablemente cardioemebolico
+origenprobablementecardioemebolico
+origen probablemente ce
+origen probablemente embolico
+origenprobablementeembolico
+origen probablemente embolismo paradojico
+origenprobablementeembolismoparadojico
+origen probablemente mecanisme embolic
+origenprobablementemecanismeembolic
+perfil cardiaco
+perfilcardiaco
+perfil cardio embolico
+perfilcardioembolico
+perfil cardioemebolico
+perfilcardioemebolico
+perfil ce
+perfil embolico
+perfilembolico
+perfil embolismo paradojico
+perfilembolismoparadojico
+perfil mecanisme embolic
+perfilmecanismeembolic
+perfil posiblemente cardiaco
+perfilposiblementecardiaco
+perfil posiblemente cardio embolico
+perfilposiblementecardioembolico
+perfil posiblemente cardioemebolico
+perfilposiblementecardioemebolico
+perfil posiblemente ce
+perfil posiblemente embolico
+perfilposiblementeembolico
+perfil posiblemente embolismo paradojico
+perfilposiblementeembolismoparadojico
+perfil posiblemente mecanisme embolic
+perfilposiblementemecanismeembolic
+perfil probablemente cardiaco
+perfilprobablementecardiaco
+perfil probablemente cardio embolico
+perfilprobablementecardioembolico
+perfil probablemente cardioemebolico
+perfilprobablementecardioemebolico
+perfil probablemente ce
+perfil probablemente embolico
+perfilprobablementeembolico
+perfil probablemente embolismo paradojico
+perfilprobablementeembolismoparadojico
+perfil probablemente mecanisme embolic
+perfilprobablementemecanismeembolic
+causa hipertensivo
+causahipertensivo
+causa posiblemente hipertensivo
+causaposiblementehipertensivo
+causa probablemente hipertensivo
+causaprobablementehipertensivo
+de origen hipertensivo
+de origen posiblemente hipertensivo
+de origen probablemente hipertensivo
+etiologia hipertensivo
+etiologiahipertensivo
+etiologia posiblemente hipertensivo
+etiologiaposiblementehipertensivo
+etiologia probablemente hipertensivo
+etiologiaprobablementehipertensivo
+hipertensivo
+origen hipertensivo
+origenhipertensivo
+origen posiblemente hipertensivo
+origenposiblementehipertensivo
+origen probablemente hipertensivo
+origenprobablementehipertensivo
+perfil hipertensivo
+perfilhipertensivo
+perfil posiblemente hipertensivo
+perfilposiblementehipertensivo
+perfil probablemente hipertensivo
+perfilprobablementehipertensivo
+a estudio
+aestudio
+causa a estudio
+causa no determinada
+causa por determinar
+causa posiblemente a estudio
+causa posiblemente no determinada
+causa posiblemente por determinar
+causa probablemente a estudio
+causa probablemente no determinada
+causa probablemente por determinar
+de origen a estudio
+de origen no determinada
+de origen por determinar
+de origen posiblemente a estudio
+de origen posiblemente no determinada
+de origen posiblemente por determinar
+de origen probablemente a estudio
+de origen probablemente no determinada
+de origen probablemente por determinar
+etiologia a estudio
+etiologia no determinada
+etiologia por determinar
+etiologia posiblemente a estudio
+etiologia posiblemente no determinada
+etiologia posiblemente por determinar
+etiologia probablemente a estudio
+etiologia probablemente no determinada
+etiologia probablemente por determinar
+no determinada
+nodeterminada
+origen a estudio
+origen no determinada
+origen por determinar
+origen posiblemente a estudio
+origen posiblemente no determinada
+origen posiblemente por determinar
+origen probablemente a estudio
+origen probablemente no determinada
+origen probablemente por determinar
+perfil a estudio
+perfil no determinada
+perfil por determinar
+perfil posiblemente a estudio
+perfil posiblemente no determinada
+perfil posiblemente por determinar
+perfil probablemente a estudio
+perfil probablemente no determinada
+perfil probablemente por determinar
+por determinar
+pordeterminar
+causa indeterminado de causa doble
+causa indeterminado por doble causa
+causa posiblemente indeterminado de causa doble
+causaposiblementeindeterminadodecausadoble
+causa posiblemente indeterminado por doble causa
+causaposiblementeindeterminadopordoblecausa
+causa probablemente indeterminado de causa doble
+causaprobablementeindeterminadodecausadoble
+causa probablemente indeterminado por doble causa
+causaprobablementeindeterminadopordoblecausa
+de origen indeterminado de causa doble
+de origen indeterminado por doble causa
+de origen posiblemente indeterminado de causa doble
+de origen posiblemente indeterminado por doble causa
+de origen probablemente indeterminado de causa doble
+de origen probablemente indeterminado por doble causa
+etiologia indeterminado de causa doble
+etiologia indeterminado por doble causa
+etiologia posiblemente indeterminado de causa doble
+etiologiaposiblementeindeterminadodecausadoble
+etiologia posiblemente indeterminado por doble causa
+etiologiaposiblementeindeterminadopordoblecausa
+etiologia probablemente indeterminado de causa doble
+etiologiaprobablementeindeterminadodecausadoble
+etiologia probablemente indeterminado por doble causa
+etiologiaprobablementeindeterminadopordoblecausa
+indeterminado de causa doble
+indeterminado por doble causa
+origen indeterminado de causa doble
+origen indeterminado por doble causa
+origen posiblemente indeterminado de causa doble
+origenposiblementeindeterminadodecausadoble
+origen posiblemente indeterminado por doble causa
+origenposiblementeindeterminadopordoblecausa
+origen probablemente indeterminado de causa doble
+origenprobablementeindeterminadodecausadoble
+origen probablemente indeterminado por doble causa
+origenprobablementeindeterminadopordoblecausa
+perfil indeterminado de causa doble
+perfil indeterminado por doble causa
+perfil posiblemente indeterminado de causa doble
+perfilposiblementeindeterminadodecausadoble
+perfil posiblemente indeterminado por doble causa
+perfilposiblementeindeterminadopordoblecausa
+perfil probablemente indeterminado de causa doble
+perfilprobablementeindeterminadodecausadoble
+perfil probablemente indeterminado por doble causa
+perfilprobablementeindeterminadopordoblecausa
+causa con estudio incompleto
+causa indeterminada per estudi incomplet
+causa indeterminado ( estudio incompleto )
+causa indeterminado pendiente de estudio
+causaindeterminadopendientedeestudio
+causa indeterminado por estudio incompleto
+causa pendent de completar l' estudi
+causa pendent de filiacio
+causa posiblemente con estudio incompleto
+causa posiblemente indeterminada per estudi incomplet
+causaposiblementeindeterminadaperestudiincomplet
+causa posiblemente indeterminado ( estudio incompleto )
+causaposiblementeindeterminado(estudioincompleto)
+causa posiblemente indeterminado pendiente de estudio
+causaposiblementeindeterminadopendientedeestudio
+causa posiblemente indeterminado por estudio incompleto
+causaposiblementeindeterminadoporestudioincompleto
+causa posiblemente pendent de completar l' estudi
+causaposiblementependentdecompletarl'estudi
+causa posiblemente pendent de filiacio
+causaposiblementependentdefiliacio
+causa probablemente con estudio incompleto
+causa probablemente indeterminada per estudi incomplet
+causaprobablementeindeterminadaperestudiincomplet
+causa probablemente indeterminado ( estudio incompleto )
+causaprobablementeindeterminado(estudioincompleto)
+causa probablemente indeterminado pendiente de estudio
+causaprobablementeindeterminadopendientedeestudio
+causa probablemente indeterminado por estudio incompleto
+causaprobablementeindeterminadoporestudioincompleto
+causa probablemente pendent de completar l' estudi
+causaprobablementependentdecompletarl'estudi
+causa probablemente pendent de filiacio
+causaprobablementependentdefiliacio
+con estudio incompleto
+de origen con estudio incompleto
+de origen indeterminada per estudi incomplet
+de origen indeterminado ( estudio incompleto )
+de origen indeterminado pendiente de estudio
+de origen indeterminado por estudio incompleto
+de origen pendent de completar l' estudi
+de origen pendent de filiacio
+de origen posiblemente con estudio incompleto
+de origen posiblemente indeterminada per estudi incomplet
+de origen posiblemente indeterminado ( estudio incompleto )
+de origen posiblemente indeterminado pendiente de estudio
+de origen posiblemente indeterminado por estudio incompleto
+de origen posiblemente pendent de completar l' estudi
+de origen posiblemente pendent de filiacio
+de origen probablemente con estudio incompleto
+de origen probablemente indeterminada per estudi incomplet
+de origen probablemente indeterminado ( estudio incompleto )
+de origen probablemente indeterminado pendiente de estudio
+de origen probablemente indeterminado por estudio incompleto
+de origen probablemente pendent de completar l' estudi
+de origen probablemente pendent de filiacio
+etiologia con estudio incompleto
+etiologia indeterminada per estudi incomplet
+etiologia indeterminado ( estudio incompleto )
+etiologia indeterminado pendiente de estudio
+etiologiaindeterminadopendientedeestudio
+etiologia indeterminado por estudio incompleto
+etiologia pendent de completar l' estudi
+etiologia pendent de filiacio
+etiologia posiblemente con estudio incompleto
+etiologia posiblemente indeterminada per estudi incomplet
+etiologiaposiblementeindeterminadaperestudiincomplet
+etiologia posiblemente indeterminado ( estudio incompleto )
+etiologiaposiblementeindeterminado(estudioincompleto)
+etiologia posiblemente indeterminado pendiente de estudio
+etiologiaposiblementeindeterminadopendientedeestudio
+etiologia posiblemente indeterminado por estudio incompleto
+etiologiaposiblementeindeterminadoporestudioincompleto
+etiologia posiblemente pendent de completar l' estudi
+etiologiaposiblementependentdecompletarl'estudi
+etiologia posiblemente pendent de filiacio
+etiologiaposiblementependentdefiliacio
+etiologia probablemente con estudio incompleto
+etiologia probablemente indeterminada per estudi incomplet
+etiologiaprobablementeindeterminadaperestudiincomplet
+etiologia probablemente indeterminado ( estudio incompleto )
+etiologiaprobablementeindeterminado(estudioincompleto)
+etiologia probablemente indeterminado pendiente de estudio
+etiologiaprobablementeindeterminadopendientedeestudio
+etiologia probablemente indeterminado por estudio incompleto
+etiologiaprobablementeindeterminadoporestudioincompleto
+etiologia probablemente pendent de completar l' estudi
+etiologiaprobablementependentdecompletarl'estudi
+etiologia probablemente pendent de filiacio
+etiologiaprobablementependentdefiliacio
+indeterminada per estudi incomplet
+indeterminado ( estudio incompleto )
+indeterminado pendiente de estudio
+indeterminado por estudio incompleto
+origen con estudio incompleto
+origen indeterminada per estudi incomplet
+origen indeterminado ( estudio incompleto )
+origen indeterminado pendiente de estudio
+origenindeterminadopendientedeestudio
+origen indeterminado por estudio incompleto
+origen pendent de completar l' estudi
+origen pendent de filiacio
+origen posiblemente con estudio incompleto
+origen posiblemente indeterminada per estudi incomplet
+origenposiblementeindeterminadaperestudiincomplet
+origen posiblemente indeterminado ( estudio incompleto )
+origenposiblementeindeterminado(estudioincompleto)
+origen posiblemente indeterminado pendiente de estudio
+origenposiblementeindeterminadopendientedeestudio
+origen posiblemente indeterminado por estudio incompleto
+origenposiblementeindeterminadoporestudioincompleto
+origen posiblemente pendent de completar l' estudi
+origenposiblementependentdecompletarl'estudi
+origen posiblemente pendent de filiacio
+origenposiblementependentdefiliacio
+origen probablemente con estudio incompleto
+origen probablemente indeterminada per estudi incomplet
+origenprobablementeindeterminadaperestudiincomplet
+origen probablemente indeterminado ( estudio incompleto )
+origenprobablementeindeterminado(estudioincompleto)
+origen probablemente indeterminado pendiente de estudio
+origenprobablementeindeterminadopendientedeestudio
+origen probablemente indeterminado por estudio incompleto
+origenprobablementeindeterminadoporestudioincompleto
+origen probablemente pendent de completar l' estudi
+origenprobablementependentdecompletarl'estudi
+origen probablemente pendent de filiacio
+origenprobablementependentdefiliacio
+pendent de completar l' estudi
+pendent de filiacio
+perfil con estudio incompleto
+perfil indeterminada per estudi incomplet
+perfil indeterminado ( estudio incompleto )
+perfil indeterminado pendiente de estudio
+perfilindeterminadopendientedeestudio
+perfil indeterminado por estudio incompleto
+perfil pendent de completar l' estudi
+perfil pendent de filiacio
+perfil posiblemente con estudio incompleto
+perfil posiblemente indeterminada per estudi incomplet
+perfilposiblementeindeterminadaperestudiincomplet
+perfil posiblemente indeterminado ( estudio incompleto )
+perfilposiblementeindeterminado(estudioincompleto)
+perfil posiblemente indeterminado pendiente de estudio
+perfilposiblementeindeterminadopendientedeestudio
+perfil posiblemente indeterminado por estudio incompleto
+perfilposiblementeindeterminadoporestudioincompleto
+perfil posiblemente pendent de completar l' estudi
+perfilposiblementependentdecompletarl'estudi
+perfil posiblemente pendent de filiacio
+perfilposiblementependentdefiliacio
+perfil probablemente con estudio incompleto
+perfil probablemente indeterminada per estudi incomplet
+perfilprobablementeindeterminadaperestudiincomplet
+perfil probablemente indeterminado ( estudio incompleto )
+perfilprobablementeindeterminado(estudioincompleto)
+perfil probablemente indeterminado pendiente de estudio
+perfilprobablementeindeterminadopendientedeestudio
+perfil probablemente indeterminado por estudio incompleto
+perfilprobablementeindeterminadoporestudioincompleto
+perfil probablemente pendent de completar l' estudi
+perfilprobablementependentdecompletarl'estudi
+perfil probablemente pendent de filiacio
+perfilprobablementependentdefiliacio
+causa criptogenico
+causacriptogenico
+causa esus
+causaesus
+causa indeterminado
+causaindeterminado
+causa posiblemente criptogenico
+causaposiblementecriptogenico
+causa posiblemente esus
+causaposiblementeesus
+causa posiblemente indeterminado
+causaposiblementeindeterminado
+causa probablemente criptogenico
+causaprobablementecriptogenico
+causa probablemente esus
+causaprobablementeesus
+causa probablemente indeterminado
+causaprobablementeindeterminado
+criptogenico
+de origen criptogenico
+de origen esus
+de origen indeterminado
+de origen posiblemente criptogenico
+de origen posiblemente esus
+de origen posiblemente indeterminado
+de origen probablemente criptogenico
+de origen probablemente esus
+de origen probablemente indeterminado
+esus
+etiologia criptogenico
+etiologiacriptogenico
+etiologia esus
+etiologiaesus
+etiologia indeterminado
+etiologiaindeterminado
+etiologia posiblemente criptogenico
+etiologiaposiblementecriptogenico
+etiologia posiblemente esus
+etiologiaposiblementeesus
+etiologia posiblemente indeterminado
+etiologiaposiblementeindeterminado
+etiologia probablemente criptogenico
+etiologiaprobablementecriptogenico
+etiologia probablemente esus
+etiologiaprobablementeesus
+etiologia probablemente indeterminado
+etiologiaprobablementeindeterminado
+indeterminado
+origen criptogenico
+origencriptogenico
+origen esus
+origenesus
+origen indeterminado
+origenindeterminado
+origen posiblemente criptogenico
+origenposiblementecriptogenico
+origen posiblemente esus
+origenposiblementeesus
+origen posiblemente indeterminado
+origenposiblementeindeterminado
+origen probablemente criptogenico
+origenprobablementecriptogenico
+origen probablemente esus
+origenprobablementeesus
+origen probablemente indeterminado
+origenprobablementeindeterminado
+perfil criptogenico
+perfilcriptogenico
+perfil esus
+perfilesus
+perfil indeterminado
+perfilindeterminado
+perfil posiblemente criptogenico
+perfilposiblementecriptogenico
+perfil posiblemente esus
+perfilposiblementeesus
+perfil posiblemente indeterminado
+perfilposiblementeindeterminado
+perfil probablemente criptogenico
+perfilprobablementecriptogenico
+perfil probablemente esus
+perfilprobablementeesus
+perfil probablemente indeterminado
+perfilprobablementeindeterminado
+causa infrecuente
+causainfrecuente
+causa inhabitual
+causainhabitual
+causa insual
+causainsual
+causa posiblemente infrecuente
+causaposiblementeinfrecuente
+causa posiblemente inhabitual
+causaposiblementeinhabitual
+causa posiblemente insual
+causaposiblementeinsual
+causa probablemente infrecuente
+causaprobablementeinfrecuente
+causa probablemente inhabitual
+causaprobablementeinhabitual
+causa probablemente insual
+causaprobablementeinsual
+de origen infrecuente
+de origen inhabitual
+de origen insual
+de origen posiblemente infrecuente
+de origen posiblemente inhabitual
+de origen posiblemente insual
+de origen probablemente infrecuente
+de origen probablemente inhabitual
+de origen probablemente insual
+etiologia infrecuente
+etiologiainfrecuente
+etiologia inhabitual
+etiologiainhabitual
+etiologia insual
+etiologiainsual
+etiologia posiblemente infrecuente
+etiologiaposiblementeinfrecuente
+etiologia posiblemente inhabitual
+etiologiaposiblementeinhabitual
+etiologia posiblemente insual
+etiologiaposiblementeinsual
+etiologia probablemente infrecuente
+etiologiaprobablementeinfrecuente
+etiologia probablemente inhabitual
+etiologiaprobablementeinhabitual
+etiologia probablemente insual
+etiologiaprobablementeinsual
+infrecuente
+inhabitual
+insual
+origen infrecuente
+origeninfrecuente
+origen inhabitual
+origeninhabitual
+origen insual
+origeninsual
+origen posiblemente infrecuente
+origenposiblementeinfrecuente
+origen posiblemente inhabitual
+origenposiblementeinhabitual
+origen posiblemente insual
+origenposiblementeinsual
+origen probablemente infrecuente
+origenprobablementeinfrecuente
+origen probablemente inhabitual
+origenprobablementeinhabitual
+origen probablemente insual
+origenprobablementeinsual
+perfil infrecuente
+perfilinfrecuente
+perfil inhabitual
+perfilinhabitual
+perfil insual
+perfilinsual
+perfil posiblemente infrecuente
+perfilposiblementeinfrecuente
+perfil posiblemente inhabitual
+perfilposiblementeinhabitual
+perfil posiblemente insual
+perfilposiblementeinsual
+perfil probablemente infrecuente
+perfilprobablementeinfrecuente
+perfil probablemente inhabitual
+perfilprobablementeinhabitual
+perfil probablemente insual
+perfilprobablementeinsual
+causa lacunar
+causalacunar
+causa microangiopatica
+causamicroangiopatica
+causa posiblemente lacunar
+causaposiblementelacunar
+causa posiblemente microangiopatica
+causaposiblementemicroangiopatica
+causa probablemente lacunar
+causaprobablementelacunar
+causa probablemente microangiopatica
+causaprobablementemicroangiopatica
+de origen lacunar
+de origen microangiopatica
+de origen posiblemente lacunar
+de origen posiblemente microangiopatica
+de origen probablemente lacunar
+de origen probablemente microangiopatica
+etiologia lacunar
+etiologialacunar
+etiologia microangiopatica
+etiologiamicroangiopatica
+etiologia posiblemente lacunar
+etiologiaposiblementelacunar
+etiologia posiblemente microangiopatica
+etiologiaposiblementemicroangiopatica
+etiologia probablemente lacunar
+etiologiaprobablementelacunar
+etiologia probablemente microangiopatica
+etiologiaprobablementemicroangiopatica
+lacunar
+microangiopatica
+origen lacunar
+origenlacunar
+origen microangiopatica
+origenmicroangiopatica
+origen posiblemente lacunar
+origenposiblementelacunar
+origen posiblemente microangiopatica
+origenposiblementemicroangiopatica
+origen probablemente lacunar
+origenprobablementelacunar
+origen probablemente microangiopatica
+origenprobablementemicroangiopatica
+perfil lacunar
+perfillacunar
+perfil microangiopatica
+perfilmicroangiopatica
+perfil posiblemente lacunar
+perfilposiblementelacunar
+perfil posiblemente microangiopatica
+perfilposiblementemicroangiopatica
+perfil probablemente lacunar
+perfilprobablementelacunar
+perfil probablemente microangiopatica
+perfilprobablementemicroangiopatica
+causa cavernoma de circunvolucion
+causa diseccio
+causadiseccio
+causa malformacion arteriovenosa
+causamalformacionarteriovenosa
+causa posiblemente cavernoma de circunvolucion
+causaposiblementecavernomadecircunvolucion
+causa posiblemente diseccio
+causaposiblementediseccio
+causa posiblemente malformacion arteriovenosa
+causaposiblementemalformacionarteriovenosa
+causa posiblemente secundaria a diseccion
+causaposiblementesecundariaadiseccion
+causa posiblemente secundaria a malformacion vascular
+causaposiblementesecundariaamalformacionvascular
+causa probablemente cavernoma de circunvolucion
+causaprobablementecavernomadecircunvolucion
+causa probablemente diseccio
+causaprobablementediseccio
+causa probablemente malformacion arteriovenosa
+causaprobablementemalformacionarteriovenosa
+causa probablemente secundaria a diseccion
+causaprobablementesecundariaadiseccion
+causa probablemente secundaria a malformacion vascular
+causaprobablementesecundariaamalformacionvascular
+causa secundaria a diseccion
+causa secundaria a malformacion vascular
+cavernoma de circunvolucion
+de origen cavernoma de circunvolucion
+de origen diseccio
+de origen malformacion arteriovenosa
+de origen posiblemente cavernoma de circunvolucion
+de origen posiblemente diseccio
+de origen posiblemente malformacion arteriovenosa
+de origen posiblemente secundaria a diseccion
+de origen posiblemente secundaria a malformacion vascular
+de origen probablemente cavernoma de circunvolucion
+de origen probablemente diseccio
+de origen probablemente malformacion arteriovenosa
+de origen probablemente secundaria a diseccion
+de origen probablemente secundaria a malformacion vascular
+de origen secundaria a diseccion
+de origen secundaria a malformacion vascular
+diseccio
+etiologia cavernoma de circunvolucion
+etiologia diseccio
+etiologiadiseccio
+etiologia malformacion arteriovenosa
+etiologiamalformacionarteriovenosa
+etiologia posiblemente cavernoma de circunvolucion
+etiologiaposiblementecavernomadecircunvolucion
+etiologia posiblemente diseccio
+etiologiaposiblementediseccio
+etiologia posiblemente malformacion arteriovenosa
+etiologiaposiblementemalformacionarteriovenosa
+etiologia posiblemente secundaria a diseccion
+etiologiaposiblementesecundariaadiseccion
+etiologia posiblemente secundaria a malformacion vascular
+etiologiaposiblementesecundariaamalformacionvascular
+etiologia probablemente cavernoma de circunvolucion
+etiologiaprobablementecavernomadecircunvolucion
+etiologia probablemente diseccio
+etiologiaprobablementediseccio
+etiologia probablemente malformacion arteriovenosa
+etiologiaprobablementemalformacionarteriovenosa
+etiologia probablemente secundaria a diseccion
+etiologiaprobablementesecundariaadiseccion
+etiologia probablemente secundaria a malformacion vascular
+etiologiaprobablementesecundariaamalformacionvascular
+etiologia secundaria a diseccion
+etiologia secundaria a malformacion vascular
+malformacion arteriovenosa
+malformacionarteriovenosa
+origen cavernoma de circunvolucion
+origen diseccio
+origendiseccio
+origen malformacion arteriovenosa
+origenmalformacionarteriovenosa
+origen posiblemente cavernoma de circunvolucion
+origenposiblementecavernomadecircunvolucion
+origen posiblemente diseccio
+origenposiblementediseccio
+origen posiblemente malformacion arteriovenosa
+origenposiblementemalformacionarteriovenosa
+origen posiblemente secundaria a diseccion
+origenposiblementesecundariaadiseccion
+origen posiblemente secundaria a malformacion vascular
+origenposiblementesecundariaamalformacionvascular
+origen probablemente cavernoma de circunvolucion
+origenprobablementecavernomadecircunvolucion
+origen probablemente diseccio
+origenprobablementediseccio
+origen probablemente malformacion arteriovenosa
+origenprobablementemalformacionarteriovenosa
+origen probablemente secundaria a diseccion
+origenprobablementesecundariaadiseccion
+origen probablemente secundaria a malformacion vascular
+origenprobablementesecundariaamalformacionvascular
+origen secundaria a diseccion
+origen secundaria a malformacion vascular
+perfil cavernoma de circunvolucion
+perfil diseccio
+perfildiseccio
+perfil malformacion arteriovenosa
+perfilmalformacionarteriovenosa
+perfil posiblemente cavernoma de circunvolucion
+perfilposiblementecavernomadecircunvolucion
+perfil posiblemente diseccio
+perfilposiblementediseccio
+perfil posiblemente malformacion arteriovenosa
+perfilposiblementemalformacionarteriovenosa
+perfil posiblemente secundaria a diseccion
+perfilposiblementesecundariaadiseccion
+perfil posiblemente secundaria a malformacion vascular
+perfilposiblementesecundariaamalformacionvascular
+perfil probablemente cavernoma de circunvolucion
+perfilprobablementecavernomadecircunvolucion
+perfil probablemente diseccio
+perfilprobablementediseccio
+perfil probablemente malformacion arteriovenosa
+perfilprobablementemalformacionarteriovenosa
+perfil probablemente secundaria a diseccion
+perfilprobablementesecundariaadiseccion
+perfil probablemente secundaria a malformacion vascular
+perfilprobablementesecundariaamalformacionvascular
+perfil secundaria a diseccion
+perfil secundaria a malformacion vascular
+secundaria a diseccion
+secundaria a malformacion vascular
+causa posiblemente secundaria a tumor
+causaposiblementesecundariaatumor
+causa probablemente secundaria a tumor
+causaprobablementesecundariaatumor
+causa secundaria a tumor
+de origen posiblemente secundaria a tumor
+de origen probablemente secundaria a tumor
+de origen secundaria a tumor
+etiologia posiblemente secundaria a tumor
+etiologiaposiblementesecundariaatumor
+etiologia probablemente secundaria a tumor
+etiologiaprobablementesecundariaatumor
+etiologia secundaria a tumor
+origen posiblemente secundaria a tumor
+origenposiblementesecundariaatumor
+origen probablemente secundaria a tumor
+origenprobablementesecundariaatumor
+origen secundaria a tumor
+perfil posiblemente secundaria a tumor
+perfilposiblementesecundariaatumor
+perfil probablemente secundaria a tumor
+perfilprobablementesecundariaatumor
+perfil secundaria a tumor
+secundaria a tumor
 acv hemorragia
 acvhemorragia
 avc hemorragia
@@ -88,118 +1223,273 @@ hemorragiaparenquimatosacerebralmasiva
 hic
 ictus hemorragia
 ictushemorragia
-actylise
-ecas iv
-fibrinolisis amb rtpa ev
-fibrinolisis
-fibrinolisis con alteplase
-fibrinolisis con r-tpa
-fibrinolisis con rtpa
-fibrinolisis con rtpa endovenoso
-fibrinolisis con rtpa intravenosa
-fibrinolisis endovenosa
-fibrinolisisendovenosa
-fibrinolisis endovenosa con rtpa
-fibrinolisis endovenosa rtpa
-fibrinolisisendovenosartpa
-fibrinolisis ev con rtpa
-fibrinolisis iv
-fibrinolisis rtpa
-fibrinolisisrtpa
-fibrinolisis sistemica con rtpa ev
-fibrinolitico
-fibrinolitico amb rtpa
-fibrinolitico con rtpa
-fibrinolizado
-procedimiento de revascularizacion
-rtpa
-rtpa ev
-rtpaev
-tecneplasa
-terapia de reperfusion
-terapia de rescate
-tnk
-tpa
-tpa ev
-tpaev
-tractament amb rtpa
-tractament amb rtpa endovenos
-tractament endovenos
-tractamentendovenos
-tractament fibrinolitic ev
-tractament fibrinolitico
-tractamentfibrinolitico
-tractament fibrinolitico
-tractamentfibrinolitico
-tractament fibrinolitico endovenos amb rtpa
-tractamentfibrinoliticoendovenosambrtpa
-tractament rpta ev
-tractat amb firbinolisi
-tratamiento con alteplasa
-tratamiento con fibrinolisis ev
-tratamiento con rt-pa intravenoso
-tratamiento con rtpa
-tratamiento con rtpa ev
-tratamiento de repefusion cerebral con r-tpa
-tratamiento de reperfusion
-tratamiento de reperfusion aguda mendiante fibrinolisis ev
-tratamiento de reperfusion con fibrinolisis
-tratamiento de reperfusion con fibrinolisis ev
-tratamiento de reperfusion con rtpa
-tratamiento de reperfusion de rpta endovenoso
-tratamiento de reperfusion en fase aguda con rtpa
-tratamiento de reperfusion ev
-tratamiento de repermeabilizacion
-tratamiento de revascularizacion
-tratamiento endovenoso
-tratamientoendovenoso
-tratamiento fibrinolitico
-tratamientofibrinolitico
-tratamiento fibrinolitico con alteplase
-tratamiento fibrinolitico con rtpa
-tratamiento fibrinolitico con rtpa endovenosa
-tratamiento fibrinolitico con rtpa ev
-tratamiento fibrinolitico endovenoso
-tratamientofibrinoliticoendovenoso
-tratamiento fibrinolitico ev con rtpa
-tratamiento fibrinolitico rtpa
-tratamientofibrinoliticortpa
-tratamiento fibrinolotico iv
-tratamiento recanalizador
-tratamientorecanalizador
-tratamiento recanalizador con fibrinolisis iv
-tratamiento recanalizador endovenoso
-tratamientorecanalizadorendovenoso
-tratamiento reperfusion
-tratamientoreperfusion
-tratamiento reperfusor con fibrinolitico endovenoso
-tratamiento reperfusor endovenoso
-tratamientoreperfusorendovenoso
-tratamiento revascularizador
-tratamientorevascularizador
-tratamiento trombolitico
-tratamientotrombolitico
-tratamiento trombolitico con rtpa
-tratamiento trombolitico con tpa endovenoso
-tratamiento trombolitico intravenoso
-tratamientotromboliticointravenoso
-tratamiento trombolitico intravenoso con rtpa
-tratamientotromboliticointravenosoconrtpa
-tratamiento trombolitico rtpa
-tratamientotromboliticortpa
-trombolisado
-trombolisis
-trombolisis cerebral
-trombolisiscerebral
-trombolisis endovenosa
-trombolisisendovenosa
-trombolisis ev
-trombolisis intravenosa
-trombolisisintravenosa
-trombolisis sistemica endovenosa
-trombolisissistemicaendovenosa
-trombolisisendovenosa con rtpa
-tto trombolitico con rtpa
+avc isquemia
+avcisquemia
+e . cerebrovascular aguda isquemia : infarto
+ecva isquemia
+ecvaisquemia
+ecva isquemia : infarto
+ecva isquemia : infarto cerebral
+ecva : infartos isquemicos
+enfermedad cerebrovascular aguda isquemia
+enfermedadcerebrovascularagudaisquemia
+ictus
+ictus isquemia
+ictusisquemia
+ictus isquemia agudo
+ictusisquemiaagudo
+ictus isquemia con transformacion hemorragia
+infarto
+infarto agudo
+infartoagudo
+infarto cerebeloso
+infartocerebeloso
+infarto cerebral
+infartocerebral
+infarto isquemia
+infartoisquemia
+infarto isquemia agudo
+infartoisquemiaagudo
+infarto isquemia cerebral
+infartoisquemiacerebral
+infarto isquemicos
+infartoisquemicos
+isquemia en territorio cortical
+transformacion hemorragia
+transformacionhemorragia
+sufusion hemorragia
+sufusionhemorragia
+accidente cerebrovascular
+accidentecerebrovascular
+avc
+sindrome de alarma capsular
+sindrome sensitivo motor
+sindromesensitivomotor
+sindrome sensitivo-motor regresivo
+sindromesensitivo-motorregresivo
+ambas
+bihemisferico
+bilaterales
+D
+dcha
+dcho
+derecho
+dret
+dreta
+E
+e
+esq
+esq .
+esquerre
+I
+izda
+izdo
+izq
+izquierda
+tronco cerebral
+troncocerebral
+bulbar
+cerebelosa
+cortical
+fronto insular
+frontoinsular
+fronto
+fronto occipital
+frontooccipital
+fronto y occipital
+fronto temporo insular
+frontotemporoinsular
+indeterminado
+parcial
+territorio indeterminado
+territorioindeterminado
+poci
+infarto lacunar
+infartolacunar
+laci
+lacunar
+infarto parcial de circulacion anterior
+paci
+infarto total de circulacion anterior
+taci
+intraventricular
+ventriculos
+lobar
+occipital
+parietal
+parietooccipital
+infarto de circulacion posterior
+posterior
+protuberancial
+basilar
+capsulo talamic
+capsulotalamic
+caudado
+corona radiada
+coronaradiada
+ganglicapsular
+ganglios basales
+gangliosbasales
+ganglios de la base
+ggbb
+lenticular
+lenticular capsular
+lenticularcapsular
+lenticular capsulotalamico
+lenticularcapsulotalamico
+palido
+profunda
+profundes
+putamen
+putaminal
+talamica
+talamo
+talamo capuslar
+talamocapuslar
+subcorticals
+emporo insular
+emporoinsular
+temporal
+temporal basal
+temporalbasal
+tronco
+escala de rankin modificada 0
+mrankin 0
+mrankinscale 0
+mrs 0
+rankin 0
+0 en la escala nihss
+escala nihss 0
+escala nihss es de 0 puntos
+nhiss 0
+nih 0
+nihaa 0
+nihss 0
+nishss 0
+nissh 0
+puntuacion total nih:0
+puntuaciontotalnih:0
+puerta aguja
+puertaaguja
+recanalizacion
+tc arterias cerebrales
+tac
+tc
+tac - craneal
+tac cerebral
+taccerebral
+tac cerebro
+taccerebro
+tac craneal
+taccraneal
+tac craneo
+taccraneo
+tac crani
+taccrani
+tac crani a l
+tac cranial
+taccranial
+tac de cap
+tac de craneo
+tacs craneales
+tacscraneales
+tc - craneal
+tc cerebral
+tccerebral
+tc cerebro
+tccerebro
+tc craneal
+tccraneal
+tc crani
+tccrani
+tc crani a l
+tc cranial
+tccranial
+tc de cap
+tc de craneo
+tomografia axial computeritzada de cap
+tomografiaaxialcomputeritzadadecap
+tomografia de cap
+tac perfusion cerebral
+tac perfusioncerebral
+tacperfusioncerebral
+tc perfusion cerebral
+tc perfusioncerebral
+tcperfusioncerebral
+prueba de disfagia
+test de deglucion
+test de disfagia
+test deglucion
+testdeglucion
+test mecv-v
+testmecv-v
+a . a . s .
+aas
+abciximab
+ac acetilsalicilico
+acacetilsalicilico
+acetil salicilic-acid
+acetilsalicilic-acid
+acetilsalicilico
+acetilsalicilico acido
+acetilsalicilicoacido
+acetylsalicylic acid
+acetylsalicylicacid
+acido acetilsalicilico
+acidoacetilsalicilico
+adiro
+agrastat
+aspirina
+brilique
+cangrelor
+cilostazol
+clopidogrel
+combinations
+dipyridamole
+disgren
+duoplavin
+ekistol
+hepraina
+persantin
+plavix
+pletal
+prasugler
+reopro
+ticagrelor
+ticlopidine
+tiklid
+tirofiban
+triflusal
+tromalyt
+vatoud
+acenocumarol
+aldocumar
+apixaban
+bemiparin
+clexane
+dabigatran
+dabigatran etexilate
+dabigatranetexilate
+dalteparin
+edoxaban
+eliquis
+enoxaparin
+fragmin
+fraxiparina
+hbpm
+heparin
+heparina
+hibor
+innohep
+lixiana
+nadroparin
+parnaparin
+pradaxa
+reviparin
+rivaroxaban
+sintrom
+warfarin
+xarelto
 angioradiologia intervencionista
 angioradiologiaintervencionista
 arteriografia trombectomia
@@ -211,8 +1501,6 @@ reperfusion intraateria
 reperfusionintraateria
 rescate endovascular
 rescateendovascular
-rescate intraarterial
-rescateintraarterial
 rescate intraarterial
 rescateintraarterial
 terapia de reperfusion
@@ -289,1431 +1577,115 @@ ttoendovascular
 trombolisis ia
 trombolisis intraarterial
 trombolisisintraarterial
-prueba de disfagia
-test de deglucion
-test de disfagia
-test deglucion
-testdeglucion
-test mecv-v
-testmecv-v
-aspects 0
-aspects score 0
-escala de rankin modificada 0
-mrankin 0
-mrankinscale 0
-mrs 0
-rankin 0
-0 en la escala nihss
-escala nihss 0
-escala nihss es de 0 puntos
-nhiss 0
-nih 0
-nihaa 0
-nihss 0
-nishss 0
-nissh 0
-puntuacion total nih:0
-puntuaciontotalnih:0
-acenocumarol
-aldocumar
-apixaban
-bemiparin
-clexane
-dabigatran
-dabigatran etexilate
-dabigatranetexilate
-dalteparin
-edoxaban
-eliquis
-enoxaparin
-fragmin
-fraxiparina
-hbpm
-heparin
-heparina
-hibor
-innohep
-lixiana
-nadroparin
-parnaparin
-pradaxa
-reviparin
-rivaroxaban
-sintrom
-warfarin
-xarelto
-a . a . s .
-aas
-abciximab
-ac acetilsalicilico
-acacetilsalicilico
-acetil salicilic , acid
-acetilsalicilico
-acetilsalicilico acido
-acetilsalicilicoacido
-acetylsalicylic acid
-acetylsalicylicacid
-acetylsalicylic acid , combinations with proton pump inhibitors
-acido acetilsalicilico
-acidoacetilsalicilico
-adiro
-agrastat
-aspirina
-brilique
-cangrelor
-cilostazol
-clopidogrel
-combinations
-dipyridamole
-disgren
-duoplavin
-ekistol
-hepraina
-persantin
-plavix
-pletal
-prasugler
-reopro
-ticagrelor
-ticlopidine
-tiklid
-tirofiban
-triflusal
-tromalyt
-vatoud
-a . basilar
-a . carotida interna
-a . circunferencial corta
-a . coroidea ant
-a . paramedia
-a . basilar
-a . carotida interna
-a . circunferencial corta
-a . coroidea ant
-a2
-ab
-aca
-acc
-aci
-aci-t
-acm
-acoa
-acp
-acs
-aica
-art basilar
-artbasilar
-art cerebral media
-art vertebral
-artvertebral
-art. cerebral media
-art.cerebralmedia
-art. paramedia
-art.paramedia
-arteria a2
-arteria aca
-arteria acc
-arteria aci
-arteria aci-t
-arteriaaci-t
-arteria acm
-arteria acoa
-arteriaacoa
-arteria acp
-arteria acs
-arteria aica
-arteriaaica
-arteria basilar
-arteriabasilar
-arteria c1
-arteria carotida comun
-arteriacarotidacomun
-arteria carotida interna
-arteriacarotidainterna
-arteria carotida interna terminal
-arteriacarotidainternaterminal
-arteria carotida primitiva
-arteriacarotidaprimitiva
-carotide
-arteria carotide
-arteriacarotide
-arteria carotidea
-arteriacarotidea
-arteria carotidi
-arteriacarotidi
-arteria cerebelosa anteroinferior
-arteriacerebelosaanteroinferior
-arteria cerebelosa posteroinferior
-arteriacerebelosaposteroinferior
-arteria cerebelosa superior
-arteriacerebelosasuperior
-arteria cerebral anterior
-arteriacerebralanterior
-arteria cerebral media
-arteriacerebralmedia
-arteria cerebral media segmento
-arteriacerebralmediasegmento
-arteria cerebral mitja
-arteriacerebralmitja
-arteria cerebral posterior
-arteriacerebralposterior
-arteria cerebrales posteriores
-arteriacerebralesposteriores
-arteria cerebrals mitges
-arteriacerebralsmitges
-arteria coroidea anterior
-arteriacoroideaanterior
-arteria coroidea posterior
-arteriacoroideaposterior
-arteria ica
-arteria indeterm i na do
-arteria indeterminado
-arteriaindeterminado
-arteria lenticular estriadas
-arterialenticularestriadas
-arteria lenticular-estriadas
-arterialenticular-estriadas
-arteria lenticuloestriada
-arterialenticuloestriada
-arteria m1
-arteria m2
-arteria m3
-arteria m4
-arteria m5
-arteria m6
-arteria no especif .
-arteria nucleo lenticular
-arterianucleolenticular
-arteria paramedia
-arteriaparamedia
-arteria paramediana
-arteriaparamediana
-arteria pica
-arteriapica
-arteria territorio indeterminado
-arteriaterritorioindeterminado
-arteria tica
-arteriatica
-arteria v1
-arteria vb
-arteria vertebr basilar
-arteriavertebrbasilar
-arteria vertebral
-arteriavertebral
-arteria vertebro basilar
-arteriavertebrobasilar
-vertebro basilar
-vertebrobasilar
-arteria vertebro-basilar
-arteriavertebro-basilar
-arteria vertebrobasilar
-arteriavertebrobasilar
-c1
-carotida
-carotida interna
-carotidainterna
-carotida primitiva
-carotidaprimitiva
-cerebrales posteriores
-cerebralesposteriores
-ica
-indeterm i na do
-indeterminado
-lenticular estriadas
-lenticularestriadas
-lenticular-estriadas
-m1
-m2
-m3
-m4
-m5
-m6
-no especif .
-nucleo lenticular
-nucleolenticular
-pica
-territorio indeterminado
-territorioindeterminado
-tica
-v1
-vb
-basilar
-bulbar
-capsulo talamic
-capsulotalamic
-caudado
-cerebelosa
-corona radiada
-coronaradiada
-cortical
-emporo insular
-emporoinsular
-fronto
-fronto insular
-frontoinsular
-fronto occipital
-frontooccipital
-fronto temporo insular
-frontotemporoinsular
-fronto y occipital
-ganglicapsular
-ganglios basales
-gangliosbasales
-ganglios de la base
-ggbb
-indeterminado
-infarto de circulacion posterior
-infarto lacunar
-infartolacunar
-infarto parcial de circulacion anterior
-infarto total de circulacion anterior
-intraventricular
-laci
-lacunar
-lenticular
-lenticular capsular
-lenticularcapsular
-lenticular capsulotalamico
-lenticularcapsulotalamico
-lobar
-occipital
-paci
-palido
-parcial
-parietal
-parietooccipital
-poci
-posterior
-profunda
-profundes
-protuberancial
-putamen
-putaminal
-subcorticals
-taci
-talamica
-talamo
-talamo capuslar
-talamocapuslar
-temporal
-temporal basal
-temporalbasal
-territorio indeterminado
-territorioindeterminado
-tronco
-ventriculos
-ambas
-bihemisferico
-bilaterales
-D
-dcha
-dcho
-derecho
-dret
-dreta
-E
-e
-esq
-esq .
-esquerre
-I
-izda
-izdo
-izq
-izquierda
-tronco cerebral
-troncocerebral
-embolismo paradojico
-embolismoparadojico
-embolica
-a estudio
-aestudio
-aneurisma
-angiopatia amiloide
-angiopatiaamiloide
-angiopatia amiloide cerebral
-angiopatiaamiloidecerebral
-ateromatosis
-aterosclerotico
-aterotrombotico
-cardiaco
-cardio embolico
-cardioembolico
-causa a estudio
-causa aneurisma
-causaaneurisma
-causa angiopatia amiloide
-causaangiopatiaamiloide
-causa angiopatia amiloide cerebral
-causaangiopatiaamiloidecerebral
-causa ateromatosis
-causaateromatosis
-causa aterosclerotico
-causaaterosclerotico
-causa aterotrombotico
-causaaterotrombotico
-causa cardiaco
-causacardiaco
-causa cardio embolico
-causacardioembolico
-causa cardioemebolico
-causacardioemebolico
-causa cavernoma de circunvolucion
-causa ce
-causa con estudio incompleto
-causa criptogenico
-causacriptogenico
-causa diseccio
-causadiseccio
-causa embolica
-causaembolica
-causa embolico
-causaembolico
-causa embolismo paradojico
-causaembolismoparadojico
-causa esus
-causaesus
-causa hipertensivo
-causahipertensivo
-causa indeterminada per estudi incomplet
-causa indeterminado
-causaindeterminado
-causa indeterminado ( estudio incompleto )
-causa indeterminado de causa doble
-causa indeterminado pendiente de estudio
-causaindeterminadopendientedeestudio
-causa indeterminado por doble causa
-causa indeterminado por estudio incompleto
-causa infrecuente
-causainfrecuente
-causa inhabitual
-causainhabitual
-causa insual
-causainsual
-causa lacunar
-causalacunar
-causa malformacion arteriovenosa
-causamalformacionarteriovenosa
-causa mecanisme embolic
-causamecanismeembolic
-causa microangiopatica
-causamicroangiopatica
-causa no determinada
-causa pendent de completar l' estudi
-causa pendent de filiacio
-causa por determinar
-causa posiblemente a estudio
-causa posiblemente aneurisma
-causaposiblementeaneurisma
-causa posiblemente angiopatia amiloide
-causaposiblementeangiopatiaamiloide
-causa posiblemente angiopatia amiloide cerebral
-causaposiblementeangiopatiaamiloidecerebral
-causa posiblemente ateromatosis
-causaposiblementeateromatosis
-causa posiblemente aterosclerotico
-causaposiblementeaterosclerotico
-causa posiblemente aterotrombotico
-causaposiblementeaterotrombotico
-causa posiblemente cardiaco
-causaposiblementecardiaco
-causa posiblemente cardio embolico
-causaposiblementecardioembolico
-causa posiblemente cardioemebolico
-causaposiblementecardioemebolico
-causa posiblemente cavernoma de circunvolucion
-causaposiblementecavernomadecircunvolucion
-causa posiblemente ce
-causa posiblemente criptogenico
-causaposiblementecriptogenico
-causa posiblemente diseccio
-causaposiblementediseccio
-causa posiblemente embolico
-causaposiblementeembolico
-causa posiblemente esus
-causaposiblementeesus
-causa posiblemente hipertensivo
-causaposiblementehipertensivo
-causa posiblemente indeterminado
-causaposiblementeindeterminado
-causa posiblemente indeterminado ( estudio incompleto )
-causaposiblementeindeterminado(estudioincompleto)
-causa posiblemente indeterminado de causa doble
-causaposiblementeindeterminadodecausadoble
-causa posiblemente indeterminado por estudio incompleto
-causaposiblementeindeterminadoporestudioincompleto
-causa posiblemente infrecuente
-causaposiblementeinfrecuente
-causa posiblemente inhabitual
-causaposiblementeinhabitual
-causa posiblemente insual
-causaposiblementeinsual
-causa posiblemente lacunar
-causaposiblementelacunar
-causa posiblemente malformacion arteriovenosa
-causaposiblementemalformacionarteriovenosa
-causa posiblemente mecanisme embolic
-causaposiblementemecanismeembolic
-causa posiblemente microangiopatica
-causaposiblementemicroangiopatica
-causa posiblemente no determinada
-causa posiblemente pendent de filiacio
-causaposiblementependentdefiliacio
-causa posiblemente por determinar
-causa posiblemente secundaria a malformacion vascular
-causaposiblementesecundariaamalformacionvascular
-causa posiblemente secundaria a tumor
-causaposiblementesecundariaatumor
-causa posiblemente secundaria a diseccion
-causaposiblementesecundariaadiseccion
-causa posiblemente con estudio incompleto
-causa posiblemente embolismo paradojico
-causaposiblementeembolismoparadojico
-causa posiblemente indeterminada per estudi incomplet
-causaposiblementeindeterminadaperestudiincomplet
-causa posiblemente indeterminado pendiente de estudio
-causaposiblementeindeterminadopendientedeestudio
-causa posiblemente indeterminado por doble causa
-causaposiblementeindeterminadopordoblecausa
-causa posiblemente pendent de completar l' estudi
-causaposiblementependentdecompletarl'estudi
-causa probablemente a estudio
-causa probablemente aneurisma
-causaprobablementeaneurisma
-causa probablemente angiopatia amiloide
-causaprobablementeangiopatiaamiloide
-causa probablemente angiopatia amiloide cerebral
-causaprobablementeangiopatiaamiloidecerebral
-causa probablemente ateromatosis
-causaprobablementeateromatosis
-causa probablemente aterosclerotico
-causaprobablementeaterosclerotico
-causa probablemente aterotrombotico
-causaprobablementeaterotrombotico
-causa probablemente cardiaco
-causaprobablementecardiaco
-causa probablemente cardio embolico
-causaprobablementecardioembolico
-causa probablemente cardioemebolico
-causaprobablementecardioemebolico
-causa probablemente cavernoma de circunvolucion
-causaprobablementecavernomadecircunvolucion
-causa probablemente ce
-causa probablemente con estudio incompleto
-causa probablemente criptogenico
-causaprobablementecriptogenico
-causa probablemente diseccio
-causaprobablementediseccio
-causa probablemente embolico
-causaprobablementeembolico
-causa probablemente embolismo paradojico
-causaprobablementeembolismoparadojico
-causa probablemente esus
-causaprobablementeesus
-causa probablemente hipertensivo
-causaprobablementehipertensivo
-causa probablemente indeterminada per estudi incomplet
-causaprobablementeindeterminadaperestudiincomplet
-causa probablemente indeterminado
-causaprobablementeindeterminado
-causa probablemente indeterminado ( estudio incompleto )
-causaprobablementeindeterminado(estudioincompleto)
-causa probablemente indeterminado de causa doble
-causaprobablementeindeterminadodecausadoble
-causa probablemente indeterminado pendiente de estudio
-causaprobablementeindeterminadopendientedeestudio
-causa probablemente indeterminado por doble causa
-causaprobablementeindeterminadopordoblecausa
-causa probablemente indeterminado por estudio incompleto
-causaprobablementeindeterminadoporestudioincompleto
-causa probablemente infrecuente
-causaprobablementeinfrecuente
-causa probablemente inhabitual
-causaprobablementeinhabitual
-causa probablemente insual
-causaprobablementeinsual
-causa probablemente lacunar
-causaprobablementelacunar
-causa probablemente malformacion arteriovenosa
-causaprobablementemalformacionarteriovenosa
-causa probablemente mecanisme embolic
-causaprobablementemecanismeembolic
-causa probablemente microangiopatica
-causaprobablementemicroangiopatica
-causa probablemente no determinada
-causa probablemente pendent de completar l' estudi
-causaprobablementependentdecompletarl'estudi
-causa probablemente pendent de filiacio
-causaprobablementependentdefiliacio
-causa probablemente por determinar
-causa probablemente secundaria a malformacion vascular
-causaprobablementesecundariaamalformacionvascular
-causa probablemente secundaria a tumor
-causaprobablementesecundariaatumor
-causa probablemente secundaria a diseccion
-causaprobablementesecundariaadiseccion
-causa secundaria a malformacion vascular
-causa secundaria a tumor
-causa secundaria a diseccion
-cavernoma de circunvolucion
-ce
-con estudio incompleto
-criptogenico
-de origen a estudio
-de origen aneurisma
-de origen angiopatia amiloide
-de origen angiopatia amiloide cerebral
-de origen ateromatosis
-de origen aterosclerotico
-de origen aterotrombotico
-de origen cardiaco
-de origen cardio embolico
-de origen cardioemebolico
-de origen cavernoma de circunvolucion
-de origen ce
-de origen con estudio incompleto
-de origen criptogenico
-de origen diseccio
-de origen embolico
-de origen embolismo paradojico
-de origen esus
-de origen hipertensivo
-de origen indeterminada per estudi incomplet
-de origen indeterminado
-de origen indeterminado ( estudio incompleto )
-de origen indeterminado de causa doble
-de origen indeterminado pendiente de estudio
-de origen indeterminado por doble causa
-de origen indeterminado por estudio incompleto
-de origen infrecuente
-de origen inhabitual
-de origen insual
-de origen lacunar
-de origen malformacion arteriovenosa
-de origen mecanisme embolic
-de origen microangiopatica
-de origen no determinada
-de origen pendent de completar l' estudi
-de origen pendent de filiacio
-de origen por determinar
-de origen posiblemente a estudio
-de origen posiblemente aneurisma
-de origen posiblemente angiopatia amiloide
-de origen posiblemente angiopatia amiloide cerebral
-de origen posiblemente ateromatosis
-de origen posiblemente aterosclerotico
-de origen posiblemente aterotrombotico
-de origen posiblemente cardiaco
-de origen posiblemente cardiaco
-de origen posiblemente cardio embolico
-de origen posiblemente cardioemebolico
-de origen posiblemente cavernoma de circunvolucion
-de origen posiblemente ce
-de origen posiblemente criptogenico
-de origen posiblemente diseccio
-de origen posiblemente embolico
-de origen posiblemente esus
-de origen posiblemente hipertensivo
-de origen posiblemente indeterminado
-de origen posiblemente indeterminado ( estudio incompleto )
-de origen posiblemente indeterminado de causa doble
-de origen posiblemente indeterminado por estudio incompleto
-de origen posiblemente infrecuente
-de origen posiblemente inhabitual
-de origen posiblemente insual
-de origen posiblemente lacunar
-de origen posiblemente malformacion arteriovenosa
-de origen posiblemente mecanisme embolic
-de origen posiblemente microangiopatica
-de origen posiblemente no determinada
-de origen posiblemente pendent de filiacio
-de origen posiblemente por determinar
-de origen posiblemente secundaria a malformacion vascular
-de origen posiblemente secundaria a tumor
-de origen posiblemente secundaria a diseccion
-de origen posiblemente con estudio incompleto
-de origen posiblemente embolismo paradojico
-de origen posiblemente indeterminada per estudi incomplet
-de origen posiblemente indeterminado pendiente de estudio
-de origen posiblemente indeterminado por doble causa
-de origen posiblemente pendent de completar l' estudi
-de origen probablemente a estudio
-de origen probablemente aneurisma
-de origen probablemente angiopatia amiloide
-de origen probablemente angiopatia amiloide cerebral
-de origen probablemente ateromatosis
-de origen probablemente aterosclerotico
-de origen probablemente aterotrombotico
-de origen probablemente cardiaco
-de origen probablemente cardiaco
-de origen probablemente cardio embolico
-de origen probablemente cardioemebolico
-de origen probablemente cavernoma de circunvolucion
-de origen probablemente ce
-de origen probablemente con estudio incompleto
-de origen probablemente criptogenico
-de origen probablemente diseccio
-de origen probablemente embolico
-de origen probablemente embolismo paradojico
-de origen probablemente esus
-de origen probablemente hipertensivo
-de origen probablemente indeterminada per estudi incomplet
-de origen probablemente indeterminado
-de origen probablemente indeterminado ( estudio incompleto )
-de origen probablemente indeterminado de causa doble
-de origen probablemente indeterminado pendiente de estudio
-de origen probablemente indeterminado por doble causa
-de origen probablemente indeterminado por estudio incompleto
-de origen probablemente infrecuente
-de origen probablemente inhabitual
-de origen probablemente insual
-de origen probablemente lacunar
-de origen probablemente malformacion arteriovenosa
-de origen probablemente mecanisme embolic
-de origen probablemente microangiopatica
-de origen probablemente no determinada
-de origen probablemente pendent de completar l' estudi
-de origen probablemente pendent de filiacio
-de origen probablemente por determinar
-de origen probablemente secundaria a malformacion vascular
-de origen probablemente secundaria a tumor
-de origen probablemente secundaria a diseccion
-de origen secundaria a malformacion vascular
-de origen secundaria a tumor
-de origen secundaria a diseccion
-diseccio
-embolico
-embolismo paradojico
-embolismoparadojico
-esus
-etiologia a estudio
-etiologia aneurisma
-etiologiaaneurisma
-etiologia angiopatia amiloide
-etiologiaangiopatiaamiloide
-etiologia angiopatia amiloide cerebral
-etiologiaangiopatiaamiloidecerebral
-etiologia ateromatosis
-etiologiaateromatosis
-etiologia aterosclerotico
-etiologiaaterosclerotico
-etiologia aterotrombotico
-etiologiaaterotrombotico
-etiologia cardiaco
-etiologiacardiaco
-etiologia cardio embolico
-etiologiacardioembolico
-etiologia cardioemebolico
-etiologiacardioemebolico
-etiologia cavernoma de circunvolucion
-etiologia ce
-etiologia con estudio incompleto
-etiologia criptogenico
-etiologiacriptogenico
-etiologia diseccio
-etiologiadiseccio
-etiologia embolico
-etiologiaembolico
-etiologia embolismo paradojico
-etiologiaembolismoparadojico
-etiologia esus
-etiologiaesus
-etiologia hipertensivo
-etiologiahipertensivo
-etiologia indeterminada per estudi incomplet
-etiologia indeterminado
-etiologiaindeterminado
-etiologia indeterminado ( estudio incompleto )
-etiologia indeterminado de causa doble
-etiologia indeterminado pendiente de estudio
-etiologiaindeterminadopendientedeestudio
-etiologia indeterminado por doble causa
-etiologia indeterminado por estudio incompleto
-etiologia infrecuente
-etiologiainfrecuente
-etiologia inhabitual
-etiologiainhabitual
-etiologia insual
-etiologiainsual
-etiologia lacunar
-etiologialacunar
-etiologia malformacion arteriovenosa
-etiologiamalformacionarteriovenosa
-etiologia mecanisme embolic
-etiologiamecanismeembolic
-etiologia microangiopatica
-etiologiamicroangiopatica
-etiologia no determinada
-etiologia pendent de completar l' estudi
-etiologia pendent de filiacio
-etiologia por determinar
-etiologia posiblemente a estudio
-etiologia posiblemente aneurisma
-etiologiaposiblementeaneurisma
-etiologia posiblemente angiopatia amiloide
-etiologiaposiblementeangiopatiaamiloide
-etiologia posiblemente angiopatia amiloide cerebral
-etiologiaposiblementeangiopatiaamiloidecerebral
-etiologia posiblemente ateromatosis
-etiologiaposiblementeateromatosis
-etiologia posiblemente aterosclerotico
-etiologiaposiblementeaterosclerotico
-etiologia posiblemente aterotrombotico
-etiologiaposiblementeaterotrombotico
-etiologia posiblemente cardiaco
-etiologiaposiblementecardiaco
-etiologia posiblemente cardio embolico
-etiologiaposiblementecardioembolico
-etiologia posiblemente cardioemebolico
-etiologiaposiblementecardioemebolico
-etiologia posiblemente cavernoma de circunvolucion
-etiologiaposiblementecavernomadecircunvolucion
-etiologia posiblemente ce
-etiologia posiblemente criptogenico
-etiologiaposiblementecriptogenico
-etiologia posiblemente diseccio
-etiologiaposiblementediseccio
-etiologia posiblemente embolico
-etiologiaposiblementeembolico
-etiologia posiblemente esus
-etiologiaposiblementeesus
-etiologia posiblemente hipertensivo
-etiologiaposiblementehipertensivo
-etiologia posiblemente indeterminado
-etiologiaposiblementeindeterminado
-etiologia posiblemente indeterminado ( estudio incompleto )
-etiologiaposiblementeindeterminado(estudioincompleto)
-etiologia posiblemente indeterminado de causa doble
-etiologiaposiblementeindeterminadodecausadoble
-etiologia posiblemente indeterminado por estudio incompleto
-etiologiaposiblementeindeterminadoporestudioincompleto
-etiologia posiblemente infrecuente
-etiologiaposiblementeinfrecuente
-etiologia posiblemente inhabitual
-etiologiaposiblementeinhabitual
-etiologia posiblemente insual
-etiologiaposiblementeinsual
-etiologia posiblemente lacunar
-etiologiaposiblementelacunar
-etiologia posiblemente malformacion arteriovenosa
-etiologiaposiblementemalformacionarteriovenosa
-etiologia posiblemente mecanisme embolic
-etiologiaposiblementemecanismeembolic
-etiologia posiblemente microangiopatica
-etiologiaposiblementemicroangiopatica
-etiologia posiblemente no determinada
-etiologia posiblemente pendent de filiacio
-etiologiaposiblementependentdefiliacio
-etiologia posiblemente por determinar
-etiologia posiblemente secundaria a malformacion vascular
-etiologiaposiblementesecundariaamalformacionvascular
-etiologia posiblemente secundaria a tumor
-etiologiaposiblementesecundariaatumor
-etiologia posiblemente secundaria a diseccion
-etiologiaposiblementesecundariaadiseccion
-etiologia posiblemente con estudio incompleto
-etiologia posiblemente embolismo paradojico
-etiologiaposiblementeembolismoparadojico
-etiologia posiblemente indeterminada per estudi incomplet
-etiologiaposiblementeindeterminadaperestudiincomplet
-etiologia posiblemente indeterminado pendiente de estudio
-etiologiaposiblementeindeterminadopendientedeestudio
-etiologia posiblemente indeterminado por doble causa
-etiologiaposiblementeindeterminadopordoblecausa
-etiologia posiblemente pendent de completar l' estudi
-etiologiaposiblementependentdecompletarl'estudi
-etiologia probablemente a estudio
-etiologia probablemente aneurisma
-etiologiaprobablementeaneurisma
-etiologia probablemente angiopatia amiloide
-etiologiaprobablementeangiopatiaamiloide
-etiologia probablemente angiopatia amiloide cerebral
-etiologiaprobablementeangiopatiaamiloidecerebral
-etiologia probablemente ateromatosis
-etiologiaprobablementeateromatosis
-etiologia probablemente aterosclerotico
-etiologiaprobablementeaterosclerotico
-etiologia probablemente aterotrombotico
-etiologiaprobablementeaterotrombotico
-etiologia probablemente cardiaco
-etiologiaprobablementecardiaco
-etiologia probablemente cardio embolico
-etiologiaprobablementecardioembolico
-etiologia probablemente cardioemebolico
-etiologiaprobablementecardioemebolico
-etiologia probablemente cavernoma de circunvolucion
-etiologiaprobablementecavernomadecircunvolucion
-etiologia probablemente ce
-etiologia probablemente con estudio incompleto
-etiologia probablemente criptogenico
-etiologiaprobablementecriptogenico
-etiologia probablemente diseccio
-etiologiaprobablementediseccio
-etiologia probablemente embolico
-etiologiaprobablementeembolico
-etiologia probablemente embolismo paradojico
-etiologiaprobablementeembolismoparadojico
-etiologia probablemente esus
-etiologiaprobablementeesus
-etiologia probablemente hipertensivo
-etiologiaprobablementehipertensivo
-etiologia probablemente indeterminada per estudi incomplet
-etiologiaprobablementeindeterminadaperestudiincomplet
-etiologia probablemente indeterminado
-etiologiaprobablementeindeterminado
-etiologia probablemente indeterminado ( estudio incompleto )
-etiologiaprobablementeindeterminado(estudioincompleto)
-etiologia probablemente indeterminado de causa doble
-etiologiaprobablementeindeterminadodecausadoble
-etiologia probablemente indeterminado pendiente de estudio
-etiologiaprobablementeindeterminadopendientedeestudio
-etiologia probablemente indeterminado por doble causa
-etiologiaprobablementeindeterminadopordoblecausa
-etiologia probablemente indeterminado por estudio incompleto
-etiologiaprobablementeindeterminadoporestudioincompleto
-etiologia probablemente infrecuente
-etiologiaprobablementeinfrecuente
-etiologia probablemente inhabitual
-etiologiaprobablementeinhabitual
-etiologia probablemente insual
-etiologiaprobablementeinsual
-etiologia probablemente lacunar
-etiologiaprobablementelacunar
-etiologia probablemente malformacion arteriovenosa
-etiologiaprobablementemalformacionarteriovenosa
-etiologia probablemente mecanisme embolic
-etiologiaprobablementemecanismeembolic
-etiologia probablemente microangiopatica
-etiologiaprobablementemicroangiopatica
-etiologia probablemente no determinada
-etiologia probablemente pendent de completar l' estudi
-etiologiaprobablementependentdecompletarl'estudi
-etiologia probablemente pendent de filiacio
-etiologiaprobablementependentdefiliacio
-etiologia probablemente por determinar
-etiologia probablemente secundaria a malformacion vascular
-etiologiaprobablementesecundariaamalformacionvascular
-etiologia probablemente secundaria a tumor
-etiologiaprobablementesecundariaatumor
-etiologia probablemente secundaria a diseccion
-etiologiaprobablementesecundariaadiseccion
-etiologia secundaria a malformacion vascular
-etiologia secundaria a tumor
-etiologia secundaria a diseccion
-hipertensivo
-indeterminada per estudi incomplet
-indeterminada per estudi incomplet
-indeterminado
-indeterminado
-indeterminado ( estudio incompleto )
-indeterminado ( estudio incompleto )
-indeterminado de causa doble
-indeterminado de causa doble
-indeterminado pendiente de estudio
-indeterminado pendiente de estudio
-indeterminado por doble causa
-indeterminado por doble causa
-indeterminado por doble causa
-indeterminado por estudio incompleto
-indeterminado por estudio incompleto
-infrecuente
-inhabitual
-insual
-lacunar
-malformacion arteriovenosa
-malformacionarteriovenosa
-mecanisme embolic
-mecanismeembolic
-microangiopatica
-no determinada
-nodeterminada
-origen a estudio
-origen aneurisma
-origenaneurisma
-origen angiopatia amiloide
-origenangiopatiaamiloide
-origen angiopatia amiloide cerebral
-origenangiopatiaamiloidecerebral
-origen ateromatosis
-origenateromatosis
-origen aterosclerotico
-origenaterosclerotico
-origen aterotrombotico
-origenaterotrombotico
-origen aterotrombotico
-origenaterotrombotico
-origen cardiaco
-origencardiaco
-origen cardiaco
-origencardiaco
-origen cardio embolico
-origencardioembolico
-origen cardioemebolico
-origencardioemebolico
-origen cavernoma de circunvolucion
-origen ce
-origen con estudio incompleto
-origen criptogenico
-origencriptogenico
-origen diseccio
-origendiseccio
-origen embolico
-origenembolico
-origen embolismo paradojico
-origenembolismoparadojico
-origen esus
-origenesus
-origen hipertensivo
-origenhipertensivo
-origen indeterminada per estudi incomplet
-origen indeterminado
-origenindeterminado
-origen indeterminado ( estudio incompleto )
-origen indeterminado de causa doble
-origen indeterminado pendiente de estudio
-origenindeterminadopendientedeestudio
-origen indeterminado por doble causa
-origen indeterminado por estudio incompleto
-origen infrecuente
-origeninfrecuente
-origen inhabitual
-origeninhabitual
-origen insual
-origeninsual
-origen lacunar
-origenlacunar
-origen malformacion arteriovenosa
-origenmalformacionarteriovenosa
-origen mecanisme embolic
-origenmecanismeembolic
-origen microangiopatica
-origenmicroangiopatica
-origen no determinada
-origen pendent de completar l' estudi
-origen pendent de filiacio
-origen por determinar
-origen posiblemente a estudio
-origen posiblemente aneurisma
-origenposiblementeaneurisma
-origen posiblemente angiopatia amiloide
-origenposiblementeangiopatiaamiloide
-origen posiblemente angiopatia amiloide cerebral
-origenposiblementeangiopatiaamiloidecerebral
-origen posiblemente ateromatosis
-origenposiblementeateromatosis
-origen posiblemente aterosclerotico
-origenposiblementeaterosclerotico
-origen posiblemente aterotrombotico
-origenposiblementeaterotrombotico
-origen posiblemente cardiaco
-origenposiblementecardiaco
-origen posiblemente cardiaco
-origenposiblementecardiaco
-origen posiblemente cardio embolico
-origenposiblementecardioembolico
-origen posiblemente cardioemebolico
-origenposiblementecardioemebolico
-origen posiblemente cavernoma de circunvolucion
-origenposiblementecavernomadecircunvolucion
-origen posiblemente ce
-origen posiblemente criptogenico
-origenposiblementecriptogenico
-origen posiblemente diseccio
-origenposiblementediseccio
-origen posiblemente embolico
-origenposiblementeembolico
-origen posiblemente esus
-origenposiblementeesus
-origen posiblemente hipertensivo
-origenposiblementehipertensivo
-origen posiblemente indeterminado
-origenposiblementeindeterminado
-origen posiblemente indeterminado ( estudio incompleto )
-origenposiblementeindeterminado(estudioincompleto)
-origen posiblemente indeterminado de causa doble
-origenposiblementeindeterminadodecausadoble
-origen posiblemente indeterminado por estudio incompleto
-origenposiblementeindeterminadoporestudioincompleto
-origen posiblemente infrecuente
-origenposiblementeinfrecuente
-origen posiblemente inhabitual
-origenposiblementeinhabitual
-origen posiblemente insual
-origenposiblementeinsual
-origen posiblemente lacunar
-origenposiblementelacunar
-origen posiblemente malformacion arteriovenosa
-origenposiblementemalformacionarteriovenosa
-origen posiblemente mecanisme embolic
-origenposiblementemecanismeembolic
-origen posiblemente microangiopatica
-origenposiblementemicroangiopatica
-origen posiblemente no determinada
-origen posiblemente pendent de filiacio
-origenposiblementependentdefiliacio
-origen posiblemente por determinar
-origen posiblemente secundaria a malformacion vascular
-origenposiblementesecundariaamalformacionvascular
-origen posiblemente secundaria a tumor
-origenposiblementesecundariaatumor
-origen posiblemente secundaria a diseccion
-origenposiblementesecundariaadiseccion
-origen posiblemente con estudio incompleto
-origen posiblemente embolismo paradojico
-origenposiblementeembolismoparadojico
-origen posiblemente indeterminada per estudi incomplet
-origenposiblementeindeterminadaperestudiincomplet
-origen posiblemente indeterminado pendiente de estudio
-origenposiblementeindeterminadopendientedeestudio
-origen posiblemente indeterminado por doble causa
-origenposiblementeindeterminadopordoblecausa
-origen posiblemente pendent de completar l' estudi
-origenposiblementependentdecompletarl'estudi
-origen probablemente a estudio
-origen probablemente aneurisma
-origenprobablementeaneurisma
-origen probablemente angiopatia amiloide
-origenprobablementeangiopatiaamiloide
-origen probablemente angiopatia amiloide cerebral
-origenprobablementeangiopatiaamiloidecerebral
-origen probablemente ateromatosis
-origenprobablementeateromatosis
-origen probablemente aterosclerotico
-origenprobablementeaterosclerotico
-origen probablemente aterotrombotico
-origenprobablementeaterotrombotico
-origen probablemente cardiaco
-origenprobablementecardiaco
-origen probablemente cardiaco
-origenprobablementecardiaco
-origen probablemente cardio embolico
-origenprobablementecardioembolico
-origen probablemente cardioemebolico
-origenprobablementecardioemebolico
-origen probablemente cavernoma de circunvolucion
-origenprobablementecavernomadecircunvolucion
-origen probablemente ce
-origen probablemente con estudio incompleto
-origen probablemente criptogenico
-origenprobablementecriptogenico
-origen probablemente diseccio
-origenprobablementediseccio
-origen probablemente embolico
-origenprobablementeembolico
-origen probablemente embolismo paradojico
-origenprobablementeembolismoparadojico
-origen probablemente esus
-origenprobablementeesus
-origen probablemente hipertensivo
-origenprobablementehipertensivo
-origen probablemente indeterminada per estudi incomplet
-origenprobablementeindeterminadaperestudiincomplet
-origen probablemente indeterminado
-origenprobablementeindeterminado
-origen probablemente indeterminado ( estudio incompleto )
-origenprobablementeindeterminado(estudioincompleto)
-origen probablemente indeterminado de causa doble
-origenprobablementeindeterminadodecausadoble
-origen probablemente indeterminado pendiente de estudio
-origenprobablementeindeterminadopendientedeestudio
-origen probablemente indeterminado por doble causa
-origenprobablementeindeterminadopordoblecausa
-origen probablemente indeterminado por estudio incompleto
-origenprobablementeindeterminadoporestudioincompleto
-origen probablemente infrecuente
-origenprobablementeinfrecuente
-origen probablemente inhabitual
-origenprobablementeinhabitual
-origen probablemente insual
-origenprobablementeinsual
-origen probablemente lacunar
-origenprobablementelacunar
-origen probablemente malformacion arteriovenosa
-origenprobablementemalformacionarteriovenosa
-origen probablemente mecanisme embolic
-origenprobablementemecanismeembolic
-origen probablemente microangiopatica
-origenprobablementemicroangiopatica
-origen probablemente no determinada
-origen probablemente pendent de completar l' estudi
-origenprobablementependentdecompletarl'estudi
-origen probablemente pendent de filiacio
-origenprobablementependentdefiliacio
-origen probablemente por determinar
-origen probablemente secundaria a malformacion vascular
-origenprobablementesecundariaamalformacionvascular
-origen probablemente secundaria a tumor
-origenprobablementesecundariaatumor
-origen probablemente secundaria a diseccion
-origenprobablementesecundariaadiseccion
-origen secundaria a malformacion vascular
-origen secundaria a tumor
-origen secundaria a diseccion
-pendent de completar l' estudi
-pendent de completar l' estudi
-pendent de filiacio
-perfil a estudio
-perfil aneurisma
-perfilaneurisma
-perfil angiopatia amiloide
-perfilangiopatiaamiloide
-perfil angiopatia amiloide cerebral
-perfilangiopatiaamiloidecerebral
-perfil ateromatosis
-perfilateromatosis
-perfil aterosclerotico
-perfilaterosclerotico
-perfil aterotrombotico
-perfilaterotrombotico
-perfil cardiaco
-perfilcardiaco
-perfil cardio embolico
-perfilcardioembolico
-perfil cardioemebolico
-perfilcardioemebolico
-perfil cavernoma de circunvolucion
-perfil ce
-perfil con estudio incompleto
-perfil criptogenico
-perfilcriptogenico
-perfil diseccio
-perfildiseccio
-perfil embolico
-perfilembolico
-perfil embolismo paradojico
-perfilembolismoparadojico
-perfil esus
-perfilesus
-perfil hipertensivo
-perfilhipertensivo
-perfil indeterminada per estudi incomplet
-perfil indeterminado
-perfilindeterminado
-perfil indeterminado ( estudio incompleto )
-perfil indeterminado de causa doble
-perfil indeterminado pendiente de estudio
-perfilindeterminadopendientedeestudio
-perfil indeterminado por doble causa
-perfil indeterminado por estudio incompleto
-perfil infrecuente
-perfilinfrecuente
-perfil inhabitual
-perfilinhabitual
-perfil insual
-perfilinsual
-perfil lacunar
-perfillacunar
-perfil malformacion arteriovenosa
-perfilmalformacionarteriovenosa
-perfil mecanisme embolic
-perfilmecanismeembolic
-perfil microangiopatica
-perfilmicroangiopatica
-perfil no determinada
-perfil pendent de completar l' estudi
-perfil pendent de filiacio
-perfil por determinar
-perfil posiblemente a estudio
-perfil posiblemente aneurisma
-perfilposiblementeaneurisma
-perfil posiblemente angiopatia amiloide
-perfilposiblementeangiopatiaamiloide
-perfil posiblemente angiopatia amiloide cerebral
-perfilposiblementeangiopatiaamiloidecerebral
-perfil posiblemente ateromatosis
-perfilposiblementeateromatosis
-perfil posiblemente aterosclerotico
-perfilposiblementeaterosclerotico
-perfil posiblemente aterotrombotico
-perfilposiblementeaterotrombotico
-perfil posiblemente cardiaco
-perfilposiblementecardiaco
-perfil posiblemente cardio embolico
-perfilposiblementecardioembolico
-perfil posiblemente cardioemebolico
-perfilposiblementecardioemebolico
-perfil posiblemente cavernoma de circunvolucion
-perfilposiblementecavernomadecircunvolucion
-perfil posiblemente ce
-perfil posiblemente criptogenico
-perfilposiblementecriptogenico
-perfil posiblemente diseccio
-perfilposiblementediseccio
-perfil posiblemente embolico
-perfilposiblementeembolico
-perfil posiblemente esus
-perfilposiblementeesus
-perfil posiblemente hipertensivo
-perfilposiblementehipertensivo
-perfil posiblemente indeterminado
-perfilposiblementeindeterminado
-perfil posiblemente indeterminado ( estudio incompleto )
-perfilposiblementeindeterminado(estudioincompleto)
-perfil posiblemente indeterminado de causa doble
-perfilposiblementeindeterminadodecausadoble
-perfil posiblemente indeterminado por estudio incompleto
-perfilposiblementeindeterminadoporestudioincompleto
-perfil posiblemente infrecuente
-perfilposiblementeinfrecuente
-perfil posiblemente inhabitual
-perfilposiblementeinhabitual
-perfil posiblemente insual
-perfilposiblementeinsual
-perfil posiblemente lacunar
-perfilposiblementelacunar
-perfil posiblemente malformacion arteriovenosa
-perfilposiblementemalformacionarteriovenosa
-perfil posiblemente mecanisme embolic
-perfilposiblementemecanismeembolic
-perfil posiblemente microangiopatica
-perfilposiblementemicroangiopatica
-perfil posiblemente no determinada
-perfil posiblemente pendent de filiacio
-perfilposiblementependentdefiliacio
-perfil posiblemente por determinar
-perfil posiblemente secundaria a malformacion vascular
-perfilposiblementesecundariaamalformacionvascular
-perfil posiblemente secundaria a tumor
-perfilposiblementesecundariaatumor
-perfil posiblemente secundaria a diseccion
-perfilposiblementesecundariaadiseccion
-perfil posiblemente con estudio incompleto
-perfil posiblemente embolismo paradojico
-perfilposiblementeembolismoparadojico
-perfil posiblemente indeterminada per estudi incomplet
-perfilposiblementeindeterminadaperestudiincomplet
-perfil posiblemente indeterminado pendiente de estudio
-perfilposiblementeindeterminadopendientedeestudio
-perfil posiblemente indeterminado por doble causa
-perfilposiblementeindeterminadopordoblecausa
-perfil posiblemente pendent de completar l' estudi
-perfilposiblementependentdecompletarl'estudi
-perfil probablemente a estudio
-perfil probablemente aneurisma
-perfilprobablementeaneurisma
-perfil probablemente angiopatia amiloide
-perfilprobablementeangiopatiaamiloide
-perfil probablemente angiopatia amiloide cerebral
-perfilprobablementeangiopatiaamiloidecerebral
-perfil probablemente ateromatosis
-perfilprobablementeateromatosis
-perfil probablemente aterosclerotico
-perfilprobablementeaterosclerotico
-perfil probablemente aterotrombotico
-perfilprobablementeaterotrombotico
-perfil probablemente cardiaco
-perfilprobablementecardiaco
-perfil probablemente cardio embolico
-perfilprobablementecardioembolico
-perfil probablemente cardioemebolico
-perfilprobablementecardioemebolico
-perfil probablemente cavernoma de circunvolucion
-perfilprobablementecavernomadecircunvolucion
-perfil probablemente ce
-perfil probablemente con estudio incompleto
-perfil probablemente criptogenico
-perfilprobablementecriptogenico
-perfil probablemente diseccio
-perfilprobablementediseccio
-perfil probablemente embolico
-perfilprobablementeembolico
-perfil probablemente embolismo paradojico
-perfilprobablementeembolismoparadojico
-perfil probablemente esus
-perfilprobablementeesus
-perfil probablemente hipertensivo
-perfilprobablementehipertensivo
-perfil probablemente indeterminada per estudi incomplet
-perfilprobablementeindeterminadaperestudiincomplet
-perfil probablemente indeterminado
-perfilprobablementeindeterminado
-perfil probablemente indeterminado ( estudio incompleto )
-perfilprobablementeindeterminado(estudioincompleto)
-perfil probablemente indeterminado de causa doble
-perfilprobablementeindeterminadodecausadoble
-perfil probablemente indeterminado pendiente de estudio
-perfilprobablementeindeterminadopendientedeestudio
-perfil probablemente indeterminado por doble causa
-perfilprobablementeindeterminadopordoblecausa
-perfil probablemente indeterminado por estudio incompleto
-perfilprobablementeindeterminadoporestudioincompleto
-perfil probablemente infrecuente
-perfilprobablementeinfrecuente
-perfil probablemente inhabitual
-perfilprobablementeinhabitual
-perfil probablemente insual
-perfilprobablementeinsual
-perfil probablemente lacunar
-perfilprobablementelacunar
-perfil probablemente malformacion arteriovenosa
-perfilprobablementemalformacionarteriovenosa
-perfil probablemente mecanisme embolic
-perfilprobablementemecanismeembolic
-perfil probablemente microangiopatica
-perfilprobablementemicroangiopatica
-perfil probablemente no determinada
-perfil probablemente pendent de completar l' estudi
-perfilprobablementependentdecompletarl'estudi
-perfil probablemente pendent de filiacio
-perfilprobablementependentdefiliacio
-perfil probablemente por determinar
-perfil probablemente secundaria a malformacion vascular
-perfilprobablementesecundariaamalformacionvascular
-perfil probablemente secundaria a tumor
-perfilprobablementesecundariaatumor
-perfil probablemente secundaria a diseccion
-perfilprobablementesecundariaadiseccion
-perfil secundaria a malformacion vascular
-perfil secundaria a tumor
-perfil secundaria a diseccion
-por determinar
-pordeterminar
-secundaria a diseccion
-secundaria a malformacion vascular
-secundaria a tumor
-tac
-tac - craneal
-tac arterias cerebrales
-tac cerebral
-taccerebral
-tac cerebro
-taccerebro
-tac craneal
-taccraneal
-tac craneo
-taccraneo
-tac crani
-taccrani
-tac crani a l
-tac de cap
-tac de craneo
-tac perfusion cerebral
-tac perfusioncerebral
-tacperfusioncerebral
-tacs craneales
-tacscraneales
-tc
-tc - craneal
-tc arterias cerebrales
-tc cerebral
-tccerebral
-tc cerebro
-tccerebro
-tc craneal
-tccraneal
-tc craneo
-tccraneo
-tc crani
-tccrani
-tc crani a l
-tc de cap
-tc de craneo
-tc perfusion cerebral
-tc perfusioncerebral
-tcperfusioncerebral
-tomografia axial computeritzada de cap
-tomografiaaxialcomputeritzadadecap
-tomografia de cap
-recanalizacion
-puerta aguja
-puertaaguja
+actylise
+ecas iv
+fibrinolisi amb rtpa ev
+fibrinolisis
+fibrinolisis con alteplase
+fibrinolisis con r-tpa
+fibrinolisis con rtpa
+fibrinolisis con rtpa endovenoso
+fibrinolisis con rtpa intravenosa
+fibrinolisis endovenosa
+fibrinolisisendovenosa
+fibrinolisis endovenosa con rtpa
+fibrinolisis endovenosa rtpa
+fibrinolisisendovenosartpa
+fibrinolisis ev con rtpa
+fibrinolisis iv
+fibrinolisis rtpa
+fibrinolisisrtpa
+fibrinolisis sistemica con rtpa ev
+fibrinolitico
+fibrinolitico amb rtpa
+fibrinolitico con rtpa
+fibrinolizado
+procedimiento de revascularizacion
+rtpa
+rtpa ev
+rtpaev
+tecneplasa
+terapia de reperfusion
+terapia de rescate
+tnk
+tpa
+tpa ev
+tpaev
+tractament amb rtpa
+tractament amb rtpa endovenos
+tractament endovenos
+tractamentendovenos
+tractament fibrinolitic ev
+tractament fibrinolitic
+tractamentfibrinolitic
+tractament fibrinolitic
+tractamentfibrinolitic
+tractament fibrinolitic endovenos amb rtpa
+tractamentfibrinoliticendovenosambrtpa
+tractament rpta ev
+tractat amb firbinolisi
+tratamiento con alteplasa
+tratamiento con fibrinolisis ev
+tratamiento con rt-pa intravenoso
+tratamiento con rtpa
+tratamiento con rtpa ev
+tratamiento de repefusion cerebral con r-tpa
+tratamiento de reperfusion
+tratamiento de reperfusion aguda mendiante fibrinolisis ev
+tratamiento de reperfusion con fibrinolisis
+tratamiento de reperfusion con fibrinolisis ev
+tratamiento de reperfusion con rtpa
+tratamiento de reperfusion de rpta endovenoso
+tratamiento de reperfusion en fase aguda con rtpa
+tratamiento de reperfusion ev
+tratamiento de repermeabilizacion
+tratamiento de revascularizacion
+tratamiento endovenoso
+tratamientoendovenoso
+tratamiento fibrinolitico
+tratamientofibrinolitico
+tratamiento fibrinolitico con alteplase
+tratamiento fibrinolitico con rtpa
+tratamiento fibrinolitico con rtpa endovenosa
+tratamiento fibrinolitico con rtpa ev
+tratamiento fibrinolitico endovenoso
+tratamientofibrinoliticoendovenoso
+tratamiento fibrinolitico ev con rtpa
+tratamiento fibrinolitico rtpa
+tratamientofibrinoliticortpa
+tratamiento fibrinolotico iv
+tratamiento recanalizador
+tratamientorecanalizador
+tratamiento recanalizador con fibrinolisis iv
+tratamiento recanalizador endovenoso
+tratamientorecanalizadorendovenoso
+tratamiento reperfusion
+tratamientoreperfusion
+tratamiento reperfusor con fibrinolitico endovenoso
+tratamiento reperfusor endovenoso
+tratamientoreperfusorendovenoso
+tratamiento revascularizador
+tratamientorevascularizador
+tratamiento trombolitico
+tratamientotrombolitico
+tratamiento trombolitico con rtpa
+tratamiento trombolitico con tpa endovenoso
+tratamiento trombolitico intravenoso
+tratamientotromboliticointravenoso
+tratamiento trombolitico intravenoso con rtpa
+tratamientotromboliticointravenosoconrtpa
+tratamiento trombolitico rtpa
+tratamientotromboliticortpa
+trombolisado
+trombolisis
+trombolisis cerebral
+trombolisiscerebral
+trombolisis endovenosa
+trombolisisendovenosa
+trombolisis ev
+trombolisis intravenosa
+trombolisisintravenosa
+trombolisis sistemica endovenosa
+trombolisissistemicaendovenosa
+trombolisisendovenosa con rtpa
+tto trombolitico con rtpa

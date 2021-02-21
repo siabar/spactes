@@ -41,10 +41,19 @@ public class RemoveAccents {
 			BufferedWriter bufferedWriter_lexicon = new BufferedWriter(writer_lexicon);
 
 			while ((line_original = bufferedReader.readLine()) != null) {
-				String templine = line_original.trim();
+				String[] templine_list = line_original.trim().split("\\|");
+				String templine = "";
 
-				String tempRC = ra.removeAccents(templine);
-				bufferedWriter_lexicon.write(tempRC + "\n");
+				templine_list[1] = ra.removeAccents(templine_list[1]);
+				templine_list[2] = ra.removeAccents(templine_list[2]);
+				
+				for (String tem : templine_list) {
+					templine += tem + "|";
+				}
+				
+				
+				
+				bufferedWriter_lexicon.write(templine.substring(0, templine.length()-1) + "\n");
 
 			}
 			bufferedReader.close();
